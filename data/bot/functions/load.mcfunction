@@ -1,1 +1,2 @@
-tellraw @a {"text": "Reloaded!"}
+function bot:objectives
+function bot:version

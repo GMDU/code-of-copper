@@ -1,1 +1,1 @@
-###By Gears and Moxvallix
+execute as @a run function bot:player
