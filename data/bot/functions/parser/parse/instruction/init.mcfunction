@@ -1,0 +1,1 @@
+execute unless data storage bot:parser/iterate stack[-1].instructions run function bot:parser/parse/instruction/definitions
