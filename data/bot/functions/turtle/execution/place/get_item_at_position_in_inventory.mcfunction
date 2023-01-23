@@ -1,4 +1,4 @@
-execute store result score .slot_target bot.variables run data get storage bot:io In
+execute store result score .slot_target bot.execution.variables run data get storage bot:io In
 
 data modify storage bot:variables Inventory set from entity @s Items
 
