@@ -3,4 +3,4 @@ execute if score .current_slot bot.execution.variables = .slot_target bot.execut
 
 data remove storage bot:variables Inventory[0]
 
-execute unless score .current_slot bot.execution.variables = .slot_target bot.execution.variables if data storage bot:variables Inventory[0] run function bot:turtle/execution/place/get_item_loop
+execute unless score .current_slot bot.execution.variables = .slot_target bot.execution.variables if data storage bot:variables Inventory[0] run function bot:golem/execution/place/get_item_loop

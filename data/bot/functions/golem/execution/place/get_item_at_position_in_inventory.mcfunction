@@ -2,4 +2,4 @@ execute store result score .slot_target bot.execution.variables run data get sto
 
 data modify storage bot:variables Inventory set from entity @s Items
 
-execute if data storage bot:variables Inventory[0] run function bot:turtle/execution/place/get_item_loop
+execute if data storage bot:variables Inventory[0] run function bot:golem/execution/place/get_item_loop

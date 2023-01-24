@@ -9,9 +9,9 @@ execute if score .type bot.execution.variables matches 0 if data storage bot:var
 execute if score .type bot.execution.variables matches 0 if data storage bot:variables CurrentEvaluation{type:"boolean"} run scoreboard players set .type bot.execution.variables 5
 execute if score .type bot.execution.variables matches 0 if data storage bot:variables CurrentEvaluation{type:"expression"} run scoreboard players set .type bot.execution.variables 6
 
-execute if score .type bot.execution.variables matches 1 run function bot:turtle/evaluate/literal
-execute if score .type bot.execution.variables matches 3 run function bot:turtle/evaluate/array
-execute if score .type bot.execution.variables matches 6 run function bot:turtle/evaluate/expression
+execute if score .type bot.execution.variables matches 1 run function bot:golem/evaluate/literal
+execute if score .type bot.execution.variables matches 3 run function bot:golem/evaluate/array
+execute if score .type bot.execution.variables matches 6 run function bot:golem/evaluate/expression
 
 data modify storage bot:variables Result set from storage bot:io Out
 data modify storage bot:io Out set value []
