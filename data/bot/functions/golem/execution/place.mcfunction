@@ -21,10 +21,11 @@ execute store result entity @s Pos[2] double 1 run scoreboard players operation 
 data modify storage bot:io In set from storage bot:program Current.args[0]
 function bot:golem/evaluate
 data modify storage bot:io In set from storage bot:io Out[0]
+data modify storage bot:io Out set value {recieved:false}
 function bot:golem/execution/place/get_item_at_position_in_inventory
 
 data modify storage bot:io In set from storage bot:io Out
-execute at @s run function bot:golem/execution/place/place_block_from_item
+execute unless data storage bot:io Out{recieved:false} at @s run function bot:golem/execution/place/place_block_from_item
 
 execute store result entity @s Pos[0] double 1 run scoreboard players get .old_x bot.execution.pos
 execute store result entity @s Pos[1] double 1 run scoreboard players get .old_y bot.execution.pos
