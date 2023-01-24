@@ -1,5 +1,4 @@
 data modify storage bot:variables operation set from storage bot:variables RecursiveEvaluation.evaluateStack[-1].operation
-tellraw @a {"nbt":"RecursiveEvaluation.evaluateStack[-1]", "storage": "bot:variables"}
 execute if data storage bot:variables {operation:"add"} run function bot:turtle/evaluate/expression/operations/add
 execute if data storage bot:variables {operation:"subtract"} run function bot:turtle/evaluate/expression/operations/subtract
 execute if data storage bot:variables {operation:"multiply"} run function bot:turtle/evaluate/expression/operations/multiply
