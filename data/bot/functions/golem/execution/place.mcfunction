@@ -1,5 +1,5 @@
 #vector3D
-data modify storage bot:io In set from storage bot:program Current.args[1]
+data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[1]
 function bot:golem/evaluate
 data modify storage bot:io Out set from storage bot:io Out[0]
 execute store result score .x bot.execution.pos run data get entity @s Pos[0]
@@ -18,7 +18,7 @@ execute store result entity @s Pos[1] double 1 run scoreboard players operation 
 execute store result entity @s Pos[2] double 1 run scoreboard players operation .z bot.execution.pos += .dz bot.execution.pos
 
 #slot
-data modify storage bot:io In set from storage bot:program Current.args[0]
+data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[0]
 function bot:golem/evaluate
 data modify storage bot:io In set from storage bot:io Out[0]
 data modify storage bot:io Out set value {recieved:false}

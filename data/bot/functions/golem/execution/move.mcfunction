@@ -1,4 +1,4 @@
-data modify storage bot:io In set from storage bot:program Current.args[0]
+data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[0]
 function bot:golem/evaluate
 data modify storage bot:io Out set from storage bot:io Out[0]
 execute store result score .x bot.execution.pos run data get entity @s Pos[0]
