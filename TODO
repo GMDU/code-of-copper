@@ -4,5 +4,6 @@
 
 ### Interpreter
 
-Remove falling blocks that don't get assigned to items
-Add overrides for blocks which whose ids dont' match their item counter parts
+Add overrides for blocks which whose ids don't match their item counter parts
+
+Make a formatting function for the print instruction
