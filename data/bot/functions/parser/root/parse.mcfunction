@@ -1,4 +1,3 @@
-execute if data storage bot:parser parsed run function bot:parser/root/append
 execute unless data storage bot:parser stack[-1].instructions run function bot:parser/root/definitions
 
 data modify storage bot:parser/root/filter target set from storage bot:parser stack[-1].instructions

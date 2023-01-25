@@ -1,0 +1,1 @@
+execute unless data storage bot:parser {current:" "} run function bot:parser/literal/close/check
