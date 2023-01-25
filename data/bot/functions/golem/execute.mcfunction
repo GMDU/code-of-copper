@@ -6,6 +6,7 @@ execute if data storage bot:program Current{variant:"let"} run function bot:gole
 execute if data storage bot:program Current{variant:"print"} run function bot:golem/execution/print
 execute if data storage bot:program Current{variant:"if"} run function bot:golem/execution/if
 execute if data storage bot:program Current{variant:"while"} run function bot:golem/execution/while
+execute if data storage bot:program Current{variant:"getBlock"} run function bot:golem/execution/get_block
 
 data modify storage bot:program Current set value {}
 data remove storage bot:program InstructionStack[-1]
