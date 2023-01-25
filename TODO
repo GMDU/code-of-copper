@@ -11,3 +11,5 @@ Implement error handling
 Add overrides for blocks which whose ids don't match their item counter parts
 
 Make a formatting function for the print instruction
+
+Implement a function to turn data from the outside into typed objects
