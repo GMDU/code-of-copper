@@ -1,0 +1,13 @@
+### Parser
+
+
+
+### Interpreter
+
+Add a type casting system for expressions that aren't compatible with the given types
+  or
+Implement error handling
+
+Add overrides for blocks which whose ids don't match their item counter parts
+
+Make a formatting function for the print instruction
