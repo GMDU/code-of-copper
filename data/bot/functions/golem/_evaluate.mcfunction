@@ -14,6 +14,5 @@ execute if score .type bot.execution.variables matches 2 run function bot:golem/
 execute if score .type bot.execution.variables matches 3 run function bot:golem/evaluate/array
 execute if score .type bot.execution.variables matches 6 run function bot:golem/evaluate/expression
 
-data modify storage bot:io Out append from storage bot:variables Result
 data remove storage bot:variables RecursiveEvaluation.evaluateStack[-1]
 scoreboard players set .type bot.execution.variables 0

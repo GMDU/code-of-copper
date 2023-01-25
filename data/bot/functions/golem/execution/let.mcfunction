@@ -1,7 +1,7 @@
 #varName
 data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[0]
 function bot:golem/evaluate
-data modify storage bot:variables varName set from storage bot:io Out
+data modify storage bot:variables varName set from storage bot:io Out.value
 
 #value
 data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[1]
