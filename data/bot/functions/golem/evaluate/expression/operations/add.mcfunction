@@ -1,1 +1,3 @@
-execute store result storage bot:io Out int 1 run scoreboard players operation .value bot.execution.variables += .expression bot.execution.variables
+execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"number"} run function bot:golem/evaluate/expression/operations/add/number
+execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"string"} run function bot:golem/evaluate/expression/operations/add/string
+execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"array"} run function bot:golem/evaluate/expression/operations/add/array

@@ -21,8 +21,6 @@ execute store result entity @s Pos[2] double 1 run scoreboard players operation 
 
 execute at @s run function moxlib:api/helpers/block/get
 
-tellraw @a {"nbt":"{}", "storage": "moxlib:api/helpers/block/get"}
-
 data modify storage bot:variables varName set value "BLOCK"
 execute if data storage moxlib:api/helpers/block/get data run data modify storage bot:variables value set from storage moxlib:api/helpers/block/get data
 execute unless data storage moxlib:api/helpers/block/get data run data modify storage bot:variables value set value {id:"minecraft:air"}
