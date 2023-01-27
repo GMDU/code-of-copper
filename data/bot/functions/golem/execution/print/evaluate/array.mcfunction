@@ -1,5 +1,5 @@
 data modify storage bot:variables RecursiveEvaluation.arrayStack append value []
-data modify storage bot:variables RecursiveEvaluation.arrayEvaluationStack append from storage bot:variables RecursiveEvaluation.evaluateStack[-1].values
+data modify storage bot:variables RecursiveEvaluation.arrayEvaluationStack append from storage bot:variables RecursiveEvaluation.evaluateStack[-1].value
 
 execute if data storage bot:variables RecursiveEvaluation.arrayEvaluationStack[-1][0] run function bot:golem/execution/print/evaluate/loops/array
 
