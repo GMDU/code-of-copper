@@ -12,4 +12,4 @@ execute if data storage bot:parser {current:"9"} run data modify storage bot:par
 execute if data storage bot:parser {current:" "} run data modify storage bot:parser/literal current.status set value "convert"
 execute if data storage bot:parser {current:"^n"} run data modify storage bot:parser/literal current.status set value "convert"
 execute if data storage bot:parser/literal input run data modify storage bot:parser stack[-1].value append from storage bot:parser/literal input
-execute unless data storage bot:parser/literal input if data storage bot:parser/literal {current:{status:"open"}} run data modify storage bot:parser raise set value "Error parsing integer literal"
+execute unless data storage bot:parser/literal input if data storage bot:parser/literal {current:{status:"open"}} run data modify storage bot:parser raise set value '{"text":"[Literal - Integer]: Expected 0-9, recieved \\"","extra":[{"nbt":"current","storage":"bot:parser"},"\\""]}'

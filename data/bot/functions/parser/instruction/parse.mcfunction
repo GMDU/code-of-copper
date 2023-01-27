@@ -1,2 +1,1 @@
-execute unless data storage bot:parser stack[-1].parameters[{}] run function bot:parser/instruction/close
-execute if data storage bot:parser stack[-1].parameters[{}] run function bot:parser/instruction/set_argument
+function bot:parser/instruction/set_argument

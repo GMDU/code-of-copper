@@ -3,3 +3,4 @@ execute unless data storage bot:parser stack[-1].value run data modify storage b
 
 execute if data storage bot:parser/literal {current:{variant:"string"}} run function bot:parser/literal/string/parse
 execute if data storage bot:parser/literal {current:{variant:"integer"}} run function bot:parser/literal/integer/parse
+execute if data storage bot:parser/literal {current:{variant:"variable"}} run function bot:parser/literal/variable/parse

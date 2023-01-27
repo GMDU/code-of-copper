@@ -12,6 +12,7 @@ execute if data storage bot:parser {current:"9"} run data modify storage bot:par
 execute if data storage bot:parser {current:"\""} run data modify storage bot:parser/expression variant set value "string"
 execute if data storage bot:parser {current:"["} run data modify storage bot:parser/expression variant set value "array"
 execute if data storage bot:parser {current:"{"} run data modify storage bot:parser/expression variant set value "object"
+execute if data storage bot:parser {current:"$"} run data modify storage bot:parser/expression variant set value "variable"
 
-execute unless data storage bot:parser/expression variant unless data storage bot:parser {current:" "} run data modify storage bot:parser raise set value "Expression missing valid literal!"
+execute unless data storage bot:parser/expression variant unless data storage bot:parser {current:" "} run data modify storage bot:parser raise set value '{"text":"[Expression - Literal]: Expected [0-9, \\", [, {, $], recieved \\"","extra":[{"nbt":"current","storage":"bot:parser"},"\\""]}'
 execute if data storage bot:parser/expression variant run function bot:parser/expression/set_literal

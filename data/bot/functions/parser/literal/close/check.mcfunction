@@ -1,4 +1,5 @@
 function bot:parser/literal/close/iterate
 
-execute if data storage bot:helpers/compare {output:true} run function bot:parser/literal/close/cleanup
-execute unless data storage bot:helpers/compare {output:true} run data modify storage bot:parser raise set value "Error parsing literal"
+data modify storage bot:parser/literal compare set from storage bot:helpers/compare output
+execute if data storage bot:parser/literal {compare:true} run function bot:parser/literal/close/cleanup
+execute unless data storage bot:parser/literal {compare:true} run data modify storage bot:parser raise set value '{"text":"[Literal]: Error parsing literal at \\"","extra":[{"nbt":"current","storage":"bot:parser"},"\\""]}'
