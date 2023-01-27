@@ -1,1 +1,2 @@
-execute unless data storage bot:parser {current:" "} run function bot:parser/literal/close/check
+execute if data storage bot:parser stack[-1].close unless data storage bot:parser {current:" "} run function bot:parser/literal/close/check
+execute unless data storage bot:parser stack[-1].close run function bot:parser/literal/close/cleanup

@@ -1,2 +1,2 @@
 execute if data storage bot:parser {current:"\""} run data modify storage bot:parser stack[-1].status set value "closed"
-execute unless data storage bot:parser {current:"\""} run data modify storage bot:parser stack[-1].values append from storage bot:parser current
+execute unless data storage bot:parser {current:"\""} run data modify storage bot:parser stack[-1].value append from storage bot:parser current
