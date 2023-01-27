@@ -1,1 +1,3 @@
-execute store result storage bot:io Out.value int 1 if score .value bot.execution.variables = .expression bot.execution.variables
+data modify storage bot:io In set from storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue.value
+data modify storage bot:io In2 set from storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionExpression.value
+function bot:golem/utils/check_equivelence
