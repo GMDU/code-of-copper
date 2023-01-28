@@ -10,3 +10,5 @@ execute if data storage bot:program Current{variant:"getBlock"} run function bot
 
 data modify storage bot:program Current set value {}
 data remove storage bot:program InstructionStack[-1]
+
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~
