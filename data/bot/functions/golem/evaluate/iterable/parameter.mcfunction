@@ -5,4 +5,4 @@ execute unless data storage bot:io Out{type:"number"} run data modify storage bo
 
 data modify storage bot:io In set from storage bot:variables RecursiveEvaluation.arrayStack[-1]
 execute store result score .in1 bot.execution.variables run data get storage bot:io Out.value
-function bot:golem/evaluate/iterable/get_item_at_index
+function bot:golem/utils/get_item_at_index
