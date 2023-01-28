@@ -1,3 +1,3 @@
-execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"number"} run function bot:golem/evaluate/expression/operations/subtract/number
+execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"integer"} run function bot:golem/evaluate/expression/operations/subtract/integer
 execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"string"} run function bot:golem/evaluate/expression/operations/subtract/string
 execute if data storage bot:variables RecursiveEvaluation.expressionStack[-1].expressionValue{type:"array"} run function bot:golem/evaluate/expression/operations/subtract/array

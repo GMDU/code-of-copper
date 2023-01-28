@@ -1,6 +1,3 @@
-data modify storage moxlib:api/data/get target set from storage bot:program Variables
-data modify storage moxlib:api/data/get key set value {name:""}
-data modify storage moxlib:api/data/get key.name set from storage bot:variables RecursiveEvaluation.evaluateStack[-1].value
-function moxlib:api/data/get
-execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:io Out set from storage moxlib:api/data/get output.value
-execute if data storage moxlib:api/data/get {success:false} run data modify storage bot:io Out set value 0
+data modify storage bot:variables Current set from storage bot:variables RecursiveEvaluation.evaluateStack[-1]
+execute unless data storage bot:variables Current{value:["I","N","V","E","N","T","O","R","Y"]} run function bot:golem/evaluate/variable/get
+execute if data storage bot:variables Current{value:["I","N","V","E","N","T","O","R","Y"]} run function bot:golem/evaluate/variable/inventory
