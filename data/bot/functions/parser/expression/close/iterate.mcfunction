@@ -3,4 +3,4 @@ data modify storage bot:helpers/compare source set from storage bot:parser curre
 function bot:helpers/compare
 
 data remove storage bot:parser stack[-1].close[0]
-execute if data storage bot:parser stack[-1].close[] unless data storage bot:helpers/compare {output:true} run function bot:parser/literal/close/iterate
+execute if data storage bot:parser stack[-1].close[] unless data storage bot:helpers/compare {output:true} run function bot:parser/expression/close/iterate

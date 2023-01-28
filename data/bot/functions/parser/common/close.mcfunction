@@ -8,5 +8,6 @@ execute unless data storage bot:parser parent run data modify storage bot:parser
 execute if data storage bot:parser {parent:{type:"root"}} run function bot:parser/root/child_closed
 execute if data storage bot:parser {parent:{type:"instruction"}} run function bot:parser/instruction/child_closed
 execute if data storage bot:parser {parent:{type:"expression"}} run function bot:parser/expression/child_closed
+execute if data storage bot:parser {parent:{type:"literal"}} run function bot:parser/literal/child_closed
 
 data remove storage bot:parser parsed
