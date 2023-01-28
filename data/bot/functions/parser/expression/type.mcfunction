@@ -1,4 +1,5 @@
 data remove storage bot:parser/expression variant
+execute if data storage bot:parser {current:"-"} run data modify storage bot:parser/expression variant set value "integer"
 execute if data storage bot:parser {current:"0"} run data modify storage bot:parser/expression variant set value "integer"
 execute if data storage bot:parser {current:"1"} run data modify storage bot:parser/expression variant set value "integer"
 execute if data storage bot:parser {current:"2"} run data modify storage bot:parser/expression variant set value "integer"
@@ -14,5 +15,5 @@ execute if data storage bot:parser {current:"["} run data modify storage bot:par
 execute if data storage bot:parser {current:"{"} run data modify storage bot:parser/expression variant set value "object"
 execute if data storage bot:parser {current:"$"} run data modify storage bot:parser/expression variant set value "variable"
 
-execute unless data storage bot:parser/expression variant unless data storage bot:parser {current:" "} run data modify storage bot:parser raise set value '{"text":"[Expression - Literal]: Expected [0-9, \\", [, {, $], recieved \\"","extra":[{"nbt":"current","storage":"bot:parser"},"\\""]}'
+execute unless data storage bot:parser/expression variant unless data storage bot:parser {current:" "} run data modify storage bot:parser raise set value '{"text":"[Expression - Literal]: Expected [0-9, \\", [, {, $], received \\"","extra":[{"nbt":"current","storage":"bot:parser"},"\\""]}'
 execute if data storage bot:parser/expression variant run function bot:parser/expression/set_literal
