@@ -1,0 +1,3 @@
+execute if data storage bot:parser {current:" "} run data modify storage bot:parser/literal current.status set value "closed"
+execute if data storage bot:parser {current:"^n"} run data modify storage bot:parser/literal current.status set value "closed"
+execute unless data storage bot:parser/literal {current:{status:"closed"}} run data modify storage bot:parser stack[-1].value append from storage bot:parser current

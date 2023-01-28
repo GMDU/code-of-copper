@@ -1,2 +1,4 @@
 -*
 generator.js
+.directory
+*.kate-swp
