@@ -1,4 +1,3 @@
-tellraw @s "tick"
 data modify storage bot:parser current set from storage bot:parser/iterate target[0]
 data remove storage bot:parser/iterate target[0]
 
