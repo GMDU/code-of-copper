@@ -9,3 +9,4 @@ scoreboard objectives add bot.parser.literal dummy
 #Interpreter objectives
 scoreboard objectives add bot.execution.variables dummy
 scoreboard objectives add bot.execution.pos dummy
+scoreboard objectives add bot.execution.cooldown dummy
