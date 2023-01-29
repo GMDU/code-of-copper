@@ -1,10 +1,10 @@
-data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[1]
+data modify storage bot:io In set from storage bot:program Current.args[1]
 function bot:golem/evaluate
 
 function bot:golem/execution/move_to_position
 
 #slot
-data modify storage bot:io In set from storage bot:program InstructionStack[-1].args[0]
+data modify storage bot:io In set from storage bot:program Current.args[0]
 function bot:golem/evaluate
 
 data modify storage bot:io In set from entity @s Items
