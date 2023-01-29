@@ -13,6 +13,4 @@ data modify storage bot:variables value set value {type: "string", value: "minec
 data modify storage bot:variables value.value set from storage moxlib:api/string/to_array output
 function bot:golem/execution/let/set_variable
 
-execute store result entity @s Pos[0] double 1 run scoreboard players get .old_x bot.execution.pos
-execute store result entity @s Pos[1] double 1 run scoreboard players get .old_y bot.execution.pos
-execute store result entity @s Pos[2] double 1 run scoreboard players get .old_z bot.execution.pos
+function bot:golem/execution/move_back
