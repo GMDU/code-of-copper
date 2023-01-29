@@ -1,0 +1,179 @@
+{
+  "pools": [
+    {
+      "rolls": 27,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# \"... sir, look at this!\n# It appears we\n# have managed to\n# make it move!\n\nmove [0,0,1]\nmove [0,1,0]\nmove [1,0,0]']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "move.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# We did it!\n# The Golem reeks\n# of life!\n#\n# ...Well, it reeks of\n# oil at least.\n\nprint \"Initialising...\"\n\nprint \"I am online...\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "life.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet \\\"success\\\" = 1\n\nif $success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "success.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Brackets help\n# our Golem read\n# variables that use\n# fancy names, or\n# are within arrays.\n\nlet \"mx\" = 1\nlet \"mz\" = -1\nlet \"var 1\" = \"Awake\"\n\nprint $(var 1)\n\nmove [$(mx),0,$(mz)]']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "i_am_awake.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Place a block into\n# slot 0 of the Golem.\n#\n# It loves placing\n# blocks!\n\nprint \"Insert block!\"\n\nplace 0, [1,1,0]\n\n# Now try putting\n# a pickaxe in the\n# same slot.']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "place_blocks.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet \"x\" = 1\nlet \"y\" = 2\nlet \"var\" = \"Boop.\"\nlet \"calc\" = $x + $y\n\nprint $var\nprint $calc']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "memory.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet \"i\" = 0\n\nwhile $i < 10\n  print \"i is less than 10\"\n  let \"i\" = $i + 1\nend']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "while.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems do not sleep.\n#\n# ...That is, unless you\n# tell them to!\n\nprint \"Waiting 5 seconds\"\n\n# 1 second is 20 ticks\nsleep 100\n\nprint \"Done!\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "i_need_sleep.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop! Wait,\n# I can just right\n# click it to stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "to_infinity_and_beyond.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"# Golems can perform\n# actions based on\n# the world around\n# them. \n\ngetblock [0,-1,0]\nprint $BLOCK\"]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "get_a_block.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
