@@ -1,4 +1,4 @@
-data modify storage bot:parser target set from entity @s data.book.tag.pages
+data modify storage bot:parser target set from entity @s data.input
 function bot:parser/init
 
 execute if data storage bot:parser {exit:0b} run data modify entity @s data.compiled set from storage bot:parser output
