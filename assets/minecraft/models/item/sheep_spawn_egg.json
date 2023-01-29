@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/template_spawn_egg",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 807001
+      },
+      "model": "bot:item/golem_handheld"
+    }
+  ]
+}
