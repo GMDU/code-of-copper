@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#bot:has_structure/bunker",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "bury",
+  "start_pool": "bot:bunker",
+  "size": 6,
+  "start_height": {
+    "absolute": -36
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

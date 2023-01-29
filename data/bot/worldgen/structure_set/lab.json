@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bot:lab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 898317009,
+    "spacing": 32,
+    "separation": 5
+  }
+}

@@ -1,0 +1,15 @@
+
+{
+  "structures": [
+    {
+      "structure": "bot:bunker",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 34,
+    "separation": 25,
+    "salt": 937473785
+  }
+}
