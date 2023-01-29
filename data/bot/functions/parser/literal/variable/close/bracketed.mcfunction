@@ -1,1 +1,2 @@
 execute if data storage bot:parser {current:")"} run data modify storage bot:parser stack[-1].status set value "closed"
+execute if data storage bot:parser {current:")"} run data remove storage bot:parser/literal current.bracketed
