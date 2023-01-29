@@ -1,10 +1,12 @@
 {
   "values": [
       "#wool_carpets",
+      "moss_carpet",
       "#saplings",
       "cave_air",
       "void_air",
       "air",
+      "structure_void",
       "#corals",
       "grass",
       "fern",
