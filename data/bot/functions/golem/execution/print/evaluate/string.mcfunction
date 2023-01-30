@@ -1,3 +1,1 @@
-data modify storage moxlib:api/string/from_array target set from storage bot:io In.value
-tag @s add bot.golem.print
-function moxlib:api/string/from_array
+execute at @s run tellraw @a[distance=..16] {"nbt":"In.value", "storage": "bot:io", "interpret": true}
