@@ -189,6 +189,23 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Addition and\n# subtraction not only\n# work on numbers,\n# but also on strings\n# and arrays.\n\nprint 1 + 2\n\nprint \"Hello, \" + \"world!\"\n\nprint [0,1,2] + 3\n\nprint [0,1,2] - 1\n', \"print [0,1,2] - -1\"]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "string_addition.glm",
+                "italic": false
+              }
+            }
+          ]
         }
       ]
     }
