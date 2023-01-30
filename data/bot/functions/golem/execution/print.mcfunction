@@ -2,4 +2,4 @@ data modify storage bot:io In set from storage bot:program Current.args[0]
 function bot:golem/evaluate
 data modify storage bot:io In set from storage bot:io Out
 function bot:golem/execution/print/evaluate
-execute unless data storage bot:io In{type:"string"} at @s run tellraw @a[distance=..16] {"nbt":"Out", "storage": "bot:io", "interpret": false}
+execute unless data storage bot:io In{type:"string"} at @s run tellraw @a[distance=..16] {"nbt":"Out", "storage": "bot:io", "interpret": true}

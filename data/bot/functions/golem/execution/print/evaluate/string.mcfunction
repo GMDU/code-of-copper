@@ -1,1 +1,3 @@
-execute at @s run tellraw @a[distance=..16] {"nbt":"In.value", "storage": "bot:io", "interpret": true}
+data modify storage bot:io Out append from storage bot:variables RecursiveEvaluation.evaluateStack[-1].value
+data modify storage bot:io Out[-1] prepend value "'"
+data modify storage bot:io Out[-1] append value "'"
