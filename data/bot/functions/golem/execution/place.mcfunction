@@ -1,7 +1,7 @@
 data modify storage bot:io In set from storage bot:program Current.args[1]
 function bot:golem/evaluate
 
-function bot:golem/execution/move_to_position
+function bot:golem/execution/place/move_to_position
 
 #slot
 data modify storage bot:io In set from storage bot:program Current.args[0]
