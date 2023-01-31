@@ -5,5 +5,4 @@ function bot:parser/newline
 function bot:parser/comment
 execute unless data storage bot:parser {comment:true} run function bot:parser/parse
 
-execute store result score $size bot.parser.iterate run data get storage bot:parser/iterate target
-execute if score $size bot.parser.iterate matches 1.. unless data storage bot:parser raise run function bot:parser/iterate
+execute if data storage bot:parser/iterate target[] unless data storage bot:parser raise run function bot:parser/iterate

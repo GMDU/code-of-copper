@@ -1,15 +1,8 @@
 data remove storage bot:parser/expression variant
-execute if data storage bot:parser {current:"-"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"0"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"1"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"2"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"3"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"4"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"5"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"6"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"7"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"8"} run data modify storage bot:parser/expression variant set value "integer"
-execute if data storage bot:parser {current:"9"} run data modify storage bot:parser/expression variant set value "integer"
+data modify storage moxlib:api/string/filter target set value ["-","0","1","2","3","4","5","6","7","8","9"]
+data modify storage moxlib:api/string/filter key set from storage bot:parser current
+function moxlib:api/string/filter
+execute if data storage moxlib:api/string/filter {output:false} run data modify storage bot:parser/expression variant set value "integer"
 execute if data storage bot:parser {current:"\""} run data modify storage bot:parser/expression variant set value "string"
 execute if data storage bot:parser {current:"["} run data modify storage bot:parser/expression variant set value "array"
 execute if data storage bot:parser {current:"{"} run data modify storage bot:parser/expression variant set value "object"
