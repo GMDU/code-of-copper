@@ -3,6 +3,6 @@ Add support for array and string index fetching
 
 
 ### Interpreter
-Fix move command floating in the air
 Fix multiple robots not being able to place blocks at the same time
 Implement better error handling
+Fix players being able to take the display off

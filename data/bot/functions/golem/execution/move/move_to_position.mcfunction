@@ -11,5 +11,5 @@ scoreboard players operation .old_y bot.execution.pos = .y bot.execution.pos
 scoreboard players operation .old_z bot.execution.pos = .z bot.execution.pos
 
 execute unless data storage bot:program Error store result entity @s Pos[0] double 1 run scoreboard players operation .x bot.execution.pos += .dx bot.execution.pos
-execute unless data storage bot:program Error store result entity @s Pos[1] double 1 run scoreboard players operation .y bot.execution.pos += .dy bot.execution.pos
+execute unless data storage bot:program Error unless block ~ ~-1 ~ #bot:traversable store result entity @s Pos[1] double 1 run scoreboard players operation .y bot.execution.pos += .dy bot.execution.pos
 execute unless data storage bot:program Error store result entity @s Pos[2] double 1 run scoreboard players operation .z bot.execution.pos += .dz bot.execution.pos
