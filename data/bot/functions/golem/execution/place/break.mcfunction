@@ -9,4 +9,3 @@ execute in moxlib:state positioned 3 57 -4 run kill @e[type=item,sort=nearest,li
 execute unless block ~ ~ ~ air store result score .damage bot.execution.variables run data get entity 0f80604b-e7f2-4a90-80c3-991c3eb3f73b HandItems[0].tag.Damage
 execute unless block ~ ~ ~ air store result entity 0f80604b-e7f2-4a90-80c3-991c3eb3f73b HandItems[0].tag.Damage int 1 run scoreboard players add .damage bot.execution.variables 1
 setblock ~ ~ ~ air
-setblock ~ ~-1 ~ air

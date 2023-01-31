@@ -1,0 +1,8 @@
+{
+  "values": [
+    "bedrock",
+    "command_block",
+    "chain_command_block",
+    "repeating_command_block"
+  ]
+}

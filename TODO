@@ -1,5 +1,9 @@
 ### Parser
-
+Add support for array and string index fetching
 
 
 ### Interpreter
+Increase range for move command
+Fix move command floating in the air
+Fix multiple robots not being abe to place blocks at the same time
+Implement better error handling
