@@ -12,8 +12,11 @@ Throughout the world, different structures will generate, containing lore, and e
 
 Shift-right-clicking the Golem will execute it's current program.
 
+While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time,
+if you would like a quick demo of the pack, you can use `/place template bot:demo` to place in our demo structure.
+
 ## Getting Started
-First, you will need to find a Copper Golem. These can be found high in the sky, within Airships. Be warned; these can be dangerous!
+First, you will need to find a Copper Golem. These can be found high in the sky, within Skyships. Be warned; these can be dangerous!
 
 You can obtain the Copper Golem as an item by breaking it. It can then be placed wherever you wish for it to be.
 
@@ -22,6 +25,6 @@ It is up to you to discover most of the language through exploration; example pr
 
 However, every good README needs a hello world.
 ```
-print "Hello, World!
+print "Hello, World!”
 ```
 This can be written into a book, and right-clicked into a Copper Golem. Shift-right-click to run.
