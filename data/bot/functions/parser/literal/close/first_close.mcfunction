@@ -1,0 +1,2 @@
+execute if data storage bot:parser {current:"["} run function bot:parser/literal/set_parameter
+execute unless data storage bot:parser {current:"["} run data modify storage bot:parser stack[-1].closing set value true
