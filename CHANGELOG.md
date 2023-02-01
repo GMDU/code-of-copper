@@ -5,13 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [0.1.3] - 2023-02-02
+Various bug fixes, and a new language feature.
+
 ### Added
-- Literal parameters, eg. `$(array)[0]`, can now be parsed.
+- Literal parameters, eg. `$(array)[0]`.
+- A dev mode, where you can see what's happening behind the scenes (not fully implemented).
+- New example programs to demonstrate parameters and the now useful INVENTORY variable
+
+### Tweaked
+- Range for place and getblock commands is now 5.
 
 ### Fixed
 - Arrays no longer close the literal early.
 - Golem's display armor stand now has locked slots to prevent interaction.
+- Golem can no longer break bedrock and other unbreakable blocks.
+- Golem no longer breaks the block underneath the one it's supposed to.
+- Golem can no longer float in the air by constantly calling the move command.
+- Multiple golems can place blocks in the same tick
 
 ## [0.1.2] - 2023-01-31
 Various bug fixes, and small additions.
