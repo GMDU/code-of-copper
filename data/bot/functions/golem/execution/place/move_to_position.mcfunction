@@ -4,7 +4,7 @@ execute store result score .z bot.execution.pos run data get entity @s Pos[2]
 execute store result score .dx bot.execution.pos run data get storage bot:io Out.value[0].value
 execute store result score .dy bot.execution.pos run data get storage bot:io Out.value[1].value
 execute store result score .dz bot.execution.pos run data get storage bot:io Out.value[2].value
-function bot:golem/execution/assert_in_range
+function bot:golem/execution/place/assert_in_range
 
 scoreboard players operation .old_x bot.execution.pos = .x bot.execution.pos
 scoreboard players operation .old_y bot.execution.pos = .y bot.execution.pos

@@ -3,3 +3,4 @@ generator.js
 .directory
 *.kate-swp
 *.zip
+working/

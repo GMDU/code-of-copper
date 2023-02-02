@@ -25,6 +25,11 @@
       "soul_torch",
       "redstone_torch",
       "redstone_wire",
-      "lever"
+      "lever",
+      "water",
+      "lava",
+      "tall_grass",
+      "seagrass",
+      "tall_seagrass"
   ]
 }

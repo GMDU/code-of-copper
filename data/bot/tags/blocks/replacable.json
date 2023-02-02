@@ -7,6 +7,11 @@
         "grass",
         "fern",
         "large_fern",
-        "dead_bush"
+        "dead_bush",
+        "water",
+        "lava",
+        "tall_grass",
+        "seagrass",
+        "tall_seagrass"
     ]
 }
