@@ -1,3 +1,4 @@
+tellraw @s [{"text":"closing "},{"storage":"bot:parser","nbt":"stack[-1].type"}]
 data remove storage bot:parser parent
 data modify storage bot:parser parsed set from storage bot:parser stack[-1]
 data remove storage bot:parser stack[-1]

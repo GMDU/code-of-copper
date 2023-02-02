@@ -13,3 +13,4 @@ scoreboard objectives add bot.execution.cooldown dummy
 
 # Misc objectives
 scoreboard objectives add bot.interface dummy
+scoreboard objectives add bot.debug dummy

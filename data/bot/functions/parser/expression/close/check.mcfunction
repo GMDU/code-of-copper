@@ -1,3 +1,4 @@
+tellraw @s "check expression close"
 data modify storage moxlib:api/string/filter target set from storage bot:parser stack[-1].metadata.close
 data modify storage moxlib:api/string/filter key set from storage bot:parser current
 function moxlib:api/string/filter
