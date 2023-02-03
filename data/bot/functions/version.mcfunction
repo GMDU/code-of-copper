@@ -1,4 +1,4 @@
-data modify storage bot:version name set value "GolemBots"
+data modify storage bot:version name set value "Code of Copper"
 
 data modify storage bot:version major set value 0
 data modify storage bot:version minor set value 1
