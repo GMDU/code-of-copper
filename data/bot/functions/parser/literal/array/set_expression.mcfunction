@@ -1,3 +1,3 @@
-data modify storage bot:parser stack append value {type:"expression",close:[",","]"]}
+data modify storage bot:parser open set value {type:"expression",metadata:{close:[",","]"]}}
 
-function bot:parser/common/reparse
+function bot:parser/common/open

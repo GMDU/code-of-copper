@@ -1,3 +1,2 @@
-execute unless data storage bot:parser/literal current.metadata.status run function bot:parser/literal/variable/before
-execute if data storage bot:parser/literal {current:{status:"open"}} run function bot:parser/literal/variable/open
-execute if data storage bot:parser/literal {current:{status:"closed"}} run function bot:parser/literal/close/init
+execute unless data storage bot:parser stack[-1].metadata.status run function bot:parser/literal/variable/before
+execute if data storage bot:parser stack[-1].metadata{status:"open"} unless data storage bot:parser consumed run function bot:parser/literal/variable/open

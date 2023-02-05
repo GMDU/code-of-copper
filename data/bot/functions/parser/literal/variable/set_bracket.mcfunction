@@ -1,3 +1,3 @@
-execute if data storage bot:parser {current:"("} run data modify storage bot:parser stack[-1].bracketed set value true
-execute unless data storage bot:parser {current:"("} run data modify storage bot:parser stack[-1].bracketed set value false
-execute unless data storage bot:parser {current:"("} run data modify storage bot:parser stack[-1].value append from storage bot:parser current
+execute if data storage bot:parser {current:"("} run data modify storage bot:parser stack[-1].metadata.bracketed set value true
+execute if data storage bot:parser {current:"("} run data modify storage bot:parser consumed set value true
+execute unless data storage bot:parser {current:"("} run data modify storage bot:parser stack[-1].metadata.bracketed set value false
