@@ -1,5 +1,3 @@
-kill @e[type=falling_block,tag=bot.place_block,sort=nearest,limit=1]
-execute in moxlib:state run setblock 0 56 0 air
-execute in moxlib:state run setblock 0 57 0 air
-kill @e[type=marker,tag=bot.block_to_be_placed,sort=nearest,limit=1]
+kill @e[type=falling_block,tag=moxlib.helpers.block.place,sort=nearest,limit=1]
+execute as @e[type=shulker,tag=moxlib.helpers.block.place] at @s run function moxlib:helpers/block/place/delete
 scoreboard players add .count bot.execution.variables 1

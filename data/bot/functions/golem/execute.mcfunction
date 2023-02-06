@@ -9,5 +9,4 @@ execute if data storage bot:program Current{variant:"sleep"} run function bot:go
 
 data modify storage bot:program Current set value {}
 
-execute at @s align xyz run tp @s ~0.5 ~ ~0.5
-execute at @s unless block ~ ~ ~ #bot:traversable positioned ~ ~0.1 ~ align xyz run tp @s ~0.5 ~ ~0.5
+function bot:golem/align

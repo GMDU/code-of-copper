@@ -4,6 +4,6 @@ data modify entity 0f80604b-e7f2-4a90-80c3-991c3eb3f73b HandItems[0] set from st
 scoreboard players set .holding_tool bot.execution.variables 0
 execute as 0f80604b-e7f2-4a90-80c3-991c3eb3f73b if predicate bot:is_holding_tool run scoreboard players set .holding_tool bot.execution.variables 1
 execute if score .holding_tool bot.execution.variables matches 1 unless block ~ ~ ~ #bot:unbreakable run function bot:golem/execution/place/break
-execute unless score .holding_tool bot.execution.variables matches 1 if block ~ ~ ~ #bot:replacable run function bot:golem/execution/place/place_block_from_item
+execute unless score .holding_tool bot.execution.variables matches 1 if block ~ ~ ~ #bot:replacable run function bot:golem/execution/place/place
 data modify storage bot:io Out set from entity 0f80604b-e7f2-4a90-80c3-991c3eb3f73b HandItems[0]
 kill 0f80604b-e7f2-4a90-80c3-991c3eb3f73b
