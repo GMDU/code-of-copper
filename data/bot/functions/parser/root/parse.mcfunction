@@ -1,5 +1,7 @@
 execute unless data storage bot:parser stack[-1].instructions run function bot:parser/root/definitions
 
+data modify storage bot:parser consumed set value true
+
 data modify storage bot:parser/root/filter target set from storage bot:parser stack[-1].instructions
 function bot:parser/root/filter/init
 data modify storage bot:parser stack[-1].instructions set from storage bot:parser/root/filter output

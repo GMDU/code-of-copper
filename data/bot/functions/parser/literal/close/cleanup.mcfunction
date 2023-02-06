@@ -1,3 +1,2 @@
 # data remove storage bot:parser stack[-1].metadata
-
-function bot:parser/common/close
+data modify storage bot:parser close set value true
