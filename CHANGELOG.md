@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Golems no longer fall through non-full blocks
-- Golems now reser their variables when the program reruns
+- Golems now reset their variables when the program reruns
+- Items no longer disappear weirdly when placing from the second slot
 
 ## [0.1.3] - 2023-02-02
 Various bug fixes, and a new language feature.
