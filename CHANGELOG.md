@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Golems now don't print quotes when printing plain strings
+
+### Fixed
+- Golems no longer fall through non-full blocks
+- Golems now reser their variables when the program reruns
+
 ## [0.1.3] - 2023-02-02
 Various bug fixes, and a new language feature.
 

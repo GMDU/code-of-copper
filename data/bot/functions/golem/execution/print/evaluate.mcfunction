@@ -3,3 +3,6 @@ data modify storage bot:variables RecursiveEvaluation.evaluateStack append from 
 data modify storage bot:io Out set value []
 
 function bot:golem/execution/print/_evaluate
+
+execute if data storage bot:io In{type:"string"} run data remove storage bot:io Out[-1][0]
+execute if data storage bot:io In{type:"string"} run data remove storage bot:io Out[-1][-1]
