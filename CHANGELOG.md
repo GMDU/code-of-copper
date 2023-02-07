@@ -5,15 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.4] - 2023-02-07
+Refactor of the parser, fixing many compiler bugs.
 
 ### Changed
-- Golems now don't print quotes when printing plain strings
+- Major refactor of the parser:
+  - Variables within arrays no longer need brackets if they use only alphanumeric characters.
+  - Operators no longer need a space between them and literals.
+  - Lots of behind-the-scenes improvements which will allow for later enhancements.
+- Most instructions will allow expressions as their parameters.
+- Golems now don't print quotes when printing plain strings.
 
 ### Fixed
-- Golems no longer fall through non-full blocks
-- Golems now reset their variables when the program reruns
-- Items no longer disappear weirdly when placing from the second slot
+- Golems no longer fall through non-full blocks.
+- Golems now reset their variables when the program reruns.
+- Items no longer disappear weirdly when placing from the second slot.
 
 ## [0.1.3] - 2023-02-02
 Various bug fixes, and a new language feature.
@@ -23,7 +29,7 @@ Various bug fixes, and a new language feature.
 - A dev mode, where you can see what's happening behind the scenes (not fully implemented).
 - New example programs to demonstrate parameters and the now useful INVENTORY variable
 
-### Tweaked
+### Changed
 - Range for place and getblock commands is now 5.
 
 ### Fixed
