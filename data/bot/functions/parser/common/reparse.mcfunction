@@ -1,1 +1,0 @@
-data modify storage bot:parser/iterate target prepend from storage bot:parser current

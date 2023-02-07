@@ -1,3 +1,4 @@
+data modify storage bot:parser close set value false
 data remove storage bot:parser parent
 data modify storage bot:parser parsed set from storage bot:parser stack[-1]
 data remove storage bot:parser stack[-1]
@@ -11,3 +12,4 @@ execute if data storage bot:parser {parent:{type:"expression"}} run function bot
 execute if data storage bot:parser {parent:{type:"literal"}} run function bot:parser/literal/child_closed
 
 data remove storage bot:parser parsed
+execute if data storage bot:parser {close:true} run function bot:parser/common/close
