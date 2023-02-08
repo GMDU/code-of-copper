@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Fixed blocks not dropping while the golem was running the break command
+- Tools can no longer go below zero durability
 
 ## [0.1.4] - 2023-02-07
 Refactor of the parser, fixing many compiler bugs.
