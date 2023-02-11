@@ -1,9 +1,9 @@
 data modify storage bot:variables arrayStack append value []
 data modify storage bot:variables arrayEvaluationStack append from storage bot:variables stack[-1].value
 
-execute if data storage bot:variables arrayEvaluationStack[-1][0] run function bot:golem/evaluate/array/loop
+execute if data storage bot:variables arrayEvaluationStack[-1][0] run function bot:golem/evaluate/object/loop
 
-execute unless data storage bot:variables stack[-1].hasParameters run data modify storage bot:io Out set value {type:"array", value: []}
+execute unless data storage bot:variables stack[-1].hasParameters run data modify storage bot:io Out set value {type:"object", value: []}
 execute unless data storage bot:variables stack[-1].hasParameters run data modify storage bot:io Out.value set from storage bot:variables arrayStack[-1]
 data remove storage bot:variables arrayStack[-1]
 data remove storage bot:variables arrayEvaluationStack[-1]

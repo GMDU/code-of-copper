@@ -1,4 +1,4 @@
-data modify storage bot:variables RecursiveEvaluation.evaluateStack append from storage bot:variables RecursiveEvaluation.evaluateStack[-1].parameters[0]
+data modify storage bot:variables stack append from storage bot:variables stack[-1].parameters[0]
 function bot:golem/_evaluate
 execute unless data storage bot:io Out{type:"integer"} run data modify storage bot:program Error set value ["Expected type integer for string index, but got type "]
 execute unless data storage bot:io Out{type:"integer"} run data modify storage bot:program Error append from storage bot:io Out.type
