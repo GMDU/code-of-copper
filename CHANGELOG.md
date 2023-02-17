@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Object variant of literal
+- Alphanumeric pseudo-variant of literal
+  - Only allows [A-Za-z0-9_-]
+  - First character must match [A-Za-z]
+
+### Changed
+- Let now takes an alphanumeric literal in the name field, rather than a string.
+
 ### Fixed
 - Fixed blocks not dropping while the golem was running the break command
 - Tools can no longer go below zero durability
