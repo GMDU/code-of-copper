@@ -43,29 +43,12 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet \\\"success\\\" = 1\n\nif $success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
+              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet success = 1\n\nif success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
                 "text": "success.glm",
-                "italic": false
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Brackets help\n# our Golem read\n# variables that use\n# fancy names, or\n# are within arrays.\n\nlet \"mx\" = 1\nlet \"mz\" = -1\nlet \"var 1\" = \"Awake\"\n\nprint $(var 1)\n\nmove [$(mx),0,$(mz)]']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "i_am_awake.glm",
                 "italic": false
               }
             }
@@ -111,7 +94,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet \"i\" = 0\n\nwhile $i < 10\n  print \"i is less than 10\"\n  let \"i\" = $i + 1\nend']}"
+              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet i = 0\n\nwhile i < 10\n  print \"i is less than 10\"\n  let i = i + 1\nend']}"
             },
             {
               "function": "minecraft:set_name",
@@ -179,7 +162,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Sometimes the\n# golems get a bit\n# confused between\n# different data types\n# but we can use that\n# to our advantage.\n\nlet \"array\" = [1,2,3]\n\nif $array > 2\n  print \"Array is longer than 2\"\nend\n\n', 'let \"string\" = \"Hello, world!\"\n\nif $string < 100\n  print \"String is short enough\"\nend']}"
+              "tag": "{pages:['# Sometimes the\n# golems get a bit\n# confused between\n# different data types\n# but we can use that\n# to our advantage.\n\nlet array = [1,2,3]\n\nif array > 2\n  print \"Array is longer than 2\"\nend\n\n', 'let string = \"Hello, world!\"\n\nif string < 100\n  print \"String is short enough\"\nend']}"
             },
             {
               "function": "minecraft:set_name",
@@ -213,7 +196,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint $INVENTORY\n\nif $(INVENTORY)[0] = \"minecraft:dirt\"\n  place 0, [1,0,0]\nend']}"
+              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint $INVENTORY\n\nif $INVENTORY[0] = \"minecraft:dirt\"\n  place 0, [1,0,0]\nend']}"
             },
             {
               "function": "minecraft:set_name",
@@ -230,12 +213,29 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can recall\n# certain parts of\n# their memory, even\n# if they were stored\n# as larger\n# structures before.\n\nlet \"hello_world\" = [\"Hello\", \", \", \"world\", \"1\"]\n\nprint $(hello_world)[2]\nprint $(hello_world)[0][3]']}"
+              "tag": "{pages:['# Golems can recall\n# certain parts of\n# their memory, even\n# if they were stored\n# as larger\n# structures before.\n\nlet hello_world = [\"Hello\", \", \", \"world\", \"1\"]\n\nprint hello_world[2]\nprint hello_world[0][3]']}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
                 "text": "index.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems love counting\n# You can ask them to\n# count up to any\n# number, executing\n# code along the way\n\nloop 7\n  print \"Looping 7 times...\"\nend\n\nprint \"finished\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "loop.glm",
                 "italic": false
               }
             }
