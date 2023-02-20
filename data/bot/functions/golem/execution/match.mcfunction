@@ -12,8 +12,6 @@ data modify storage regex:api/match flags set value {process_target: false, pars
 
 function regex:api/match
 
-tellraw @a {"nbt":"{}", "storage": "regex:api/match"}
-
 data modify storage bot:variables varName set value ["M","A","T","C","H"]
 data modify storage bot:variables value set value {type: "string", value: []}
 data modify storage bot:variables value.value set from storage regex:api/match output
