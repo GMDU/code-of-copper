@@ -9,7 +9,7 @@ function moxlib:api/string/to_array
 
 
 data modify storage bot:variables varName set value ["B","L","O","C","K"]
-data modify storage bot:variables value set value {type: "string", value: "minecraft:air"}
+data modify storage bot:variables value set value {type: "string", value: ["m","i","n","e","c","r","a","f","t",":","a","i","r"]}
 data modify storage bot:variables value.value set from storage moxlib:api/string/to_array output
 function bot:golem/execution/let/set_variable
 
