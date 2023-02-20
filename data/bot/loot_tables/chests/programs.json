@@ -240,6 +240,40 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# We needed a way to\n# organise the Golem\\'s\n# memories.\n\n# We came up with the\n# Object, that could\n# hold memories to\n# a simple name, in a\n# compact manner.\n\nlet obj = {a:1,b:2+3}\n\nprint obj[\"b\"]']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "object.glm",
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems can read,\n# but they need to\n# know what they are\n# looking for. We\n# made a \"Regular\n# Expression\", to tell\n# the Golem what to\n# find.\n\nlet regex = /h\\\\w+o/\nmatch regex, \"hello!!!\"\nprint $MATCH']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "regex.glm",
+                "italic": false
+              }
+            }
+          ]
         }
       ]
     }
