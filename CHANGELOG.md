@@ -5,16 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.2.0] - 2023-02-21
+Two new literal types, and cleanup of syntax.
 
 ### Added
 - Object variant of literal
 - Alphanumeric pseudo-variant of literal
-  - Only allows [A-Za-z0-9_-]
+  - Only allows [A-Za-z0-9_]
   - First character must match [A-Za-z]
+  - Regex variant of literal
+  - String-regex matching using the `match` function
 
 ### Changed
 - Let now takes an alphanumeric literal in the name field, rather than a string.
+- Variables no longer need a "$" in front of the name
 
 ### Fixed
 - Fixed blocks not dropping while the golem was running the break command
