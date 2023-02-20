@@ -2,6 +2,8 @@
 
 **Code of Copper will only ever function in snapshot 23w03a or later (1.19.4+).**
 
+**Make sure you also install the required resource pack, as found on the Version pages**
+
 # Code of Copper
 **A Datapack by Moxvallix, Gears and Wulfian.**
 
@@ -12,11 +14,10 @@ Throughout the world, different structures will generate, containing lore, and e
 
 Shift-right-clicking the Golem will execute it's current program.
 
-While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time,
-if you would like a quick demo of the pack, you can use `/place template bot:demo` to place in our demo structure.
+While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place in our demo structure.
 
 ## Getting Started
-First, you will need to find a Copper Golem. These can be found high in the sky, within Skyships. Be warned; these can be dangerous!
+First, you will need to find a Copper Golem. These can be found high in the sky, within Airships. Be warned; these can be dangerous!
 
 You can obtain the Copper Golem as an item by breaking it. It can then be placed wherever you wish for it to be.
 
@@ -28,3 +29,283 @@ However, every good README needs a hello world.
 print "Hello, World!”
 ```
 This can be written into a book, and right-clicked into a Copper Golem. Shift-right-click to run.
+
+## Documentation
+The following (excellent) language documentation was written by xokz, from the MinecraftCommands discord.
+
+<details>
+<summary>Full Documentation</summary>
+
+# GOLEM SCRIPT DOCUMENTATION
+By: xokz
+
+Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
+Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
+
+## 1. COMMENTS
+Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
+
+EX.
+```
+# this will not do anything since it is a comment
+```
+
+## 2. VARIABLES
+A variable can be an signed integer, array, or a string.
+
+Variables can use the +, -, *, /, and % operators.
+
+Only one operator is supported per line, so no "let x = a / b + c"
+
+If a variable's name contains characters other than letters, numbers or underscores,
+then it must be referenced within parentheses.
+
+EX.
+```
+let foo = 7
+let str = "Hello"
+let x = 1
+let arr = [9, 2, -3, 6]
+let var = ["hello", "world"]
+let fizz = foo + x                           # this will be 8
+let buzz = var[x]				# this will be 'world'
+let bar = var[2] + 7                         # this will be 4
+let obj = {a:1,b:2+3}
+```
+
+Variables can be changed by simply redeclaring them.
+
+EX.
+```
+let foo = 7
+let foo = 8                                           # foo is now 8 instead of 7
+```
+
+Arrays can be added and removed from via addition and subtraction.
+
+EX.
+```
+let arr = [0, 1, 2]
+let arr = arr + 3				# arr is now [0,1,2,3]
+let arr = arr - 1				# arr is now [0,1,2]
+let arr = arr - -1				# arr is now [1,2]
+```
+
+Objects can be added and removed from via addition and subtraction.
+
+EX.
+```
+let obj = {a:1,b:2,c:3}
+let obj = obj - "a"				# obj is now {b:2,c:3}
+let obj = obj + {c:5,d:4}				# obj is now {b:2,c:5,d:4}
+```
+
+Strings can be added to with addition.
+
+EX.
+```
+let str = "hello"
+print str                                               # this will print 'hello'
+let var = str + ", world!"   
+print var                                              # this will print 'hello, world!'
+```
+
+Strings are just arrays of characters, so they can be indexed just like an array.
+
+EX.
+```
+let str = "hello, world!"
+print str[1]                                          # this will print 'e'
+```
+
+## 3. PRINTING
+The print command outputs text to the chat.
+String literals and variables can both be printed, but not on the same line.
+
+EX.
+```
+let foo = 8
+let bar = "xokz"
+let arr = [0, 4, 7]
+let obj = {hello:"world"}
+
+print "Hello, world!"                             # this will print 'Hello, world!'
+print foo                                              # this will print 8	
+print name                                          # this will print 'xokz'
+print arr                                               # this will print '[0, 4, 7]'
+print arr[1]                                          # this will print 4
+print arr[1] + foo                             # this will print 12
+print obj["hello"]                             # this will print 'world'
+```
+
+## 4. SLEEP
+
+The golem can pause code execution for a specified amount of time with the sleep command.
+The provided value is how many ticks the golem will sleep for.
+
+EX.
+```
+let time = 7
+sleep time                                           # sleep for 7 ticks
+sleep 40                                                # sleep for 2 seconds, since 1 second is 20 ticks
+```
+
+## 5. IF STATEMENTS
+
+If statements allow parts of the code to execute only if a condition is met. 
+The if statement will execute if the result is not 0 or and empty string.
+
+EX.
+```
+let foo = 0
+if foo
+  print "success"                                   # this will not print since the condition results in 0
+end
+
+let foo = 5
+if foo
+  print "success"                                   # this will succeed because the condition did not result in 0
+end
+
+let bar = ""
+if bar
+  print "success"                                   # this will not print since the condition results in an empty string
+end
+
+let bar = "i love this datapack"
+if bar
+  print "success"                                   # this will print since the condition did not result in an empty string
+end
+```
+
+There are also operators: =, <, and >. 
+They represent equal to, less than, and greater than, respectively.
+They can compare variables and/or literals.
+
+EX.
+```
+let foo = 7
+let bar = 5
+
+if foo > bar
+  print "success"                                   # this will print since foo is greater than bar
+end
+
+let var = "hello, world"
+
+if var = "goodbye, world"
+  print "success"                                   # this will not print since var is not "goodbye, world"
+end
+```
+
+Strings and arrays have lengths, which can be compared against integers.
+
+EX.
+```
+let str = "hello"
+if str < 10
+  print "The length of the string is less than 10!"
+end
+```
+
+## 6. LOOPS
+
+Loops work similarly to if statements, for the condition part.
+They execute while a condition is met.
+
+EX.
+```
+# this will print the numbers 0-19
+let i = 0
+while i < 20
+  print i
+  let i = i + 1
+end
+
+
+# this will go on forever
+while 1
+  print "wheee!"
+end
+```
+
+## 7. MOVEMENT
+
+The golem can move 1 block in any direction (though it is still affected by gravity.)
+The array can use variables or literals.
+
+EX.
+```
+let var = 1
+move [0, var, 0]                                  # the golem will jump up one block
+```
+
+## 8. GETBLOCK
+
+The getblock command stores the name of the block at the given position in the $BLOCK variable.
+
+EX.
+```
+let best_block = "minecraft:dirt"
+
+getblock [0, -1, 0]                                # the block under the golem is a dirt block in this example
+print $BLOCK                                        # will print 'minecraft:dirt'
+
+if $BLOCK = best_block
+  print "Yes, dirt is the best." 	# this will print because the block below is dirt
+end
+```
+
+## 9. PLACE/MINE
+
+The place command can place or mine blocks. It takes in a slot number, and a position.
+If there is a block in the specified slot, it will attempt to place the block at the given coords.
+The slot number is 0 indexed.
+
+EX.
+```
+# in slot 6, we have put a dirt block.
+
+place 5, [1,0,1]
+# this will place a dirt block diagonally to the 
+# golem, provided there is not already a block there
+```
+
+If there is a pickaxe in the slot instead, it will break a block at the given coords, and put it in its inventory.
+The pickaxe will still lose durability.
+
+EX.
+```
+# in slot 7, we have an iron pickaxe.
+
+place 6, [1,0,1] # this will mine the dirt block we placed earlier and take it back into the inventory.
+```
+
+If there is nothing in the slot, then nothing will happen.
+
+## 10. INVENTORY
+
+The $INVENTORY variable is an array with the names of all the items in the golems inventory.
+It can be indexed like any other array.
+
+EX.
+```
+# if there is dirt in the first slot, print a message.
+if $INVENTORY[0] = "minecraft:dirt"
+  print "yeah you got the good stuff"
+end
+```
+
+## 11. MATCH
+
+Strings can be compared using a Regular Expression (See [RegExr](https://regexr.com)).
+
+The matched sub-string will return to $MATCH.
+
+EX.
+```
+let regex = /ab?c/
+match regex, "abcdefg"
+print $MATCH         # prints "abc"
+```
+</details>
