@@ -9,6 +9,24 @@
         "custom_model_data": 807001
       },
       "model": "bot:item/golem"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807002
+      },
+      "model": "bot:item/golem_exposed"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807003
+      },
+      "model": "bot:item/golem_weathered"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807004
+      },
+      "model": "bot:item/golem_oxidized"
     }
   ]
 }

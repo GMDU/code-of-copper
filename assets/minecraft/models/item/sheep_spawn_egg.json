@@ -6,6 +6,24 @@
         "custom_model_data": 807001
       },
       "model": "bot:item/golem_handheld"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807002
+      },
+      "model": "bot:item/golem_exposed_handheld"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807003
+      },
+      "model": "bot:item/golem_weathered_handheld"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 807004
+      },
+      "model": "bot:item/golem_oxidized_handheld"
     }
   ]
 }
