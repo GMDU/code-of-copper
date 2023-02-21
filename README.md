@@ -25,7 +25,7 @@ You can obtain the Copper Golem as an item by breaking it. It can then be placed
 It is up to you to discover most of the language through exploration; example programs are found scattered across the world.
 
 However, every good README needs a hello world.
-```
+```ruby
 print "Hello, World!”
 ```
 This can be written into a book, and right-clicked into a Copper Golem. Shift-right-click to run.
@@ -46,7 +46,7 @@ Right click the minecart with the book to set the golems code, and shift-click t
 Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
 
 EX.
-```
+```ruby
 # this will not do anything since it is a comment
 ```
 
@@ -61,7 +61,7 @@ If a variable's name contains characters other than letters, numbers or undersco
 then it must be referenced within parentheses.
 
 EX.
-```
+```ruby
 let foo = 7
 let str = "Hello"
 let x = 1
@@ -76,7 +76,7 @@ let obj = {a:1,b:2+3}
 Variables can be changed by simply redeclaring them.
 
 EX.
-```
+```ruby
 let foo = 7
 let foo = 8                                           # foo is now 8 instead of 7
 ```
@@ -84,7 +84,7 @@ let foo = 8                                           # foo is now 8 instead of 
 Arrays can be added and removed from via addition and subtraction.
 
 EX.
-```
+```ruby
 let arr = [0, 1, 2]
 let arr = arr + 3				# arr is now [0,1,2,3]
 let arr = arr - 1				# arr is now [0,1,2]
@@ -94,7 +94,7 @@ let arr = arr - -1				# arr is now [1,2]
 Objects can be added and removed from via addition and subtraction.
 
 EX.
-```
+```ruby
 let obj = {a:1,b:2,c:3}
 let obj = obj - "a"				# obj is now {b:2,c:3}
 let obj = obj + {c:5,d:4}				# obj is now {b:2,c:5,d:4}
@@ -103,7 +103,7 @@ let obj = obj + {c:5,d:4}				# obj is now {b:2,c:5,d:4}
 Strings can be added to with addition.
 
 EX.
-```
+```ruby
 let str = "hello"
 print str                                               # this will print 'hello'
 let var = str + ", world!"   
@@ -113,7 +113,7 @@ print var                                              # this will print 'hello,
 Strings are just arrays of characters, so they can be indexed just like an array.
 
 EX.
-```
+```ruby
 let str = "hello, world!"
 print str[1]                                          # this will print 'e'
 ```
@@ -123,7 +123,7 @@ The print command outputs text to the chat.
 String literals and variables can both be printed, but not on the same line.
 
 EX.
-```
+```ruby
 let foo = 8
 let bar = "xokz"
 let arr = [0, 4, 7]
@@ -144,7 +144,7 @@ The golem can pause code execution for a specified amount of time with the sleep
 The provided value is how many ticks the golem will sleep for.
 
 EX.
-```
+```ruby
 let time = 7
 sleep time                                           # sleep for 7 ticks
 sleep 40                                                # sleep for 2 seconds, since 1 second is 20 ticks
@@ -156,7 +156,7 @@ If statements allow parts of the code to execute only if a condition is met.
 The if statement will execute if the result is not 0 or and empty string.
 
 EX.
-```
+```ruby
 let foo = 0
 if foo
   print "success"                                   # this will not print since the condition results in 0
@@ -183,7 +183,7 @@ They represent equal to, less than, and greater than, respectively.
 They can compare variables and/or literals.
 
 EX.
-```
+```ruby
 let foo = 7
 let bar = 5
 
@@ -201,7 +201,7 @@ end
 Strings and arrays have lengths, which can be compared against integers.
 
 EX.
-```
+```ruby
 let str = "hello"
 if str < 10
   print "The length of the string is less than 10!"
@@ -214,7 +214,7 @@ Loops work similarly to if statements, for the condition part.
 They execute while a condition is met.
 
 EX.
-```
+```ruby
 # this will print the numbers 0-19
 let i = 0
 while i < 20
@@ -235,7 +235,7 @@ The golem can move 1 block in any direction (though it is still affected by grav
 The array can use variables or literals.
 
 EX.
-```
+```ruby
 let var = 1
 move [0, var, 0]                                  # the golem will jump up one block
 ```
@@ -245,7 +245,7 @@ move [0, var, 0]                                  # the golem will jump up one b
 The getblock command stores the name of the block at the given position in the $BLOCK variable.
 
 EX.
-```
+```ruby
 let best_block = "minecraft:dirt"
 
 getblock [0, -1, 0]                                # the block under the golem is a dirt block in this example
@@ -263,7 +263,7 @@ If there is a block in the specified slot, it will attempt to place the block at
 The slot number is 0 indexed.
 
 EX.
-```
+```ruby
 # in slot 6, we have put a dirt block.
 
 place 5, [1,0,1]
@@ -275,7 +275,7 @@ If there is a pickaxe in the slot instead, it will break a block at the given co
 The pickaxe will still lose durability.
 
 EX.
-```
+```ruby
 # in slot 7, we have an iron pickaxe.
 
 place 6, [1,0,1] # this will mine the dirt block we placed earlier and take it back into the inventory.
@@ -289,7 +289,7 @@ The $INVENTORY variable is an array with the names of all the items in the golem
 It can be indexed like any other array.
 
 EX.
-```
+```ruby
 # if there is dirt in the first slot, print a message.
 if $INVENTORY[0] = "minecraft:dirt"
   print "yeah you got the good stuff"
@@ -303,7 +303,7 @@ Strings can be compared using a Regular Expression (See [RegExr](https://regexr.
 The matched sub-string will return to $MATCH.
 
 EX.
-```
+```ruby
 let regex = /ab?c/
 match regex, "abcdefg"
 print $MATCH         # prints "abc"
