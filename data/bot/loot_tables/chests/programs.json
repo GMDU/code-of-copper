@@ -4,276 +4,68 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# \"... sir, look at this!\n# It appears we\n# have managed to\n# make it move!\n\nmove [0,0,1]\nmove [0,1,0]\nmove [1,0,0]']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "move.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/array_equals_string"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# We did it!\n# The Golem reeks\n# of life!\n#\n# ...Well, it reeks of\n# oil at least.\n\nprint \"Initialising...\"\n\nprint \"I am online...\"']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "life.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/get_a_block"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet success = 1\n\nif success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "success.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/i_need_sleep"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Place a block into\n# slot 0 of the Golem.\n#\n# It loves placing\n# blocks!\n\nprint \"Insert block!\"\n\nplace 0, [1,1,0]\n\n# Now try putting\n# a pickaxe in the\n# same slot.']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "place_blocks.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/index"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet \"x\" = 1\nlet \"y\" = 2\nlet \"var\" = \"Boop.\"\nlet \"calc\" = $x + $y\n\nprint $var\nprint $calc']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "memory.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/inventory"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet i = 0\n\nwhile i < 10\n  print \"i is less than 10\"\n  let i = i + 1\nend']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "while.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/life"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems do not sleep.\n#\n# ...That is, unless you\n# tell them to!\n\nprint \"Waiting 5 seconds\"\n\n# 1 second is 20 ticks\nsleep 100\n\nprint \"Done!\"']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "i_need_sleep.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/loop"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop! Wait,\n# I can just right\n# click it to stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "to_infinity_and_beyond.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/memory"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# Golems can perform\n# actions based on\n# the world around\n# them. \n\ngetblock [0,-1,0]\nprint $BLOCK\"]}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "get_a_block.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/move"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Sometimes the\n# golems get a bit\n# confused between\n# different data types\n# but we can use that\n# to our advantage.\n\nlet array = [1,2,3]\n\nif array > 2\n  print \"Array is longer than 2\"\nend\n\n', 'let string = \"Hello, world!\"\n\nif string < 100\n  print \"String is short enough\"\nend']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "array_equals_string.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/object"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Addition and\n# subtraction not only\n# work on numbers,\n# but also on strings\n# and arrays.\n\nprint 1 + 2\n\nprint \"Hello, \" + \"world!\"\n\nprint [0,1,2] + 3\n\nprint [0,1,2] - 1\n', \"print [0,1,2] - -1\"]}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "string_addition.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/place_blocks"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint $INVENTORY\n\nif $INVENTORY[0] = \"minecraft:dirt\"\n  place 0, [1,0,0]\nend']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "inventory.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/regex"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can recall\n# certain parts of\n# their memory, even\n# if they were stored\n# as larger\n# structures before.\n\nlet hello_world = [\"Hello\", \", \", \"world\", \"1\"]\n\nprint hello_world[2]\nprint hello_world[0][3]']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "index.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/string_addition"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems love counting\n# You can ask them to\n# count up to any\n# number, executing\n# code along the way\n\nloop 7\n  print \"Looping 7 times...\"\nend\n\nprint \"finished\"']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "loop.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/success"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# We needed a way to\n# organise the Golem\\'s\n# memories.\n\n# We came up with the\n# Object, that could\n# hold memories to\n# a simple name, in a\n# compact manner.\n\nlet obj = {a:1,b:2+3}\n\nprint obj[\"b\"]']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "object.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/to_infinity_and_beyond"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:writable_book",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can read,\n# but they need to\n# know what they are\n# looking for. We\n# made a \"Regular\n# Expression\", to tell\n# the Golem what to\n# find.\n\nlet regex = /h\\\\w+o/\nmatch regex, \"hello!!!\"\nprint $MATCH']}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "regex.glm",
-                "italic": false
-              }
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/while"
         }
       ]
     }

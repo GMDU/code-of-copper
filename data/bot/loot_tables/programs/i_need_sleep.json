@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems do not sleep.\n#\n# ...That is, unless you\n# tell them to!\n\nprint \"Waiting 5 seconds\"\n\n# 1 second is 20 ticks\nsleep 100\n\nprint \"Done!\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "i_need_sleep.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
