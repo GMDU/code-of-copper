@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Containers not dropping their contents when broken by a golem
+- Items not dropping when the golem's inventory is full
 
 ## [0.2.0] - 2023-02-21
 Two new literal types, and cleanup of syntax.
