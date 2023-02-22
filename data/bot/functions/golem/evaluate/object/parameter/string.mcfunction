@@ -1,4 +1,4 @@
-data modify storage moxlib:api/data/get target set from storage bot:variables Parameterise.value
+data modify storage moxlib:api/data/get target set from storage bot:interpreter/evaluate Parameterise.value
 data modify storage moxlib:api/data/get key set value {key:{}}
 data modify storage moxlib:api/data/get key.key set from storage bot:io Out
 function moxlib:api/data/get

@@ -1,4 +1,4 @@
-data modify storage moxlib:api/data/get target set from storage bot:variables blockCounterparts
+data modify storage moxlib:api/data/get target set from storage bot:interpreter/execution blockCounterparts
 data modify storage moxlib:api/data/get key set value {item:""}
 data modify storage moxlib:api/data/get key.item set from storage bot:io In.id
 function moxlib:api/data/get

@@ -1,12 +1,12 @@
 data modify storage moxlib:api/data/set target set from storage bot:io Out.value
 data modify storage moxlib:api/data/set key set value {key: []}
-data modify storage moxlib:api/data/set key.key set from storage bot:variables expressionStack[-1].expressionExpression.value[0].key
+data modify storage moxlib:api/data/set key.key set from storage bot:interpreter/evaluate expressionStack[-1].expressionExpression.value[0].key
 data modify storage moxlib:api/data/set data set value {value: []}
-data modify storage moxlib:api/data/set data.value set from storage bot:variables expressionStack[-1].expressionExpression.value[0].value
+data modify storage moxlib:api/data/set data.value set from storage bot:interpreter/evaluate expressionStack[-1].expressionExpression.value[0].value
 function moxlib:api/data/set
 
 data modify storage bot:io Out.value set from storage moxlib:api/data/set output
 
-data remove storage bot:variables expressionStack[-1].expressionExpression.value[0]
+data remove storage bot:interpreter/evaluate expressionStack[-1].expressionExpression.value[0]
 
-execute if data storage bot:variables expressionStack[-1].expressionExpression.value[0] run function bot:golem/evaluate/expression/operations/add/object/loop
+execute if data storage bot:interpreter/evaluate expressionStack[-1].expressionExpression.value[0] run function bot:golem/evaluate/expression/operations/add/object/loop

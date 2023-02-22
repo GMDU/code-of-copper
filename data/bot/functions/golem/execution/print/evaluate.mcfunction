@@ -1,8 +1,8 @@
-data modify storage bot:variables stack set value []
-data modify storage bot:variables expressionStack set value []
-data modify storage bot:variables arrayStack set value []
-data modify storage bot:variables arrayEvaluationStack set value []
-data modify storage bot:variables stack append from storage bot:io In
+data modify storage bot:interpreter/execution/evaluate stack set value []
+data modify storage bot:interpreter/execution/evaluate expressionStack set value []
+data modify storage bot:interpreter/execution/evaluate arrayStack set value []
+data modify storage bot:interpreter/execution/evaluate arrayEvaluationStack set value []
+data modify storage bot:interpreter/execution/evaluate stack append from storage bot:io In
 data modify storage bot:io Out set value []
 
 function bot:golem/execution/print/_evaluate
