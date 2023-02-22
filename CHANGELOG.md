@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `$POS` variable
 
+### Changed
+- Golem now uses item and text display entities
+
 ### Fixed
 - Containers not dropping their contents when broken by a golem
 
