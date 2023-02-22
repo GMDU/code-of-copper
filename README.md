@@ -112,7 +112,6 @@ You can join our discord server here: https://discord.gg/2eR2hdYJMc
 
 
 ## GolemScript Documentation
----
 The following (excellent) language documentation was written by xokz, from the MinecraftCommands discord.
 
 By: xokz
