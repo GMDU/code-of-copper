@@ -26,7 +26,7 @@ Two new literal types, and cleanup of syntax.
 - Alphanumeric pseudo-variant of literal
   - Only allows [A-Za-z0-9_]
   - First character must match [A-Za-z]
-  - Regex variant of literal
+- Regex variant of literal
   - String-regex matching using the `match` function
 
 ### Changed
