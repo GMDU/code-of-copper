@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop! Wait,\n# I can just right\n# click it to stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "to_infinity_and_beyond.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

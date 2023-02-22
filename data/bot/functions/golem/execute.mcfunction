@@ -8,6 +8,7 @@ execute if data storage bot:program Current{variant:"getBlock"} run function bot
 execute if data storage bot:program Current{variant:"sleep"} run function bot:golem/execution/sleep
 execute if data storage bot:program Current{variant:"match"} run function bot:golem/execution/match
 execute if data storage bot:program Current{variant:"loop"} run function bot:golem/execution/loop
+execute if data storage bot:program Current{variant:"break"} run function bot:golem/execution/break
 
 data modify storage bot:program Current set value {}
 

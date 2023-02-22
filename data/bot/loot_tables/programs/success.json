@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet success = 1\n\nif success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "success.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

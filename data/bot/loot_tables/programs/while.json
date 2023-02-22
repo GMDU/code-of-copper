@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet i = 0\n\nwhile i < 10\n  print \"i is less than 10\"\n  let i = i + 1\nend']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "while.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

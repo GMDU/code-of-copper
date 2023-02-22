@@ -7,5 +7,3 @@ execute if score .global bot.dev_mode matches 1 run tellraw @a [{"text": "Evalua
 
 execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:io Out set from storage moxlib:api/data/get output.value
 execute if data storage moxlib:api/data/get {success:false} run data modify storage bot:io Out set value {"type": "undefined", value: undefined}
-
-

@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint $INVENTORY\n\nif $INVENTORY[0] = \"minecraft:dirt\"\n  place 0, [1,0,0]\nend']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "inventory.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- `$POS` variable
+- break instruction
+
+### Changed
+- Golem now uses item and text display entities
+- Golem model and texture
+
+### Fixed
+- Containers not dropping their contents when broken by a golem
+- Items not dropping when the golem's inventory is full
+
 ## [0.2.0] - 2023-02-21
 Two new literal types, and cleanup of syntax.
 
@@ -13,7 +27,7 @@ Two new literal types, and cleanup of syntax.
 - Alphanumeric pseudo-variant of literal
   - Only allows [A-Za-z0-9_]
   - First character must match [A-Za-z]
-  - Regex variant of literal
+- Regex variant of literal
   - String-regex matching using the `match` function
 
 ### Changed

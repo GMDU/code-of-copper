@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems can read,\n# but they need to\n# know what they are\n# looking for. We\n# made a \"Regular\n# Expression\", to tell\n# the Golem what to\n# find.\n\nlet regex = /h\\\\w+o/\nmatch regex, \"hello!!!\"\nprint $MATCH']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "regex.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
