@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop! Wait,\n# I can just right\n# click it to stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
+              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop!\n\n# Wait, I can just hit it\n# to make it stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
             },
             {
               "function": "minecraft:set_name",

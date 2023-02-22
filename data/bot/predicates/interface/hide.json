@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "bot:interface/looking_at_golem"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "moxlib:api/player/is_sneaking"
+  }
+]
