@@ -9,9 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `$POS` variable
+- break instruction
 
 ### Changed
 - Golem now uses item and text display entities
+- Golem model and texture
 
 ### Fixed
 - Containers not dropping their contents when broken by a golem
