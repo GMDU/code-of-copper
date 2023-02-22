@@ -6,7 +6,6 @@
 <strong><h2 align="center">Code of Copper</h2></strong>
 </div>
 
----
 <div align="center">
 
   <p align="center">
