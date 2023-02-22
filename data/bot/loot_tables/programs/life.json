@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# We did it!\n# The Golem reeks\n# of life!\n#\n# ...Well, it reeks of\n# oil at least.\n\nprint \"Initialising...\"\n\nprint \"I am online...\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "life.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

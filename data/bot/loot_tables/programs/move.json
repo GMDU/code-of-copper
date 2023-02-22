@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# \"... sir, look at this!\n# It appears we\n# have managed to\n# make it move!\n\nmove [0,0,1]\nmove [0,1,0]\nmove [1,0,0]']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "move.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

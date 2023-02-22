@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['# Golems love counting\n# You can ask them to\n# count up to any\n# number, executing\n# code along the way\n\nloop 7\n  print \"Looping 7 times...\"\nend\n\nprint \"finished\"']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "loop.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
