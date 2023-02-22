@@ -5,8 +5,8 @@
     "type_specific": {
       "type": "player",
       "looking_at": {
-        "type": "minecraft:chest_minecart",
-        "nbt": "{Tags:[\"bot.golem\",\"bot.golem.target\"]}"
+        "type": "minecraft:interaction",
+        "nbt": "{Tags:[\"bot.golem.hitbox\",\"bot.golem.target\"]}"
       }
     }
   }

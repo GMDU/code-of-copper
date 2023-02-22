@@ -9,11 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `$POS` variable
-- break instruction
+- `break` instruction
 
 ### Changed
 - Golem now uses item and text display entities
 - Golem model and texture
+- New interaction system:
+  - Right click to run a Golem, or with a book to assign a program.
+  - Left click to stop a Golem
+  - Crouching whilst looking at the Golem allows it's inventory to be
+  accessed, or for it to be broken.
 
 ### Fixed
 - Containers not dropping their contents when broken by a golem
