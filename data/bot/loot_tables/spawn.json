@@ -20,7 +20,8 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "Minecart with Copper Golem",
+                  "translate": "item.bot.golem_minecart",
+                  "fallback": "Minecart with Copper Golem",
                   "italic": false
                 }
               ]
