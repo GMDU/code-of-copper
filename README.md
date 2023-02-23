@@ -196,22 +196,22 @@ EX.
 ```ruby
 let foo = 0
 if foo
-  print "success!"                                   # this will not print since the condition results in 0
+	print "success!"                                   # this will not print since the condition results in 0
 end
 
 let foo = 5
 if foo
-  print "success!"                                   # this will succeed because the condition did not result in 0
+	print "success!"                                   # this will succeed because the condition did not result in 0
 end
 
 let bar = ""
 if bar
-  print "success!"                                   # this will not print since the condition results in an empty string
+	print "success!"                                   # this will not print since the condition results in an empty string
 end
 
 let bar = "i love this datapack"
 if bar
-  print "success!"                                   # this will print since the condition did not result in an empty string
+	print "success!"                                   # this will print since the condition did not result in an empty string
 end
 ```
 
@@ -225,13 +225,13 @@ let foo = 7
 let bar = 5
 
 if foo > bar
-  print "success"                                   # this will print since foo is greater than bar
+	print "success"                                   # this will print since foo is greater than bar
 end
 
 let var = "hello, world"
 
 if var = "goodbye, world"
-  print "success"                                   # this will not print since var is not "goodbye, world"
+	print "success"                                   # this will not print since var is not "goodbye, world"
 end
 ```
 
@@ -241,7 +241,7 @@ EX.
 ```ruby
 let str = "hello"
 if str < 10
-  print "The length of the string is less than 10!"
+	print "The length of the string is less than 10!"
 end
 ```
 
@@ -255,13 +255,13 @@ EX.
 # this will print the numbers 0-19
 let i = 0
 loop i
-  print i
+	print i
 end
 
 
 # this will go on forever
 while 1
-  print "wheee!"
+	print "wheee!"
 end
 ```
 
@@ -288,7 +288,7 @@ getblock [0, -1, 0]                                # the block under the golem i
 print BLOCK                                        # will print 'minecraft:dirt'
 
 if BLOCK = best_block
-  print "Yes, dirt is the best." 	# this will print because the block below is dirt
+	print "Yes, dirt is the best." 	# this will print because the block below is dirt
 end
 ```
 
@@ -328,7 +328,7 @@ EX.
 ```ruby
 # if there is dirt in the first slot, print a message.
 if INVENTORY[0] = "minecraft:dirt"
-  print "yeah you got the good stuff"
+	print "yeah you got the good stuff"
 end
 ```
 
