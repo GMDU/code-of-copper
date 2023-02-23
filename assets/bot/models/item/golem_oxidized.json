@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "bot:item/golem/oxidized/copper_golem",
+		"0": "bot:item/golem/oxidized/body",
 		"1": "bot:item/golem/oxidized/right_arm",
 		"2": "bot:item/golem/oxidized/left_arm",
 		"3": "bot:item/golem/oxidized/head",
@@ -11,7 +11,7 @@
 		"6": "bot:item/golem/oxidized/ball",
 		"7": "bot:item/golem/oxidized/right_leg",
 		"8": "bot:item/golem/oxidized/left_leg",
-		"particle": "bot:item/golem/oxidized/copper_golem"
+		"particle": "bot:item/golem/oxidized/body"
 	},
 	"elements": [
 		{

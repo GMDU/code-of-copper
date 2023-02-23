@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "bot:item/golem/weathered/copper_golem",
+		"0": "bot:item/golem/weathered/body",
 		"1": "bot:item/golem/weathered/right_arm",
 		"2": "bot:item/golem/weathered/left_arm",
 		"3": "bot:item/golem/weathered/head",
@@ -11,7 +11,7 @@
 		"6": "bot:item/golem/weathered/ball",
 		"7": "bot:item/golem/weathered/right_leg",
 		"8": "bot:item/golem/weathered/left_leg",
-		"particle": "bot:item/golem/weathered/copper_golem"
+		"particle": "bot:item/golem/weathered/body"
 	},
 	"elements": [
 		{
