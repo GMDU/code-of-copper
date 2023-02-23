@@ -8,7 +8,7 @@
       "predicate": {
         "custom_model_data": 807001
       },
-      "model": "bot:item/golem"
+      "model": "bot:item/golem_normal"
     },
     {
       "predicate": {

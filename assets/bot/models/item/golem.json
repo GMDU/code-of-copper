@@ -2,16 +2,16 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "bot:item/golem/copper_golem",
-		"1": "bot:item/golem/right_arm",
-		"2": "bot:item/golem/left_arm",
-		"3": "bot:item/golem/head",
-		"4": "bot:item/golem/nose",
-		"5": "bot:item/golem/rod",
-		"6": "bot:item/golem/ball",
-		"7": "bot:item/golem/right_leg",
-		"8": "bot:item/golem/left_leg",
-		"particle": "bot:item/golem/copper_golem"
+		"0": "bot:item/golem/normal/body",
+		"1": "bot:item/golem/normal/right_arm",
+		"2": "bot:item/golem/normal/left_arm",
+		"3": "bot:item/golem/normal/head",
+		"4": "bot:item/golem/normal/nose",
+		"5": "bot:item/golem/normal/rod",
+		"6": "bot:item/golem/normal/ball",
+		"7": "bot:item/golem/normal/right_leg",
+		"8": "bot:item/golem/normal/left_leg",
+		"particle": "bot:item/golem/normal/body"
 	},
 	"elements": [
 		{

@@ -5,7 +5,7 @@
       "predicate": {
         "custom_model_data": 807001
       },
-      "model": "bot:item/golem_handheld"
+      "model": "bot:item/golem_normal_handheld"
     },
     {
       "predicate": {
