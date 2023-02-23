@@ -79,7 +79,7 @@ By: xokz
 Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
 Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
 
-## 1. COMMENTS
+## 1. Comments
 Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
 
 EX.
@@ -87,7 +87,7 @@ EX.
 # this will not do anything since it is a comment
 ```
 
-## 2. VARIABLES
+## 2. Variables
 A variable can be an signed integer, array, or a string.
 
 Variables can use the +, -, *, /, and % operators.
@@ -155,8 +155,8 @@ let str = "hello, world!"
 print str[1]                                          # this will print 'e'
 ```
 
-## 3. PRINTING
-The print command outputs text to the chat.
+## 3. Printing
+The `print` command outputs text to the chat.
 String literals and variables can both be printed, but not on the same line.
 
 EX.
@@ -175,9 +175,9 @@ print arr[1] + foo                             # this will print 12
 print obj["hello"]                             # this will print 'world'
 ```
 
-## 4. SLEEP
+## 4. Sleep
 
-The golem can pause code execution for a specified amount of time with the sleep command.
+The golem can pause code execution for a specified amount of time with the `sleep` command.
 The provided value is how many ticks the golem will sleep for.
 
 EX.
@@ -187,7 +187,7 @@ sleep time                                           # sleep for 7 ticks
 sleep 40                                                # sleep for 2 seconds, since 1 second is 20 ticks
 ```
 
-## 5. IF STATEMENTS
+## 5. If Statements
 
 If statements allow parts of the code to execute only if a condition is met. 
 The if statement will execute if the result is not 0 or and empty string.
@@ -245,7 +245,7 @@ if str < 10
 end
 ```
 
-## 6. LOOPS
+## 6. Loops
 
 Loops work similarly to if statements, for the condition part.
 They execute while a condition is met.
@@ -265,7 +265,7 @@ while 1
 end
 ```
 
-## 7. MOVEMENT
+## 7. Movement
 
 The golem can move 1 block in any direction (though it is still affected by gravity.)
 The array can use variables or literals.
@@ -276,25 +276,25 @@ let var = 1
 move [0, var, 0]                                  # the golem will jump up one block
 ```
 
-## 8. GETBLOCK
+## 8. Getblock
 
-The getblock command stores the name of the block at the given position in the $BLOCK variable.
+The `getblock` command stores the name of the block at the given position in the `BLOCK` variable.
 
 EX.
 ```ruby
 let best_block = "minecraft:dirt"
 
 getblock [0, -1, 0]                                # the block under the golem is a dirt block in this example
-print $BLOCK                                        # will print 'minecraft:dirt'
+print BLOCK                                        # will print 'minecraft:dirt'
 
-if $BLOCK = best_block
+if BLOCK = best_block
   print "Yes, dirt is the best." 	# this will print because the block below is dirt
 end
 ```
 
-## 9. PLACE
+## 9. Place
 
-The place command can place or mine blocks. It takes in a slot index, and a position.
+The `place` command can place or mine blocks. It takes in a slot index, and a position.
 If there is a block in the specified slot, it will attempt to place the block at the given coords.
 The slot number is 0 indexed.
 
@@ -319,7 +319,7 @@ place 6, [1,0,1] # this will mine the dirt block we placed earlier and take it b
 
 If there is nothing in the slot, then nothing will happen.
 
-## 10. INVENTORY
+## 10. Inventory
 
 The `INVENTORY` variable is an array with the names of all the items in the golems inventory.
 It can be indexed like any other array.
@@ -332,9 +332,9 @@ if INVENTORY[0] = "minecraft:dirt"
 end
 ```
 
-## 11. MATCH
+## 11. Match
 
-Strings can be compared using a Regular Expression (See [RegExr](https://regexr.com)).
+Strings can be compared using the `match` command and they use Regular Expressions, So this command is kind of advanced. (See [RegExr](https://regexr.com)).
 
 The matched sub-string will return to `MATCH`.
 
