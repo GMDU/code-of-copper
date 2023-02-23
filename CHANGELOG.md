@@ -5,15 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.2.1] - 2022-02-24
+Escaping, interaction improvements, position variable, and break instruction.
 
 ### Added
 - `$POS` variable
 - `break` instruction
+- `\` as escape for strings and regexes
+  - Escaped `"` are replaced by `”` as to not break tellraw
 
 ### Changed
 - Golem now uses item and text display entities
-- Golem model and texture
+- Golem model and texture revamp
 - New interaction system:
   - Right click to run a Golem, or with a book to assign a program.
   - Left click to stop a Golem
