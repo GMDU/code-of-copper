@@ -1,42 +1,79 @@
-**Code of Copper requires two libraries: [Moxlib](https://modrinth.com/datapack/moxlib) and [Moxlib Exp](https://modrinth.com/datapack/moxlib-exp).** 
+<div align="center">
+  <a href="https://github.com/GMDU/code-of-copper">
+    <img src="logo.png" alt="Logo" width="128" height="128">
+  </a>
 
-**Code of Copper will only ever function in snapshot 23w03a or later (1.19.4+).**
+<strong><h2 align="center">Code of Copper</h2></strong>
+</div>
 
-**Make sure you also install the required resource pack, as found on the Version pages**
+<div align="center">
 
-# Code of Copper
-**A Datapack by Moxvallix, Gears and Wulfian.**
-
-## Overview
-Code of Copper is a lore heavy, and technically advanced Datapack, adding a programmable Copper Golem into the game.
+  <p align="center">
+Code of Copper is a lore heavy, and technically advanced Datapack. Adding a programmable Copper Golem into the game.
 
 Throughout the world, different structures will generate, containing lore, and examples of programs that the Copper Golem can run. Programs can be written into a book, and then given to the Golem, by right clicking it with the book.
 
-Shift-right-clicking the Golem will execute it's current program.
+Right-clicking the Golem with a empty hand will execute it's current program.
 
-While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place in our demo structure.
+While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
+
+**A datapack by Moxvallix, Gears and Wulfian. Enjoy!**
+    <br />
+    <a href="#golemscript-documentation"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://github.com/GMDU/code-of-copper/issues">Report Bug</a>
+  </p>
+</div>
+
+---
+
+<br />
+
+## Requirements
+- **This datapack will not work in versions below 23w03a**
+- **Make sure to remember to download and install the resource pack**
+- **This datapack will not work without the following datapacks:**
+  - [Moxlib](https://modrinth.com/datapack/moxlib)
+  - [Moxlib Exp](https://modrinth.com/datapack/moxlib-exp)
+  - [Regex Lib](https://modrinth.com/datapack/regex)
 
 ## Getting Started
-First, you will need to find a Copper Golem. These can be found high in the sky, within Airships. Be warned; these can be dangerous!
 
-You can obtain the Copper Golem as an item by breaking it. It can then be placed wherever you wish for it to be.
+First, you will need to find a Copper Golem. These can be found high in the sky, within Airships. Be warned; they can be dangerous!
 
-### Writing your First Program
+You can obtain the Copper Golem as an item by left clicking while shifting. It can then be placed wherever you want it to be.
+<br />
+<br />
+
+## Writing your First Program
 It is up to you to discover most of the language through exploration; example programs are found scattered across the world.
 
 However, every good README needs a hello world.
-```ruby
-print "Hello, World!”
-```
-This can be written into a book, and right-clicked into a Copper Golem. Shift-right-click to run.
 
-## Documentation
+```ruby
+print "Hello, World!"
+```
+This can be written into a book, and right-clicked into a Copper Golem. right-click again to run.
+<br />
+<br />
+
+## License
+
+This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more information.
+<br />
+<br />
+
+
+
+## Discord Server
+You can join our discord server here: https://discord.gg/2eR2hdYJMc
+<br />
+<br />
+
+
+## GolemScript Documentation
 The following (excellent) language documentation was written by xokz, from the MinecraftCommands discord.
 
-<details>
-<summary>Full Documentation</summary>
-
-# GOLEM SCRIPT DOCUMENTATION
 By: xokz
 
 Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
@@ -159,22 +196,22 @@ EX.
 ```ruby
 let foo = 0
 if foo
-  print "success"                                   # this will not print since the condition results in 0
+  print "success!"                                   # this will not print since the condition results in 0
 end
 
 let foo = 5
 if foo
-  print "success"                                   # this will succeed because the condition did not result in 0
+  print "success!"                                   # this will succeed because the condition did not result in 0
 end
 
 let bar = ""
 if bar
-  print "success"                                   # this will not print since the condition results in an empty string
+  print "success!"                                   # this will not print since the condition results in an empty string
 end
 
 let bar = "i love this datapack"
 if bar
-  print "success"                                   # this will print since the condition did not result in an empty string
+  print "success!"                                   # this will print since the condition did not result in an empty string
 end
 ```
 
@@ -217,9 +254,8 @@ EX.
 ```ruby
 # this will print the numbers 0-19
 let i = 0
-while i < 20
+loop i
   print i
-  let i = i + 1
 end
 
 
@@ -256,9 +292,9 @@ if $BLOCK = best_block
 end
 ```
 
-## 9. PLACE/MINE
+## 9. PLACE
 
-The place command can place or mine blocks. It takes in a slot number, and a position.
+The place command can place or mine blocks. It takes in a slot index, and a position.
 If there is a block in the specified slot, it will attempt to place the block at the given coords.
 The slot number is 0 indexed.
 
@@ -271,7 +307,7 @@ place 5, [1,0,1]
 # golem, provided there is not already a block there
 ```
 
-If there is a pickaxe in the slot instead, it will break a block at the given coords, and put it in its inventory.
+If there is a pickaxe in the slot instead, it will break a block at the given coordinates, and put it in its inventory.
 The pickaxe will still lose durability.
 
 EX.
@@ -285,13 +321,13 @@ If there is nothing in the slot, then nothing will happen.
 
 ## 10. INVENTORY
 
-The $INVENTORY variable is an array with the names of all the items in the golems inventory.
+The `INVENTORY` variable is an array with the names of all the items in the golems inventory.
 It can be indexed like any other array.
 
 EX.
 ```ruby
 # if there is dirt in the first slot, print a message.
-if $INVENTORY[0] = "minecraft:dirt"
+if INVENTORY[0] = "minecraft:dirt"
   print "yeah you got the good stuff"
 end
 ```
@@ -300,12 +336,11 @@ end
 
 Strings can be compared using a Regular Expression (See [RegExr](https://regexr.com)).
 
-The matched sub-string will return to $MATCH.
+The matched sub-string will return to `MATCH`.
 
 EX.
 ```ruby
 let regex = /ab?c/
 match regex, "abcdefg"
-print $MATCH         # prints "abc"
+print MATCH         # prints "abc"
 ```
-</details>
