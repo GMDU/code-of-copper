@@ -57,46 +57,6 @@ This can be written into a book, and right-clicked into a Copper Golem. right-cl
 <br />
 <br />
 
-
-## Roadmap
-
-Please note: **All of these version release dates are not always going to be accurate!**
-<br />
-<br />
-
-### Language
-- [ ] Restructure syntax to make everything functions
-  - Version to implement: `0.3.0`
-  - Progress: `0%`
-- [ ] Create a standalone version of `GolemScript`
-  - Version to implement: `Indefinite future`
-  - Progress: `Concept in development`
-- [ ] Refine the language for easier learning
-  - Version to implement: `0.2.1`
-  - Progress: `Concept in development`
-- [ ] Functions
-  - Version to implement: `0.3.0`
-  - Progress: `Concept in development`
-
-### Golem
-- [ ] Crafting functionality
-  - Version to implement: `0.4.0`
-  - Progress: `Concept in development`
-- [ ] More data for the `BLOCK` and `INVENTORY` variables
-  - Version to implement: `0.4.0`?
-  - Progress: `0%`
-- [ ] Rotation
-  - Version to implement: `0.3.0`
-  - Progress: `0%`
-- [ ] Block interactions
-  - Version to implement: `Indefinite future`
-  - Progress: `Concept in development`
-- [ ] Oxidization
-  - Version to implement: `Indefinite future`
-  - Progress: `Concept in development`
-
-<br />
-
 ## License
 
 This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more information.
