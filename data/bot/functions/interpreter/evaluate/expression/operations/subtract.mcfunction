@@ -1,0 +1,4 @@
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"integer"} run function bot:interpreter/evaluate/expression/operations/subtract/integer
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"string"} run function bot:interpreter/evaluate/expression/operations/subtract/string
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"array"} run function bot:interpreter/evaluate/expression/operations/subtract/array
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"object"} run function bot:interpreter/evaluate/expression/operations/subtract/object
