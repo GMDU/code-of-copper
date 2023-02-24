@@ -13,7 +13,7 @@ Code of Copper is a lore heavy, and technically advanced Datapack. Adding a prog
 
 Throughout the world, different structures will generate, containing lore, and examples of programs that the Copper Golem can run. Programs can be written into a book, and then given to the Golem, by right clicking it with the book.
 
-Right-clicking the Golem with a empty hand will execute it's current program.
+Right-clicking the Golem with an empty hand will execute it's current program.
 
 While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
 
@@ -198,7 +198,7 @@ end
 
 let foo = 5
 if foo
-  print "success!"                                   # this will succeed because the condition did not result in 0
+  print "success!"                                   # this will print because the condition did not result in 0
 end
 
 let bar = ""
