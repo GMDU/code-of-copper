@@ -13,7 +13,7 @@ Code of Copper is a lore heavy, and technically advanced Datapack. Adding a prog
 
 Throughout the world, different structures will generate, containing lore, and examples of programs that the Copper Golem can run. Programs can be written into a book, and then given to the Golem, by right clicking it with the book.
 
-Right-clicking the Golem with a empty hand will execute it's current program.
+Right-clicking the Golem with an empty hand will execute it's current program.
 
 While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
 
@@ -30,9 +30,9 @@ While we recommend playing through the pack, as an addition to your world, and s
 <br />
 
 ## Requirements
-- **This datapack will not work in versions below 23w03a**
+- **This datapack will only work in versions 23w03a and higher**
 - **Make sure to remember to download and install the resource pack**
-- **This datapack will not work without the following datapacks:**
+- **This datapack will not work without the following datapack libraries:**
   - [Moxlib](https://modrinth.com/datapack/moxlib)
   - [Moxlib Exp](https://modrinth.com/datapack/moxlib-exp)
   - [Regex Lib](https://modrinth.com/datapack/regex)
@@ -66,7 +66,7 @@ This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more
 
 
 ## Discord Server
-You can join our discord server here: https://discord.gg/2eR2hdYJMc
+You can join our discord server [here](https://discord.gg/2eR2hdYJMc).
 <br />
 <br />
 
@@ -76,8 +76,8 @@ The following (excellent) language documentation was written by xokz, from the M
 
 By: xokz
 
-Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
-Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
+Code goes in a book and quill. Code can span multiple pages, but make sure there is a new line after every page!. The name of the book does not matter.
+Right click the minecart with the book to set the golems code, and right-click the minecart with a empty hand to execute the code.
 
 ## 1. Comments
 Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
@@ -92,10 +92,7 @@ A variable can be an signed integer, array, or a string.
 
 Variables can use the +, -, *, /, and % operators.
 
-Only one operator is supported per line, so no "let x = a / b + c"
-
-If a variable's name contains characters other than letters, numbers or underscores,
-then it must be referenced within parentheses.
+Only one operator is supported per line, so that means `let x = a / b + c` will not work.
 
 EX.
 ```ruby
@@ -201,7 +198,7 @@ end
 
 let foo = 5
 if foo
-	print "success!"                                   # this will succeed because the condition did not result in 0
+  print "success!"                                   # this will print because the condition did not result in 0
 end
 
 let bar = ""
