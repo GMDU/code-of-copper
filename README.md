@@ -30,9 +30,9 @@ While we recommend playing through the pack, as an addition to your world, and s
 <br />
 
 ## Requirements
-- **This datapack will not work in versions below 23w03a**
+- **This datapack will only work in versions 23w03a and higher**
 - **Make sure to remember to download and install the resource pack**
-- **This datapack will not work without the following datapacks:**
+- **This datapack will not work without the following datapack libraries:**
   - [Moxlib](https://modrinth.com/datapack/moxlib)
   - [Moxlib Exp](https://modrinth.com/datapack/moxlib-exp)
   - [Regex Lib](https://modrinth.com/datapack/regex)
@@ -66,7 +66,7 @@ This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more
 
 
 ## Discord Server
-You can join our discord server here: https://discord.gg/2eR2hdYJMc
+You can join our discord server [here](https://discord.gg/2eR2hdYJMc).
 <br />
 <br />
 
@@ -76,7 +76,7 @@ The following (excellent) language documentation was written by xokz, from the M
 
 By: xokz
 
-Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
+Code goes in a book and quill. Code can span multiple pages, but make sure there is a new line after every page!. The name of the book does not matter.
 Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
 
 ## 1. COMMENTS
