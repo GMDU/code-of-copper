@@ -1,9 +1,9 @@
-data modify storage bot:io In set from storage bot:program Current.args[0]
+data modify storage bot:io In set from storage bot:interpreter/execution Current.args[0]
 function bot:golem/evaluate
 
 data modify storage regex:api/match pattern set from storage bot:io Out
 
-data modify storage bot:io In set from storage bot:program Current.args[1]
+data modify storage bot:io In set from storage bot:interpreter/execution Current.args[1]
 function bot:golem/evaluate
 
 data modify storage regex:api/match target set from storage bot:io Out.value

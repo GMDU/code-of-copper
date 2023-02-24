@@ -1,9 +1,9 @@
-execute on passengers as @s[type=marker,tag=bot.golem.brain] unless data entity @s data.RunRootStack[] run data modify entity @s data.RunRootStack set value []
-execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"stopped"} run data modify entity @s data.RunRootStack set value []
-execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} unless data entity @s data.RunRootStack[-1] run function bot:entity/activate
+execute on passengers as @s[type=marker,tag=bot.golem.brain] unless data entity @s data.instructions[] run data modify entity @s data.instructions set value []
+execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"stopped"} run data modify entity @s data.instructions set value []
+execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} unless data entity @s data.instructions[-1] run function bot:entity/activate
 
-execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} if data entity @s data.RunRootStack[-1] on vehicle run function bot:golem/run_root_type
-execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} unless data entity @s data.RunRootStack[-1] run data modify entity @s data.status set value "stopped"
+execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} if data entity @s data.instructions[-1] on vehicle run function bot:golem/run_root_type
+execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"active"} unless data entity @s data.instructions[-1] run data modify entity @s data.status set value "stopped"
 
 execute on passengers as @s[type=text_display,tag=bot.golem.text] run data modify entity @s text set value '{"text": ""}'
 execute on passengers as @s[type=marker,tag=bot.golem.brain] if data entity @s data{status:"stopped"} on vehicle on passengers as @s[type=text_display,tag=bot.golem.text] run data modify entity @s text set value '{"text": "Right click to run"}'

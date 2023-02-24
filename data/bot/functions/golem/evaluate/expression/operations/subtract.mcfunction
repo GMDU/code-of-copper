@@ -1,4 +1,4 @@
-execute if data storage bot:interpreter/evaluate expressionStack[-1].expressionValue{type:"integer"} run function bot:golem/evaluate/expression/operations/subtract/integer
-execute if data storage bot:interpreter/evaluate expressionStack[-1].expressionValue{type:"string"} run function bot:golem/evaluate/expression/operations/subtract/string
-execute if data storage bot:interpreter/evaluate expressionStack[-1].expressionValue{type:"array"} run function bot:golem/evaluate/expression/operations/subtract/array
-execute if data storage bot:interpreter/evaluate expressionStack[-1].expressionValue{type:"object"} run function bot:golem/evaluate/expression/operations/subtract/object
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"integer"} run function bot:golem/evaluate/expression/operations/subtract/integer
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"string"} run function bot:golem/evaluate/expression/operations/subtract/string
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"array"} run function bot:golem/evaluate/expression/operations/subtract/array
+execute if data storage bot:interpreter/expression stack[-1].expressionValue{type:"object"} run function bot:golem/evaluate/expression/operations/subtract/object

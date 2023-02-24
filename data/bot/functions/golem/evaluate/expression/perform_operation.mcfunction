@@ -1,6 +1,6 @@
 data modify storage bot:interpreter/evaluate operation set from storage bot:interpreter/evaluate stack[-1].operation
-execute store result score .value bot.execution.variables run data get storage bot:interpreter/evaluate expressionStack[-1].expressionValue.value
-execute store result score .expression bot.execution.variables run data get storage bot:interpreter/evaluate expressionStack[-1].expressionExpression.value
+execute store result score .value bot.execution.variables run data get storage bot:interpreter/expression stack[-1].expressionValue.value
+execute store result score .expression bot.execution.variables run data get storage bot:interpreter/expression stack[-1].expressionExpression.value
 data modify storage bot:io Out set value {"type": "integer", "value": 0}
 execute if data storage bot:interpreter/evaluate {operation:"add"} run function bot:golem/evaluate/expression/operations/add
 execute if data storage bot:interpreter/evaluate {operation:"subtract"} run function bot:golem/evaluate/expression/operations/subtract
