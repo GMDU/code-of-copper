@@ -77,7 +77,7 @@ The following (excellent) language documentation was written by xokz, from the M
 By: xokz
 
 Code goes in a book and quill. Code can span multiple pages, but make sure there is a new line after every page!. The name of the book does not matter.
-Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
+Right click the minecart with the book to set the golems code, and right-click the minecart with a empty hand to execute the code.
 
 ## 1. COMMENTS
 Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
@@ -92,10 +92,7 @@ A variable can be an signed integer, array, or a string.
 
 Variables can use the +, -, *, /, and % operators.
 
-Only one operator is supported per line, so no "let x = a / b + c"
-
-If a variable's name contains characters other than letters, numbers or underscores,
-then it must be referenced within parentheses.
+Only one operator is supported per line, so that means `let x = a / b + c` will not work.
 
 EX.
 ```ruby
