@@ -1,4 +1,4 @@
-execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify storage moxlib:api/data/get target set from entity @s data.variables
+data modify storage moxlib:api/data/get target set from entity @s data.variables
 data modify storage moxlib:api/data/get key set value {name:[""]}
 data modify storage moxlib:api/data/get key.name set from storage bot:interpreter/evaluate stack[-1].value
 function moxlib:api/data/get

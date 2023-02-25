@@ -1,6 +1,3 @@
-data modify storage bot:io In set from storage bot:interpreter/execution Current.args[0]
-function bot:interpreter/evaluate
-
 function bot:interpreter/execution/get_block/move_to_position
 
 execute at @s run function moxlib:api/helpers/block/get
