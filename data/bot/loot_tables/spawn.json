@@ -14,13 +14,14 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:807001,EntityTag:{id:\"minecraft:marker\",UUID:[I;630956989,-35109831,-2014879120,-1832353081]}}"
+              "tag": "{CustomModelData:807001,EntityTag:{id:\"minecraft:marker\",UUID:[I;630956989,-35109831,-2014879120,-1832353081]},bot:{id:\"golem_spawn\"}}"
             },
             {
               "function": "set_name",
               "name": [
                 {
-                  "text": "Minecart with Copper Golem",
+                  "translate": "item.bot.golem_minecart",
+                  "fallback": "Minecart with Copper Golem",
                   "italic": false
                 }
               ]
