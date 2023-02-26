@@ -15,6 +15,7 @@ Escaping, interaction improvements, position variable, and break instruction.
   - Escaped `"` are replaced by `”` as to not break tellraw
 
 ### Changed
+- README has now been greatly improved
 - Golem now uses item and text display entities
 - Golem model and texture revamp
 - New interaction system:

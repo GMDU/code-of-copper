@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:honeycomb"
+    },
+    "title": "A Well-Oiled Machine",
+    "description": "Prevent the Golem from oxidising, by coating it with Beeswax",
+    "show_toast": true
+  },
+  "parent": "bot:progression/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
