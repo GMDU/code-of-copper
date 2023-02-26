@@ -1,3 +1,5 @@
+data modify storage bot:private temp.text set value '[{"keybind":"key.attack"},{"text":" to stop"}]'
+
 execute unless data entity @s data.instructions[-1] run function bot:entity/activate
 
 scoreboard players add @s bot.golem.execute 1

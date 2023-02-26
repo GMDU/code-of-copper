@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems do not sleep.\n#\n# ...That is, unless you\n# tell them to!\n\nprint \"Waiting 5 seconds\"\n\n# 1 second is 20 ticks\nsleep 100\n\nprint \"Done!\"']}"
+              "tag": "{pages:['# Golems do not sleep.\n#\n# ...That is, unless you\n# tell them to!\n\nprint \"Waiting 5 seconds\"\n\n# 1 second is 10 ticks\nsleep 50\n\nprint \"Done!\"']}"
             },
             {
               "function": "minecraft:set_name",

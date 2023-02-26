@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "bot:interface/holding_axe"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "bot:interface/holding_book"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "bot:interface/holding_wax"
+      }
+    ]
+  }
+}

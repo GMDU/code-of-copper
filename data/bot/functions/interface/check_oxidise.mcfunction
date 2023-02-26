@@ -1,0 +1,1 @@
+execute if data entity @s data{status:"active"} run data remove storage bot:temp golem.status
