@@ -5,7 +5,7 @@
     },
     "title": "Hidden in the Cracks",
     "description": "Discover an ancient program whilst cleaning your Golem (perhaps there are more...)",
-    "hidden": true
+    "hidden": false
   },
   "parent": "bot:progression/root",
   "criteria": {

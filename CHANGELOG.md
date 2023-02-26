@@ -7,10 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Added
+- Oxidisation Based Progression
+  - Golems will oxidise over time whilst executing programs
+    - This can be prevented by waxing a Golem with honeycomb
+    - Wax, and oxidisation, can be scraped off a Golem with an axe
+
 ### Changed
 - Refactor of the interpreter
-  - Golem now uses a pipeline, saving on lag
-  - Golem now executes instructions at 10Hz
+  - Golems now uses a pipeline, saving on lag
+  - Golems now execute instructions at 10Hz
+- Modified loot tables to work with new progression system
 
 ## [0.2.1] - 2022-02-24
 Escaping, interaction improvements, position variable, and break instruction.
