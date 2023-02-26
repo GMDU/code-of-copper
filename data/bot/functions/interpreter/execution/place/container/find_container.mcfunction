@@ -1,0 +1,7 @@
+execute if block ~ ~ ~ minecraft:chest run data modify storage bot:interpreter/execution container set value "minecraft:chest"
+execute if block ~ ~ ~ minecraft:trapped_chest run data modify storage bot:interpreter/execution container set value "minecraft:trapped_chest"
+execute if block ~ ~ ~ minecraft:barrel run data modify storage bot:interpreter/execution container set value "minecraft:barrel"
+execute if block ~ ~ ~ minecraft:hopper run data modify storage bot:interpreter/execution container set value "minecraft:hopper"
+execute if block ~ ~ ~ minecraft:dropper run data modify storage bot:interpreter/execution container set value "minecraft:dropper"
+execute if block ~ ~ ~ minecraft:dispenser run data modify storage bot:interpreter/execution container set value "minecraft:dispenser"
+execute if block ~ ~ ~ minecraft:furnace run data modify storage bot:interpreter/execution container set value "minecraft:furnace"

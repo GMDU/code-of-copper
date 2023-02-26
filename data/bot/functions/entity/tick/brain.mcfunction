@@ -1,6 +1,6 @@
 data modify storage bot:private temp.golem.program set from entity @s data.program
 data modify storage bot:private temp.text set value '[{"keybind":"key.attack"},{"text":" to stop"}]'
-execute unless data entity @s data.RunRootStack[] run data modify entity @s data.RunRootStack set value []
+execute unless data entity @s data.instructions[] run data modify entity @s data.instructions set value []
 
 execute unless data entity @s data{status:"rusted"} unless data entity @s data{waxed:true} run function bot:entity/tick/brain/oxidisation
 

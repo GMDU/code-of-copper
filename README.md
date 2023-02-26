@@ -13,7 +13,7 @@ Code of Copper is a lore heavy, and technically advanced Datapack. Adding a prog
 
 Throughout the world, different structures will generate, containing lore, and examples of programs that the Copper Golem can run. Programs can be written into a book, and then given to the Golem, by right clicking it with the book.
 
-Right-clicking the Golem with a empty hand will execute it's current program.
+Right-clicking the Golem with an empty hand will execute it's current program.
 
 While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
 
@@ -30,9 +30,9 @@ While we recommend playing through the pack, as an addition to your world, and s
 <br />
 
 ## Requirements
-- **This datapack will not work in versions below 23w03a**
+- **This datapack will only work in versions 23w03a and higher**
 - **Make sure to remember to download and install the resource pack**
-- **This datapack will not work without the following datapacks:**
+- **This datapack will not work without the following datapack libraries:**
   - [Moxlib](https://modrinth.com/datapack/moxlib)
   - [Moxlib Exp](https://modrinth.com/datapack/moxlib-exp)
   - [Regex Lib](https://modrinth.com/datapack/regex)
@@ -66,7 +66,7 @@ This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more
 
 
 ## Discord Server
-You can join our discord server here: https://discord.gg/2eR2hdYJMc
+You can join our discord server [here](https://discord.gg/2eR2hdYJMc).
 <br />
 <br />
 
@@ -76,10 +76,10 @@ The following (excellent) language documentation was written by xokz, from the M
 
 By: xokz
 
-Code goes in a book and quill. Code can span multiple pages. The name of the book does not matter.
-Right click the minecart with the book to set the golems code, and shift-click the minecart to execute the code.
+Code goes in a book and quill. Code can span multiple pages, but make sure there is a new line after every page!. The name of the book does not matter.
+Right click the minecart with the book to set the golems code, and right-click the minecart with a empty hand to execute the code.
 
-## 1. COMMENTS
+## 1. Comments
 Comments are indicated with a '#' and last until the end of the line. There are no multi line comments.
 
 EX.
@@ -87,15 +87,12 @@ EX.
 # this will not do anything since it is a comment
 ```
 
-## 2. VARIABLES
+## 2. Variables
 A variable can be an signed integer, array, or a string.
 
 Variables can use the +, -, *, /, and % operators.
 
-Only one operator is supported per line, so no "let x = a / b + c"
-
-If a variable's name contains characters other than letters, numbers or underscores,
-then it must be referenced within parentheses.
+Only one operator is supported per line, so that means `let x = a / b + c` will not work.
 
 EX.
 ```ruby
@@ -155,8 +152,8 @@ let str = "hello, world!"
 print str[1]                                          # this will print 'e'
 ```
 
-## 3. PRINTING
-The print command outputs text to the chat.
+## 3. Printing
+The `print` command outputs text to the chat.
 String literals and variables can both be printed, but not on the same line.
 
 EX.
@@ -175,9 +172,9 @@ print arr[1] + foo                             # this will print 12
 print obj["hello"]                             # this will print 'world'
 ```
 
-## 4. SLEEP
+## 4. Sleep
 
-The golem can pause code execution for a specified amount of time with the sleep command.
+The golem can pause code execution for a specified amount of time with the `sleep` command.
 The provided value is how many ticks the golem will sleep for.
 
 EX.
@@ -187,7 +184,7 @@ sleep time                                           # sleep for 7 ticks
 sleep 40                                                # sleep for 2 seconds, since 1 second is 20 ticks
 ```
 
-## 5. IF STATEMENTS
+## 5. If Statements
 
 If statements allow parts of the code to execute only if a condition is met. 
 The if statement will execute if the result is not 0 or and empty string.
@@ -196,22 +193,22 @@ EX.
 ```ruby
 let foo = 0
 if foo
-  print "success!"                                   # this will not print since the condition results in 0
+	print "success!"                                   # this will not print since the condition results in 0
 end
 
 let foo = 5
 if foo
-  print "success!"                                   # this will succeed because the condition did not result in 0
+  print "success!"                                   # this will print because the condition did not result in 0
 end
 
 let bar = ""
 if bar
-  print "success!"                                   # this will not print since the condition results in an empty string
+	print "success!"                                   # this will not print since the condition results in an empty string
 end
 
 let bar = "i love this datapack"
 if bar
-  print "success!"                                   # this will print since the condition did not result in an empty string
+	print "success!"                                   # this will print since the condition did not result in an empty string
 end
 ```
 
@@ -225,13 +222,13 @@ let foo = 7
 let bar = 5
 
 if foo > bar
-  print "success"                                   # this will print since foo is greater than bar
+	print "success"                                   # this will print since foo is greater than bar
 end
 
 let var = "hello, world"
 
 if var = "goodbye, world"
-  print "success"                                   # this will not print since var is not "goodbye, world"
+	print "success"                                   # this will not print since var is not "goodbye, world"
 end
 ```
 
@@ -241,11 +238,11 @@ EX.
 ```ruby
 let str = "hello"
 if str < 10
-  print "The length of the string is less than 10!"
+	print "The length of the string is less than 10!"
 end
 ```
 
-## 6. LOOPS
+## 6. Loops
 
 Loops work similarly to if statements, for the condition part.
 They execute while a condition is met.
@@ -255,17 +252,17 @@ EX.
 # this will print the numbers 0-19
 let i = 0
 loop i
-  print i
+	print i
 end
 
 
 # this will go on forever
 while 1
-  print "wheee!"
+	print "wheee!"
 end
 ```
 
-## 7. MOVEMENT
+## 7. Movement
 
 The golem can move 1 block in any direction (though it is still affected by gravity.)
 The array can use variables or literals.
@@ -276,25 +273,25 @@ let var = 1
 move [0, var, 0]                                  # the golem will jump up one block
 ```
 
-## 8. GETBLOCK
+## 8. Getblock
 
-The getblock command stores the name of the block at the given position in the $BLOCK variable.
+The `getblock` command stores the name of the block at the given position in the `BLOCK` variable.
 
 EX.
 ```ruby
 let best_block = "minecraft:dirt"
 
 getblock [0, -1, 0]                                # the block under the golem is a dirt block in this example
-print $BLOCK                                        # will print 'minecraft:dirt'
+print BLOCK                                        # will print 'minecraft:dirt'
 
-if $BLOCK = best_block
-  print "Yes, dirt is the best." 	# this will print because the block below is dirt
+if BLOCK = best_block
+	print "Yes, dirt is the best." 	# this will print because the block below is dirt
 end
 ```
 
-## 9. PLACE
+## 9. Place
 
-The place command can place or mine blocks. It takes in a slot index, and a position.
+The `place` command can place or mine blocks. It takes in a slot index, and a position.
 If there is a block in the specified slot, it will attempt to place the block at the given coords.
 The slot number is 0 indexed.
 
@@ -319,7 +316,7 @@ place 6, [1,0,1] # this will mine the dirt block we placed earlier and take it b
 
 If there is nothing in the slot, then nothing will happen.
 
-## 10. INVENTORY
+## 10. Inventory
 
 The `INVENTORY` variable is an array with the names of all the items in the golems inventory.
 It can be indexed like any other array.
@@ -328,13 +325,13 @@ EX.
 ```ruby
 # if there is dirt in the first slot, print a message.
 if INVENTORY[0] = "minecraft:dirt"
-  print "yeah you got the good stuff"
+	print "yeah you got the good stuff"
 end
 ```
 
-## 11. MATCH
+## 11. Match
 
-Strings can be compared using a Regular Expression (See [RegExr](https://regexr.com)).
+Strings can be compared using the `match` command and they use Regular Expressions, So this command is kind of advanced. (See [RegExr](https://regexr.com)).
 
 The matched sub-string will return to `MATCH`.
 
