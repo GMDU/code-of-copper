@@ -4,7 +4,8 @@
       "item": "minecraft:red_bed"
     },
     "title": "Do Golems Dream of Electric Sheep?",
-    "description": "Discover the sleep function"
+    "description": "Discover the sleep function",
+    "hidden": true
   },
   "parent": "bot:progression/programs/success",
   "criteria": {

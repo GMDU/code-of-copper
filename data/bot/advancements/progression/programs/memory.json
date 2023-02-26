@@ -4,7 +4,8 @@
       "item": "minecraft:written_book"
     },
     "title": "It's Only a Burning Memory",
-    "description": "Uncover the variable system"
+    "description": "Uncover the variable system",
+    "hidden": true
   },
   "parent": "bot:progression/programs/i_need_sleep",
   "criteria": {

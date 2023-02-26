@@ -4,7 +4,8 @@
       "item": "minecraft:dirt"
     },
     "title": "All I See is Dirt Ahead",
-    "description": "Find the getblock function"
+    "description": "Find the getblock function",
+    "hidden": true
   },
   "parent": "bot:progression/programs/memory",
   "criteria": {

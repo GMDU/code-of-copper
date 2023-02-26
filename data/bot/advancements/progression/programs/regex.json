@@ -4,7 +4,8 @@
       "item": "minecraft:spyglass"
     },
     "title": "How Irregular",
-    "description": "You used regex to solve a problem. Now you have two"
+    "description": "You used regex to solve a problem. Now you have two",
+    "hidden": true
   },
   "parent": "bot:progression/programs/object",
   "criteria": {

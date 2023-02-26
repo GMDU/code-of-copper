@@ -4,7 +4,8 @@
       "item": "minecraft:string"
     },
     "title": "Strung Together",
-    "description": "Learn to concatenate Strings and Arrays"
+    "description": "Learn to concatenate Strings and Arrays",
+    "hidden": true
   },
   "parent": "bot:progression/programs/array_equals_string",
   "criteria": {

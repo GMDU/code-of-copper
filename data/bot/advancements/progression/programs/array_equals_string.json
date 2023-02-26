@@ -7,7 +7,8 @@
       "text": "Array equals String",
       "obfuscated": true
     },
-    "description": "What the title says"
+    "description": "What the title says",
+    "hidden": true
   },
   "parent": "bot:progression/programs/success",
   "criteria": {

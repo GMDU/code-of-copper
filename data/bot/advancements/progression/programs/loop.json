@@ -4,7 +4,8 @@
       "item": "minecraft:repeater"
     },
     "title": "Staying in the Loop",
-    "description": "Keep up to date with the loop instruction"
+    "description": "Keep up to date with the loop instruction",
+    "hidden": true
   },
   "parent": "bot:progression/programs/success",
   "criteria": {

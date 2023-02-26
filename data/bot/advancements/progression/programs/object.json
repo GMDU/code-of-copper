@@ -4,7 +4,8 @@
       "item": "minecraft:egg"
     },
     "title": "It's an Object",
-    "description": "I mean, it is. And sometimes it contains things."
+    "description": "I mean, it is. And sometimes it contains things.",
+    "hidden": true
   },
   "parent": "bot:progression/programs/success",
   "criteria": {

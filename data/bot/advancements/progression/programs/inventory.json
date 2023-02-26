@@ -4,7 +4,8 @@
       "item": "minecraft:chest"
     },
     "title": "Taking Inventory",
-    "description": "Experience the $INVENTORY variable"
+    "description": "Experience the $INVENTORY variable",
+    "hidden": true
   },
   "parent": "bot:progression/programs/index",
   "criteria": {

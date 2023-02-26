@@ -4,7 +4,8 @@
       "item": "minecraft:comparator"
     },
     "title": "It's Been a While",
-    "description": "While you wait, check out the while instruction"
+    "description": "While you wait, check out the while instruction",
+    "hidden": true
   },
   "parent": "bot:progression/programs/loop",
   "criteria": {
