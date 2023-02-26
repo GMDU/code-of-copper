@@ -46,7 +46,7 @@ You can obtain the Copper Golem as an item by left clicking while shifting. It c
 <br />
 
 ## Writing your First Program
-It is up to you to discover most of the language through exploration; example programs are found scattered across the world.
+It is up to you to discover most of the language through the progression system.
 
 However, every good README needs a hello world.
 
@@ -69,6 +69,12 @@ This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more
 You can join our discord server [here](https://discord.gg/2eR2hdYJMc).
 <br />
 <br />
+
+## Oxidisation and progression
+After a certain number of instruction executions, the golem will begin to oxidise.
+Interacting with the golem while holding an axe removes the rust.\
+If the golem is fully oxidised, it will not run anymore, but upon scraping it with an axe you will find example programs that explain the language of GolemScript.\
+This process can be avoided however, by waxing the golem. As with anything copper, you can also scrape off the wax.
 
 
 ## GolemScript Documentation
