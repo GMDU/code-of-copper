@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet \"x\" = 1\nlet \"y\" = 2\nlet \"var\" = \"Boop.\"\nlet \"calc\" = $x + $y\n\nprint $var\nprint $calc']}"
+              "tag": "{pages:['# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet x = 1\nlet y = 2\nlet var = \"Boop.\"\nlet calc = x + y\n\nprint var\nprint calc']}"
             },
             {
               "function": "minecraft:set_name",
