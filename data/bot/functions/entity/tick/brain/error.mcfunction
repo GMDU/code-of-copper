@@ -1,0 +1,2 @@
+data modify storage bot:private temp.error set from entity @s data.error
+data modify storage bot:private temp.text set value '{"nbt":"temp.error","storage":"bot:private","interpret":true,"color":"red"}'

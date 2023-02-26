@@ -1,0 +1,2 @@
+data modify entity @s data.instructions set value []
+data modify storage bot:private temp.text set value '[[{"keybind":"key.use"},{"text":" to run "},{"color":"gold","storage":"bot:private","nbt":"temp.golem.program","interpret":true},"\\n"],[{"keybind":"key.sneak"},{"text":" + "},{"keybind":"key.use"},{"text":" to open"}]]'

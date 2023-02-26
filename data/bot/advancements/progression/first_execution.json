@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": "Flawless Execution",
+    "description": "Successfully execute your first program on the Golem",
+    "show_toast": true
+  },
+  "parent": "bot:progression/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

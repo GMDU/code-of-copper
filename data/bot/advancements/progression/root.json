@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sheep_spawn_egg",
+      "nbt": "{CustomModelData:807001}"
+    },
+    "title": "Code of Copper",
+    "description": "Obtain a Copper Golem from an Airship",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/copper_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "minecraft:sheep_spawn_egg"
+            ],
+            "nbt": "{bot:{id:\"golem_spawn\"}}"
+          }
+        ]
+      }
+    }
+  }
+}
