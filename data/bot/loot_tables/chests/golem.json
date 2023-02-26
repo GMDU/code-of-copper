@@ -1,15 +1,29 @@
 {
   "pools": [
     {
-      "rolls": {
-        "min": 1,
-        "max": 3
-      },
-      "bonus_rolls": 1,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "bot:chests/programs"
+          "name": "bot:programs/place_blocks"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/life"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bot:programs/move"
         }
       ]
     },
