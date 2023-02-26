@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:glow_lichen"
+    },
+    "title": "Hidden in the Cracks",
+    "description": "Discover an ancient program whilst cleaning your Golem (perhaps there are more...)"
+  },
+  "parent": "bot:progression/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player"
+              },
+              "nbt": "{Tags:[\"bot.progression.advance\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:progression/advance",
+    "loot": [
+      "bot:programs/success"
+    ]
+  }
+}

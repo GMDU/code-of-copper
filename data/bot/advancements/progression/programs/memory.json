@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "It's Only a Burning Memory",
+    "description": "Uncover the variable system"
+  },
+  "parent": "bot:progression/programs/i_need_sleep",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "bot:progression/programs/i_need_sleep": true
+                }
+              },
+              "nbt": "{Tags:[\"bot.progression.advance\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:progression/advance",
+    "loot": [
+      "bot:programs/memory"
+    ]
+  }
+}

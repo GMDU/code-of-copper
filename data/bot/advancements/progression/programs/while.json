@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:comparator"
+    },
+    "title": "It's Been a While",
+    "description": "While you wait, check out the while instruction"
+  },
+  "parent": "bot:progression/programs/loop",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "bot:progression/programs/loop": true
+                }
+              },
+              "nbt": "{Tags:[\"bot.progression.advance\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:progression/advance",
+    "loot": [
+      "bot:programs/while"
+    ]
+  }
+}

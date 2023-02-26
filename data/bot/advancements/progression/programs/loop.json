@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:repeater"
+    },
+    "title": "Staying in the Loop",
+    "description": "Keep up to date with the loop instruction"
+  },
+  "parent": "bot:progression/programs/success",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "bot:progression/programs/inventory": true
+                }
+              },
+              "nbt": "{Tags:[\"bot.progression.advance\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:progression/advance",
+    "loot": [
+      "bot:programs/loop"
+    ]
+  }
+}
