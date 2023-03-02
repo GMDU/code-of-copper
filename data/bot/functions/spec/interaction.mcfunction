@@ -1,0 +1,1 @@
+execute at @s run particle dust 1.000 0.000 0.000 1 ~ ~0.5 ~ 0.125 0.125 0.125 1 1 normal

@@ -1,0 +1,1 @@
+summon text_display ~ ~ ~ {UUID:[I;461593914,-794539009,-1087447806,-900040391],billboard:"vertical"}
