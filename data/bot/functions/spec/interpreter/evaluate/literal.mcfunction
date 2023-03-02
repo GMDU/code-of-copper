@@ -112,6 +112,16 @@ data modify storage moxlib:test/it describes set value "Indexing an array"
 
   function moxlib:api/test/perform
 
+data modify storage moxlib:test/it describes set value "Indexing an array with a negative index"
+
+  data modify storage bot:io In set value {type: "literal", variant: "array", value: [{ type: "literal", variant: "integer", value: 15 }, { type: "literal", variant: "string", value: ["h","i"] }, {type: "literal", variant: "integer", value: 34}], parameters: [{type: "literal", variant: "integer", value: -3}]}
+  function bot:interpreter/evaluate
+
+  data modify storage moxlib:test/it expects set value {type: "integer", value: 15}
+  data modify storage moxlib:test/it receives set from storage bot:io Out
+
+  function moxlib:api/test/perform
+
 data modify storage moxlib:test/it describes set value "Indexing an object by a number"
 
   data modify storage bot:io In set value {type: "literal", variant: "object", value: [{"key":["f","o","o"],"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":["h","e","l","l","o"],"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}], parameters: [{type: "literal", variant: "integer", value: 0}]}
