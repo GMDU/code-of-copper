@@ -250,21 +250,31 @@ end
 
 ## 6. Loops
 
-Loops work similarly to if statements, for the condition part.
+There are two kinds of loops - While loops and N loops.
+
+While loops work similarly to if statements, for the condition part.
 They execute while a condition is met.
 
 EX.
 ```ruby
 # this will print the numbers 0-19
 let i = 0
-loop i
+while i < 20
 	print i
+  let i = i + 1
 end
-
 
 # this will go on forever
 while 1
 	print "wheee!"
+end
+```
+
+N loops execute a set number of times.
+
+```ruby
+loop 10
+  print "This will print 10 times"
 end
 ```
 
