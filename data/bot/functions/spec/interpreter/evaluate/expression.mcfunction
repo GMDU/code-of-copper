@@ -1,5 +1,3 @@
-summon marker ~ ~ ~ {UUID:[I; 670424586, -2010626786, -1216225889, -1737789087]}
-
 data modify storage moxlib:test/it describes set value "An expression with no second value"
 
   data modify storage bot:io In set value {type: "expression", operation: "add", value: {type: "literal", variant: "integer", value: 2}}

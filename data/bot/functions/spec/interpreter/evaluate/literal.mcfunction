@@ -1,5 +1,5 @@
 # 27f5de0a-8828-451e-b781-dd9f986b7161
-summon marker ~ ~ ~ {UUID:[I; 670424586, -2010626786, -1216225889, -1737789087]}
+execute in moxlib:state positioned 12 -4 3 run summon marker ~ ~ ~ {UUID:[I; 670424586, -2010626786, -1216225889, -1737789087]}
 
 data modify storage moxlib:test/it describes set value "A literal integer"
 
@@ -38,6 +38,16 @@ data modify storage moxlib:test/it describes set value "A variable"
   execute as 27f5de0a-8828-451e-b781-dd9f986b7161 run function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "string", value: ["h","i"]}
+  data modify storage moxlib:test/it receives set from storage bot:io Out
+
+  function moxlib:api/test/perform
+
+data modify storage moxlib:test/it describes set value "The $POS variable"
+
+  data modify storage bot:io In set value {type: "literal", variant: "variable", value: ["P","O","S"]}
+  execute as 27f5de0a-8828-451e-b781-dd9f986b7161 run function bot:interpreter/evaluate
+
+  data modify storage moxlib:test/it expects set value {type: "array", value: [{type: "integer", value: 12}, {type: "integer", value: -4}, {type: "integer", value: 3}]}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -125,7 +135,6 @@ data modify storage moxlib:test/it describes set value "Indexing an object by a 
 data modify storage moxlib:test/it describes set value "Indexing a variable"
 
   data modify storage bot:io In set value {type: "literal", variant: "variable", value: ["v","a","r"], parameters: [{type: "literal", variant: "integer", value: 4}]}
-  # 27f5de0a-8828-451e-b781-dd9f986b7161
   data modify entity 27f5de0a-8828-451e-b781-dd9f986b7161 data.variables set value [{name: ["v","a","r"], value: {type: "string", value: ["h","e","l","l","o"]}}]
   execute as 27f5de0a-8828-451e-b781-dd9f986b7161 run function bot:interpreter/evaluate
 
