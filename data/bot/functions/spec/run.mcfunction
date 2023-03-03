@@ -4,7 +4,7 @@
 
 advancement revoke @s only bot:spec/run
 
-execute unless data storage bot:spec target[] run data modify storage bot:spec target set value [{name:"Move",program:"bot:programs/move"},{name:"Index",program:"bot:programs/index"}]
+execute unless data storage bot:spec target[] run function bot:spec/set_test_books
 
 data modify storage bot:spec current set from storage bot:spec target[0]
 data remove storage bot:spec target[0]
