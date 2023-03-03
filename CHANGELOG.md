@@ -6,10 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+Lots of unit tests and fixed bugs after the interpreter refactor
 
 ### Fixed
 - Regex matcher is now correctly passed a string's value
 - Backslashes, unless escaping `/`, no longer need to be escaped themselves.
+- $INVENTORY and $POS variables now parse correctly again
+
+### Added
+- Array indexing with negtive numbers, starting from the end of the list
+- Unit tests for literal and expression evaluation
+- Integration test module for testing instructions
+  - This can be placed by running `/function bot:spec/place`
 
 ## [0.2.2] - 2023-02-27
 Pipelines and progression
