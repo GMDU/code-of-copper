@@ -9,7 +9,3 @@ execute if data storage bot:interpreter/execution Current{variant:"sleep"} run f
 execute if data storage bot:interpreter/execution Current{variant:"match"} run function bot:interpreter/execution/match
 execute if data storage bot:interpreter/execution Current{variant:"loop"} run function bot:interpreter/execution/loop
 execute if data storage bot:interpreter/execution Current{variant:"break"} run function bot:interpreter/execution/break
-
-data modify storage bot:interpreter/execution Current set value {}
-
-function bot:interpreter/align
