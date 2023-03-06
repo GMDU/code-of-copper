@@ -1,11 +1,11 @@
-data modify storage bot:io In set from storage bot:interpreter/execution Current.args[1]
+data modify storage bot:io In set from storage bot:interpreter/execution current.decoded_args[1]
 function bot:interpreter/evaluate
 
 function bot:interpreter/execution/place/move_to_position
 
 
 data modify storage bot:io In set from entity @s Items
-execute store result score .in1 bot.execution.variables run data get storage bot:interpreter/execution Current.args[0].value
+execute store result score .in1 bot.execution.variables run data get storage bot:interpreter/execution current.decoded_args[0].value
 function bot:interpreter/utils/get_item_at_index
 execute store result score .slot bot.execution.variables run data get storage bot:io Out.Slot
 

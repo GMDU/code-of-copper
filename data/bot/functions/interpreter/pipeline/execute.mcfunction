@@ -1,4 +1,4 @@
-data modify storage bot:interpreter/execution Current set from entity @s data.current_instruction
+data modify storage bot:interpreter/execution current set from entity @s data.instructions[-1].value[0]
 
 execute if data entity @s data.instructions[-1].value[0] run function bot:interpreter/execute/init
 execute store result score .is_looping bot.execution.variables run data get entity @s data.instructions[-1].isLooping

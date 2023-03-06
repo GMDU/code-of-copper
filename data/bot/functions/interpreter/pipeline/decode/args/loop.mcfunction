@@ -6,4 +6,4 @@ execute if data storage bot:io In{type:"root"} run data modify storage bot:inter
 
 data remove storage bot:interpreter/pipeline current.args[0]
 
-execute if data storage bot:interpreter/pipeline current.args[0] run function bot:interpreter/decode/args/loop
+execute if data storage bot:interpreter/pipeline current.args[0] run function bot:interpreter/pipeline/decode/args/loop
