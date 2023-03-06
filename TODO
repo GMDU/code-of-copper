@@ -5,3 +5,38 @@ Fix parsing for signed books
 
 ### Interpreter
 Implement better error handling
+
+### Language Revision
+
+[if, while, loop, let, return, break, next, elif, end, func, import, export]
+
+! || &&
+
+a = b if c
+
+() - sub expression
+
+1 + (2 * 2)
+
+func myfunc(name)
+  
+end
+
+let abc = 2 + func() + 3
+
+{
+  type: "function",
+  name: {type:"literal",variant:"string",value:"myfunc"},
+  parameters: [{name:"a",default:{...}},{name:"b",default:{...}}],
+  value: {
+    type: "block"
+  }
+}
+
+{
+  type: "literal",
+  variant: "function",
+  name: {type:"literal",variant:"string"}
+  args: []
+}
+
