@@ -9,3 +9,4 @@ execute if data storage bot:interpreter/execution current{variant:"sleep"} run f
 execute if data storage bot:interpreter/execution current{variant:"match"} run function bot:interpreter/execution/match
 execute if data storage bot:interpreter/execution current{variant:"loop"} run function bot:interpreter/execution/loop
 execute if data storage bot:interpreter/execution current{variant:"break"} on passengers as @s[type=marker,tag=bot.golem.brain] run function bot:interpreter/execution/break
+execute if data storage bot:interpreter/execution current{variant:"return"} on passengers as @s[type=marker,tag=bot.golem.brain] run function bot:interpreter/execution/return
