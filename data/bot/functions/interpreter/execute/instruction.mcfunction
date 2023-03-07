@@ -3,7 +3,7 @@ execute if data storage bot:interpreter/execution current{variant:"place"} run f
 execute if data storage bot:interpreter/execution current{variant:"let"} run function bot:interpreter/execution/let
 execute if data storage bot:interpreter/execution current{variant:"print"} run function bot:interpreter/execution/print
 execute if data storage bot:interpreter/execution current{variant:"if"} run function bot:interpreter/execution/if
-execute if data storage bot:interpreter/execution current{variant:"while"} run function bot:interpreter/execution/while
+execute if data storage bot:interpreter/execution current{variant:"while"} on passengers as @s[type=marker,tag=bot.golem.brain] run function bot:interpreter/execution/while
 execute if data storage bot:interpreter/execution current{variant:"getBlock"} run function bot:interpreter/execution/get_block
 execute if data storage bot:interpreter/execution current{variant:"sleep"} run function bot:interpreter/execution/sleep
 execute if data storage bot:interpreter/execution current{variant:"match"} run function bot:interpreter/execution/match
