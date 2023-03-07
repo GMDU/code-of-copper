@@ -6,7 +6,8 @@ execute if score .type bot.execution.variables matches 0 if data storage bot:int
 execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"regex"} run scoreboard players set .type bot.execution.variables 3
 execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"array"} run scoreboard players set .type bot.execution.variables 4
 execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"object"} run scoreboard players set .type bot.execution.variables 5
-execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"undefined"} run scoreboard players set .type bot.execution.variables 6
+execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"boolean"} run scoreboard players set .type bot.execution.variables 6
+execute if score .type bot.execution.variables matches 0 if data storage bot:interpreter/execution currentEvaluation{type:"undefined"} run scoreboard players set .type bot.execution.variables 7
 
 execute if score .type bot.execution.variables matches 0 run data modify storage bot:interpreter/execution Error set value ["print - Unknown type: "]
 execute if score .type bot.execution.variables matches 0 run data modify storage bot:interpreter/execution Error append from storage bot:interpreter/execution currentEvaluation.type
@@ -15,7 +16,8 @@ execute if score .type bot.execution.variables matches 2 run function bot:interp
 execute if score .type bot.execution.variables matches 3 run function bot:interpreter/utils/stringify/regex
 execute if score .type bot.execution.variables matches 4 run function bot:interpreter/utils/stringify/array
 execute if score .type bot.execution.variables matches 5 run function bot:interpreter/utils/stringify/object
-execute if score .type bot.execution.variables matches 6 run data modify storage bot:interpreter/utils/stringify output append value ["undefined"]
+execute if score .type bot.execution.variables matches 6 run function bot:interpreter/utils/stringify/boolean
+execute if score .type bot.execution.variables matches 7 run data modify storage bot:interpreter/utils/stringify output append value ["undefined"]
 
 data remove storage bot:interpreter/utils/stringify stack[-1]
 scoreboard players set .type bot.execution.variables 0
