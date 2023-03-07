@@ -1,16 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:skeleton_skull"
+      "item": "minecraft:barrier"
     },
-    "title": {
-      "text": "Array equals String",
-      "obfuscated": true
-    },
-    "description": "What the title says",
+    "title": "Slam the breaks",
+    "description": "Break out of a loop early",
     "hidden": true
   },
-  "parent": "bot:progression/programs/success",
+  "parent": "bot:progression/programs/while",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -23,7 +20,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "bot:progression/programs/break": true
+                  "bot:progression/programs/while": true
                 }
               },
               "nbt": "{Tags:[\"bot.progression.advance\"]}"
@@ -36,7 +33,7 @@
   "rewards": {
     "function": "bot:progression/advance",
     "loot": [
-      "bot:programs/array_equals_string"
+      "bot:programs/break"
     ]
   }
 }

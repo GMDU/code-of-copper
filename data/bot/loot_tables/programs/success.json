@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# Golems love any\n# numbers that are\n# not zero.\n\n# If they see one,\n# they can't help\n# but follow.\n\nlet success = 1\n\nif success\n print \\\"I will follow...\\\"\n move [1,0,-1]\nend\"]}"
+              "tag": "{pages:['# Golems love the\n# truth.\n# If they see\n# anything truthy,\n# they can\\'t help\n# but follow.\n\nlet success = true\n\nif success\n print \"I will follow...\"\n move [1,0,-1]\nend', '# blank strings, empty arrays and objects, zero and false are not truthy.\n# Every other value however, is\n\nlet n = 0\n\nif n\n  print \"This will not appear\"\nend']}"
             },
             {
               "function": "minecraft:set_name",

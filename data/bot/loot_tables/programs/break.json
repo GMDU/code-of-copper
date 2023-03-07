@@ -9,12 +9,12 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can perform\n# actions based on\n# the world around\n# them. \n\ngetblock [0,-1,0]\nprint $BLOCK\n\nprint $POS\nif $POS = [0,0,0]\n  print \"You\\'re at the origin!\"\nend']}"
+              "tag": "{pages:['# Golems, if need be,\n# can break out of a\n# loop before it\\'s \n# finished\n\nwhile true\n  print \"Looping...\"\n  getblock [1,0,0]\n  if $BLOCK = \"minecraft:dirt\"\n    break\n  end\nend']}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "get_a_block.glm",
+                "text": "break.glm",
                 "italic": false
               }
             }
