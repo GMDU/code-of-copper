@@ -34,7 +34,7 @@ data modify storage moxlib:test/it describes set value "A regular expression"
 data modify storage moxlib:test/it describes set value "A variable"
 
   data modify storage bot:io In set value {type: "literal", variant: "variable", value: ["v","a","r"]}
-  data modify entity 27f5de0a-8828-451e-b781-dd9f986b7161 data.variables set value [[{name: ["v","a","r"], value: {type: "string", value: ["h","i"]}}]]
+  data modify entity 27f5de0a-8828-451e-b781-dd9f986b7161 data.variables set value [{name: ["v","a","r"], value: {type: "string", value: ["h","i"]},scope:0b}]
   execute as 27f5de0a-8828-451e-b781-dd9f986b7161 run function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "string", value: ["h","i"]}
@@ -145,7 +145,7 @@ data modify storage moxlib:test/it describes set value "Indexing an object by a 
 data modify storage moxlib:test/it describes set value "Indexing a variable"
 
   data modify storage bot:io In set value {type: "literal", variant: "variable", value: ["v","a","r"], parameters: [{type: "literal", variant: "integer", value: 4}]}
-  data modify entity 27f5de0a-8828-451e-b781-dd9f986b7161 data.variables set value [[{name: ["v","a","r"], value: {type: "string", value: ["h","e","l","l","o"]}}]]
+  data modify entity 27f5de0a-8828-451e-b781-dd9f986b7161 data.variables set value [{name: ["v","a","r"], value: {type: "string", value: ["h","e","l","l","o"]},scope:0b}]
   execute as 27f5de0a-8828-451e-b781-dd9f986b7161 run function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "string", value: ["o"]}
