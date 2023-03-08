@@ -1,9 +1,9 @@
 execute store result score .x bot.execution.pos run data get entity @s Pos[0] 1000
 execute store result score .y bot.execution.pos run data get entity @s Pos[1] 1000
 execute store result score .z bot.execution.pos run data get entity @s Pos[2] 1000
-execute store result score .dx bot.execution.pos run data get storage bot:interpreter/execution Current.args[0].value[0].value 1000
-execute store result score .dy bot.execution.pos run data get storage bot:interpreter/execution Current.args[0].value[1].value 1000
-execute store result score .dz bot.execution.pos run data get storage bot:interpreter/execution Current.args[0].value[2].value 1000
+execute store result score .dx bot.execution.pos run data get storage bot:interpreter/execution current.decoded_args[0].value[0].value 1000
+execute store result score .dy bot.execution.pos run data get storage bot:interpreter/execution current.decoded_args[0].value[1].value 1000
+execute store result score .dz bot.execution.pos run data get storage bot:interpreter/execution current.decoded_args[0].value[2].value 1000
 function bot:interpreter/execution/move/assert_in_range
 
 scoreboard players operation .old_x bot.execution.pos = .x bot.execution.pos

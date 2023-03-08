@@ -1,13 +1,3 @@
-### Parser
-Allow operations without spaces
-Fix parsing for signed books
-
-
-### Interpreter
-Implement better error handling
-
-### Language Revision
-
 [if, while, loop, let, return, break, next, elif, end, func, import, export]
 
 ! || &&
@@ -19,7 +9,7 @@ a = b if c
 1 + (2 * 2)
 
 func myfunc(name)
-  
+
 end
 
 let abc = 2 + func() + 3
@@ -36,7 +26,7 @@ let abc = 2 + func() + 3
 {
   type: "literal",
   variant: "function",
-  name: {type:"literal",variant:"string"}
+  name: {type:"literal",variant:"string"},
   args: []
 }
 

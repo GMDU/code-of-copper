@@ -63,7 +63,7 @@ data modify storage moxlib:test/it describes set value "A succesful equality bet
   data modify storage bot:io In set value {type: "expression", operation: "equals", value: {type: "literal", variant: "string", value: ["f","o","o"]}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "string", value: ["f","o","o"]}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 1}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: true}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -73,7 +73,7 @@ data modify storage moxlib:test/it describes set value "An unsuccesful equality 
   data modify storage bot:io In set value {type: "expression", operation: "equals", value: {type: "literal", variant: "string", value: ["f","o","o"]}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "string", value: ["b","a","r"]}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 0}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: false}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -83,7 +83,7 @@ data modify storage moxlib:test/it describes set value "A greater than operation
   data modify storage bot:io In set value {type: "expression", operation: "greaterThan", value: {type: "literal", variant: "integer", value: 7}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "integer", value: 3}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 1}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: true}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -93,7 +93,7 @@ data modify storage moxlib:test/it describes set value "A less than operation on
   data modify storage bot:io In set value {type: "expression", operation: "lessThan", value: {type: "literal", variant: "integer", value: 7}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "integer", value: 3}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 0}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: false}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -103,7 +103,7 @@ data modify storage moxlib:test/it describes set value "A greater than operation
   data modify storage bot:io In set value {type: "expression", operation: "greaterThan", value: {type: "literal", variant: "string", value: ["h","e","l","l","o"]}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "string", value: ["h","i"]}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 1}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: true}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -113,7 +113,7 @@ data modify storage moxlib:test/it describes set value "A greater than operation
   data modify storage bot:io In set value {type: "expression", operation: "greaterThan", value: {type: "literal", variant: "array", value: [{ type: "literal", variant: "integer", value: 15 }, { type: "literal", variant: "string", value: ["h","i"] }]}, expression: {type: "expression", operation: "add", value: {type: "literal", variant: "array", value: [{ type: "literal", variant: "integer", value: 2 }]}}}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "integer", value: 1}
+  data modify storage moxlib:test/it expects set value {type: "boolean", value: true}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform

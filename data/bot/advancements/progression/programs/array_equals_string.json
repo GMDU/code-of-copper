@@ -23,7 +23,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "bot:progression/programs/while": true
+                  "bot:progression/programs/break": true
                 }
               },
               "nbt": "{Tags:[\"bot.progression.advance\"]}"

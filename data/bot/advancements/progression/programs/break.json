@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:barrier"
+    },
+    "title": "Slam the breaks",
+    "description": "Break out of a loop early",
+    "hidden": true
+  },
+  "parent": "bot:progression/programs/while",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "bot:progression/programs/while": true
+                }
+              },
+              "nbt": "{Tags:[\"bot.progression.advance\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:progression/advance",
+    "loot": [
+      "bot:programs/break"
+    ]
+  }
+}
