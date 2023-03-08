@@ -1,0 +1,2 @@
+execute if data storage bot:parser current{value:"#"} run data modify storage bot:parser current merge value {comment:true,flags:["comment","meta"]}
+execute if data storage bot:parser current{comment:true} run data modify storage bot:parser current.consumed set value true
