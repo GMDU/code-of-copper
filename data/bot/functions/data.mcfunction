@@ -1,1 +1,1 @@
-data modify storage bot:interpreter blockCounterparts set value [{item: "minecraft:redstone", block: "minecraft:redstone_wire"},{item: "minecraft:string", block: "minecraft:tripwire"}]
+data modify storage bot:interpreter/constants blockCounterparts set value [{item: "minecraft:redstone", block: "minecraft:redstone_wire"},{item: "minecraft:string", block: "minecraft:tripwire"},{item: "minecraft:lava_bucket", block: "minecraft:lava"},{item: "minecraft:water_bucket", block: "minecraft:water"},{item: "minecraft:powder_snow_bucket", block: "minecraft:powder_snow"}]
