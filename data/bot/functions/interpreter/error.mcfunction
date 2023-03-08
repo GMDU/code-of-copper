@@ -1,3 +1,4 @@
 data remove entity @s data.instructions
-execute at @s run tellraw @a[distance=..16] [{"text": "Runtime Error: ", "color": "red"},{"nbt":"Error","storage": "bot:interpreter/execution", "interpret": true}]
+data modify entity @s data.status set value "error"
+data modify entity @s data.error set from storage bot:interpreter/execution Error
 data remove storage bot:interpreter/execution Error
