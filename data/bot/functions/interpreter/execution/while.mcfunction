@@ -7,3 +7,5 @@ execute unless score .condition bot.execution.variables matches 0 run data modif
 execute unless score .condition bot.execution.variables matches 0 run function bot:interpreter/pipeline/execute/add_nesting
 # This gets removed immediately
 execute unless score .condition bot.execution.variables matches 0 run data modify entity @s data.instructions[-1].value prepend value {}
+# While loop conditions need to be re-evaluated
+data remove entity @s data.instructions[-2].value[0].decoded_args
