@@ -1,3 +1,0 @@
-execute unless data storage bot:parser stack[-1].metadata.status unless data storage bot:parser {current:" "} run function bot:parser/literal/alphanumeric/before
-execute unless data storage bot:parser stack[-1].metadata.status run data modify storage bot:parser consumed set value true
-execute if data storage bot:parser stack[-1].metadata{status:"open"} unless data storage bot:parser {consumed:true} run function bot:parser/literal/alphanumeric/open

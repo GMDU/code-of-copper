@@ -1,2 +1,0 @@
-execute unless data storage bot:parser stack[-1].metadata.status run function bot:parser/literal/string/before
-execute unless data storage bot:parser {consumed:true} if data storage bot:parser stack[-1].metadata{status:"open"} run function bot:parser/literal/string/open

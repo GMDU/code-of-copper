@@ -1,1 +1,0 @@
-data modify storage bot:parser stack[-1].value set value []

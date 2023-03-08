@@ -1,1 +1,0 @@
-data modify storage bot:parser/root/filter output append from storage bot:parser/root/filter current
