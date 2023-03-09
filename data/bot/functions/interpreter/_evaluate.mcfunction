@@ -10,5 +10,7 @@ execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"literal
 execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"literal",variant:"object"} run function bot:interpreter/evaluate/object
 execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"expression"} run function bot:interpreter/evaluate/expression
 
+function bot:interpreter/dev_mode/init
+
 data remove storage bot:interpreter/evaluate stack[-1]
 data remove storage bot:interpreter/evaluate CurrentEvaluation

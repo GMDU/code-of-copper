@@ -15,7 +15,7 @@ execute if data storage moxlib:api/data/get {success:false} on passengers as @s[
 data modify storage bot:interpreter/execution first_character set from storage bot:interpreter/execution varName[0]
 execute if data storage bot:interpreter/execution {first_character:'$'} run data modify storage moxlib:api/data/set data.scope set value 0
 
-execute if score .global bot.dev_mode matches 1 run tellraw @a [{"text": "Let: setting variable ", "color": "green"},{"nbt":"varName", "storage": "bot:interpreter/execution", "color": "yellow"},{"text": " to value ", "color": "green"},{"nbt": "value", "storage": "bot:interpreter/execution", "color": "yellow"}]
+data modify storage bot:dev_mode logs append value '[{"text": "Let: setting variable ", "color": "green"},{"nbt":"varName", "storage": "bot:interpreter/execution", "color": "yellow","interpret":true},{"text": " to value ", "color": "green"},{"nbt": "value", "storage": "bot:interpreter/execution", "color": "yellow"}]'
 
 function moxlib:api/data/set
 execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify entity @s data.variables set from storage moxlib:api/data/set output
