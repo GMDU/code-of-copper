@@ -1,0 +1,8 @@
+scoreboard players set .error bot.execution.variables 0
+
+data modify storage bot:interpreter/execution args set from storage bot:interpreter/execution current.decoded_args
+
+execute if data storage moxlib:api/data/get output.args[0] run function bot:interpreter/execution/function/stdlib/verify/iterate
+
+execute if score .error bot.execution.variables matches 1 run data modify storage bot:interpreter/execution Error set value [[],[" - Invalid arguments"]]
+execute if score .error bot.execution.variables matches 1 run data modify storage bot:interpreter/execution Error[0] set from storage bot:interpreter/execution current.name

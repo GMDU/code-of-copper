@@ -1,4 +1,4 @@
-function bot:interpreter/execution/get_block/move_to_position
+function bot:interpreter/execution/getblock/move_to_position
 
 execute at @s run function moxlib:api/helpers/block/get
 data modify storage moxlib:api/string/to_array target set from storage moxlib:api/helpers/block/get output.block
