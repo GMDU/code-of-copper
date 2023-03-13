@@ -9,6 +9,7 @@ execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"literal
 execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"literal",variant:"array"} run function bot:interpreter/evaluate/array
 execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"literal",variant:"object"} run function bot:interpreter/evaluate/object
 execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"expression"} run function bot:interpreter/evaluate/expression
+execute if data storage bot:interpreter/evaluate CurrentEvaluation{type:"binary_operation"} run function bot:interpreter/evaluate/binary_operation
 
 function bot:interpreter/dev_mode/init
 
