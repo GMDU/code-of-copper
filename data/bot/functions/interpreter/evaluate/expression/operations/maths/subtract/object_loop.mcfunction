@@ -5,4 +5,4 @@ execute if score .can_remain bot.execution.variables matches 1 run data modify s
 
 data remove storage bot:interpreter/evaluate stack[-1].a.value[0]
 
-execute if data storage bot:interpreter/evaluate stack[-1].a.value[0] run function bot:interpreter/evaluate/expression/operations/subtract/object_loop
+execute if data storage bot:interpreter/evaluate stack[-1].a.value[0] run function bot:interpreter/evaluate/expression/operations/maths/subtract/object_loop

@@ -1,8 +1,13 @@
 data modify storage bot:interpreter/execution varName set from storage bot:interpreter/execution current.decoded_args[0].value
 data modify storage bot:interpreter/execution value set from storage bot:interpreter/execution current.decoded_args[1]
 
-execute if data storage bot:interpreter/execution {varName:["I","N","V","E","N","T","O","R","Y"]} run data modify storage bot:interpreter/execution Error set value ["let: The INVENTORY variable is immutable"]
-execute if data storage bot:interpreter/execution {varName:["B","L","O","C","K"]} run data modify storage bot:interpreter/execution Error set value ["let: The BLOCK variable is immutable"]
-execute if data storage bot:interpreter/execution {varName:["P","O","S"]} run data modify storage bot:interpreter/execution Error set value ["let: The POS variable is immutable"]
+data modify storage moxlib:api/data/get target set from entity @s data.variables
+data modify storage moxlib:api/data/get key set value {name:""}
+data modify storage moxlib:api/data/get key.name set from storage bot:interpreter/execution varName
 
-execute unless data storage bot:interpreter/execution Error run function bot:interpreter/execution/let/set_variable
+function moxlib:api/data/get
+
+execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter/execution Error set value [["Let - cannot redeclare variable "],[""]]
+execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter/execution Error[1] set from storage bot:interpreter/execution varName
+
+execute unless data storage bot:interpreter/execution Error run function bot:interpreter/execution/let/set

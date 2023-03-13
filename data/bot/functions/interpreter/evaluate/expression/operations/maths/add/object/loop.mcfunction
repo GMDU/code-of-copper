@@ -9,4 +9,4 @@ data modify storage bot:io Out.value set from storage moxlib:api/data/set output
 
 data remove storage bot:interpreter/evaluate stack[-1].b.value[0]
 
-execute if data storage bot:interpreter/evaluate stack[-1].b.value[0] run function bot:interpreter/evaluate/expression/operations/add/object/loop
+execute if data storage bot:interpreter/evaluate stack[-1].b.value[0] run function bot:interpreter/evaluate/expression/operations/maths/add/object/loop
