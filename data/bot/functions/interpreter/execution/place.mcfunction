@@ -12,6 +12,10 @@ execute store result score .slot bot.execution.variables run data get storage bo
 data modify storage bot:io In set from storage bot:io Out
 execute unless data storage bot:io Out{type:undefined} unless data storage bot:interpreter/execution Error at @s run function bot:interpreter/execution/place/break_or_place
 
+execute if data storage bot:io Out{type:undefined} unless data storage bot:interpreter/execution Error run data modify storage bot:dev_mode logs append value '[{"text": "Place: placing ", "color": "green"},{"nbt":"target.Name", "storage": "moxlib:api/helpers/block/place","color":"yellow"},{"text": ", failed: Invalid item at specified slot", "color": "red"}]'
+
+execute if data storage bot:interpreter/execution Error run data modify storage bot:dev_mode logs append value '[{"text": "Place: placing ", "color": "green"},{"nbt":"target.Name", "storage": "moxlib:api/helpers/block/place","color":"yellow"},{"text": ", failed: Invalid arguments", "color": "red"}]'
+
 data modify storage bot:io In set from storage bot:io Out
 execute store result storage bot:io In.Slot byte 1 run scoreboard players get .slot bot.execution.variables
 data modify storage bot:io In2 set from entity @s Items

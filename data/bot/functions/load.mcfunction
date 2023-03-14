@@ -1,5 +1,5 @@
 function bot:objectives
-function bot:data
+function bot:interpreter/init
 function bot:version
 
 # Up max command chain length

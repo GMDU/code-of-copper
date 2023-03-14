@@ -3,6 +3,9 @@
     "bedrock",
     "command_block",
     "chain_command_block",
-    "repeating_command_block"
+    "repeating_command_block",
+    "air",
+    "void_air",
+    "cave_air"
   ]
 }
