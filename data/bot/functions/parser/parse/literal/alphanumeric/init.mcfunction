@@ -1,0 +1,2 @@
+execute unless data storage bot:parser stack[-1].value[] run function bot:parser/parse/literal/alphanumeric/before
+execute if data storage bot:parser stack[-1].value[] unless data storage bot:parser current{consumed:true} run function bot:parser/parse/literal/alphanumeric/open/init
