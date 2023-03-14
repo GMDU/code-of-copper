@@ -1,0 +1,2 @@
+execute if data storage bot:parser stack[-1].instruction if data storage bot:parser current{flags:["whitespace"]} run function bot:parser/parse/line/replace_with/instruction
+execute unless data storage bot:parser temp{replaced:true} run function bot:parser/parse/line/replace_with/alphanumeric
