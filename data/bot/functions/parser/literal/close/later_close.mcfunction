@@ -1,2 +1,0 @@
-execute if data storage bot:parser stack[-1].metadata.close[] unless data storage bot:parser {consumed:true} unless data storage bot:parser {current:" "} run function bot:parser/literal/close/check
-execute unless data storage bot:parser stack[-1].metadata.close[] run function bot:parser/literal/close/cleanup

@@ -1,1 +1,0 @@
-execute if data storage bot:parser/root {match:{action:"close"}} run function bot:parser/root/close
