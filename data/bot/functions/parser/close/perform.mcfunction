@@ -8,3 +8,5 @@ execute if data storage bot:parser parent{type:"block"} run function bot:parser/
 execute if data storage bot:parser parent{type:"expression"} run function bot:parser/parse/expression/child_closed
 execute if data storage bot:parser parent{type:"instruction"} run function bot:parser/parse/instruction/child_closed
 execute if data storage bot:parser parent{type:"literal"} run function bot:parser/parse/literal/child_closed
+
+data remove storage bot:parser parsed
