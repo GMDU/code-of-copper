@@ -3,4 +3,3 @@ execute if data storage bot:parser stack[-1].metadata{type:"double"} unless data
 
 data modify storage bot:parser current.consumed set value true
 data modify storage bot:parser stack[-1].metadata.status set value "open"
-tellraw @s {"storage":"bot:parser","nbt":"current"}

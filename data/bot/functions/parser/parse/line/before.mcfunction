@@ -1,4 +1,5 @@
 data modify storage bot:parser stack[-1].metadata.opened set value true
+data remove storage bot:parser temp
 
 function bot:parser/parse/literal/alphanumeric/filters/first
 
