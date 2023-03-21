@@ -1,0 +1,2 @@
+execute if data storage bot:parser stack[-1].metadata{status:"alphanumeric"} run function bot:parser/parse/instruction/assign/child_closed/alphanumeric
+execute if data storage bot:parser stack[-1].metadata{status:"expression"} run function bot:parser/parse/instruction/assign/child_closed/expression

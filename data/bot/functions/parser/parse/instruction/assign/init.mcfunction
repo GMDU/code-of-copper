@@ -1,0 +1,2 @@
+execute unless data storage bot:parser parent.metadata.status run function bot:parser/parse/instruction/assign/set_alphanumeric
+execute if data storage bot:parser parent.metadata{status:"alphanumeric"} run function bot:parser/parse/instruction/assign/set_expression

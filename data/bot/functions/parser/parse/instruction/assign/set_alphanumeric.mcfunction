@@ -1,0 +1,2 @@
+data modify storage bot:parser stack[-1].metadata.status set value "alphanumeric"
+data modify storage bot:parser stack append value {type:"literal",variant:"alphanumeric",metadata:{close:{type:"single",value:"="}}}

@@ -1,0 +1,1 @@
+execute if data storage bot:parser parent{variant:"end"} run function bot:parser/parse/instruction/action/end

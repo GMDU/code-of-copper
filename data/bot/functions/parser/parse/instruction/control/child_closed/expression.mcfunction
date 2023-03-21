@@ -1,0 +1,1 @@
+data modify storage bot:parser stack[-1].condition set from storage bot:parser parsed
