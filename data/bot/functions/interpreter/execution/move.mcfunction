@@ -1,6 +1,3 @@
-data modify storage bot:io In set from storage bot:interpreter/execution current.decoded_args[0]
-function bot:interpreter/evaluate
-
 function bot:interpreter/execution/move/move_to_position
 
 execute at @s if block ~ ~ ~ #bot:traversable unless data storage bot:interpreter/execution Error run data modify storage bot:dev_mode logs append value '[{"text": "Move: moving to ", "color": "green"},{"nbt":"current.decoded_args", "storage": "bot:interpreter/execution","color":"yellow"},{"text": ", success!", "color": "green"}]'
