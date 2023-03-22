@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems, if need be,\n# can break out of a\n# loop before it\\'s \n# finished\n\nwhile true\n  print(\"Looping...\")\n  let block = getblock(1,0,0)\n  if block == \"minecraft:dirt\"\n    break\n  end\nend]']}"
+              "tag": "{pages:['# Golems, if need be,\n# can break out of a\n# loop before it\\'s \n# finished\n\nwhile true\n  print(\"Looping...\")\n  let block = getblock(1,0,0)\n  if block == \"minecraft:dirt\"\n    break\n  end\nend']}"
             },
             {
               "function": "minecraft:set_name",
