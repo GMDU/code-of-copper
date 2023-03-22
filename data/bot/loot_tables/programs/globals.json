@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:[\"# Golems like to\n# seperate their\n# variables based\n# on the context\n# they are accessed\n# from.\n\n# Global variables\n# can be accessed\n# from anywhere.\n\nvar global = 32\", '# Local variables,\n# on the other hand,\n# can only be\n# accessed from in\n# the block they were\n# defined.\n\nif true\n let a = \"apple\"\nend\n\nprint(a)', '# \\'let\\' and the assign\n# operator (\\'=\\') both\n# assign locally.\n\n# \\'var\\' assigns\n# globally.\n\nif true\n let a = \"apple\"\n b = \"banana\"\n var c = \"carrot\"\nend\n\nprint([a, b, c])']}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "globals.glm",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

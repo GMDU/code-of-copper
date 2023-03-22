@@ -9,12 +9,12 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems love counting\n# You can ask them to\n# count up to any\n# number, executing\n# code along the way\n\nloop 7\n  print(\"Looping 7 times...\")\nend\n\nprint(\"finished\")']}"
+              "tag": "{pages:[\"# Golems can learn\n# to perform a\n# function, and love\n# to help out.\n\nfunc run(dist)\n  print(dist)\n  move(dist,0,0)\nend\n\nrun(2)\", \"# They can also\n# return the results\n# of the function they\n# perform.\n\nfunc square(num)\n  return num ** 2\nend\n\nlet result = square(2)\n\nprint(result)\"]}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "loop.glm",
+                "text": "functions.glm",
                 "italic": false
               }
             }

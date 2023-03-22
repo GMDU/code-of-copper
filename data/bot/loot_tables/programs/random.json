@@ -9,12 +9,12 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems love counting\n# You can ask them to\n# count up to any\n# number, executing\n# code along the way\n\nloop 7\n  print(\"Looping 7 times...\")\nend\n\nprint(\"finished\")']}"
+              "tag": "{pages:[\"# The Golems can\n# get a little bit\n# quirky sometimes...\n\nnum = random(0, 10)\n\nprint(num)\n\nnum = random(5, 20)\n\nprint(num)\"]}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "loop.glm",
+                "text": "random.glm",
                 "italic": false
               }
             }
