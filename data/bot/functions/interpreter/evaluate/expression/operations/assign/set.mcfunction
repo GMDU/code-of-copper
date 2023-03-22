@@ -13,5 +13,8 @@ function moxlib:api/data/get
 execute if data storage moxlib:api/data/get {success:true} run data modify storage moxlib:api/data/set data.scope set from storage moxlib:api/data/get output.scope
 execute if data storage moxlib:api/data/get {success:false} run data modify storage moxlib:api/data/set data.scope set from entity @s data.nest_level
 
+execute if data storage moxlib:api/data/get output{isConstant:true} run data modify storage bot:interpreter/execution Error set value [["Assign - cannot reassign constant "],[]]
+execute if data storage moxlib:api/data/get output{isConstant:true} run data modify storage bot:interpreter/execution Error[1] set from storage bot:interpreter/execution varName
+
 function moxlib:api/data/set
 data modify entity @s data.variables set from storage moxlib:api/data/set output
