@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n#\n# You can too, by\n# sneak right-clicking\n# them.\n\nprint $INVENTORY\n\nif $INVENTORY[0] = \"minecraft:dirt\"\n  place 0, [1,0,0]\nend']}"
+              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint(INVENTORY)\n\nif INVENTORY[0] == \"minecraft:dirt\"\n  place(0, [1,0,0])\nend']}"
             },
             {
               "function": "minecraft:set_name",
