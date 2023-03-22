@@ -4,7 +4,7 @@
       "item": "minecraft:cyan_glazed_terracotta"
     },
     "title": "Roll of the Dice!",
-    "description": "Adobe Garden Glue Mountain Soap!",
+    "description": "Adobe Garden Glue Mountain Turtle!",
     "hidden": true
   },
   "parent": "bot:progression/programs/regex",
