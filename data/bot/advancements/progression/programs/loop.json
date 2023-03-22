@@ -20,7 +20,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "bot:progression/programs/inventory": true
+                  "bot:progression/programs/get_a_block": true
                 }
               },
               "nbt": "{Tags:[\"bot.progression.advance\"]}"

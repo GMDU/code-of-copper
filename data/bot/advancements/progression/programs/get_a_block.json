@@ -7,7 +7,7 @@
     "description": "Find the getblock function",
     "hidden": true
   },
-  "parent": "bot:progression/programs/memory",
+  "parent": "bot:progression/programs/inventory",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -20,7 +20,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "bot:progression/programs/memory": true
+                  "bot:progression/programs/inventory": true
                 }
               },
               "nbt": "{Tags:[\"bot.progression.advance\"]}"

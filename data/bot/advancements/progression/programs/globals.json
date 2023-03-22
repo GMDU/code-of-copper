@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:egg"
+      "item": "minecraft:compass"
     },
-    "title": "It's an Object",
-    "description": "I mean, it is. And sometimes it contains things.",
+    "title": "Going Global",
+    "description": "Learn about global and local variables.",
     "hidden": true
   },
-  "parent": "bot:progression/programs/success",
+  "parent": "bot:progression/programs/memory",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:tick",
@@ -20,7 +20,7 @@
               "type_specific": {
                 "type": "player",
                 "advancements": {
-                  "bot:progression/programs/functions": true
+                  "bot:progression/programs/memory": true
                 }
               },
               "nbt": "{Tags:[\"bot.progression.advance\"]}"
@@ -33,7 +33,7 @@
   "rewards": {
     "function": "bot:progression/advance",
     "loot": [
-      "bot:programs/object"
+      "bot:programs/globals"
     ]
   }
 }
