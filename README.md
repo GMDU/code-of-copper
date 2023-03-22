@@ -51,7 +51,7 @@ It is up to you to discover most of the language through the progression system.
 However, every good README needs a hello world.
 
 ```ruby
-print("Hello, World!")
+print "Hello, World!"
 ```
 This can be written into a book, and right-clicked into a Copper Golem. right-click again to run.
 <br />
@@ -73,14 +73,14 @@ You can join our discord server [here](https://discord.gg/2eR2hdYJMc).
 ## Oxidisation and progression
 After a certain number of instruction executions, the golem will begin to oxidise.
 Interacting with the golem while holding an axe removes the rust.\
-If the golem is fully oxidised, it will not run anymore, but upon scraping it with an axe you will find example programs that explain the language of GolemScript.
+If the golem is fully oxidised, it will not run anymore, but upon scraping it with an axe you will find example programs that explain the language of GolemScript.\
 This process can be avoided however, by waxing the golem. As with anything copper, you can also scrape off the wax.
 
 
 ## GolemScript Documentation
 The following (excellent) language documentation was written by xokz, from the MinecraftCommands discord.
 
-By: xokz (Edited by RevolvingMadness)
+By: xokz
 
 Code goes in a book and quill. Code can span multiple pages, but make sure there is a new line after every page!. The name of the book does not matter.
 Right click the minecart with the book to set the golems code, and right-click the minecart with a empty hand to execute the code.
@@ -90,7 +90,7 @@ Comments are indicated with a '#' and last until the end of the line. There are 
 
 EX.
 ```ruby
-# This will not do anything since it is a comment
+# this will not do anything since it is a comment
 ```
 
 ## 2. Variables
@@ -107,12 +107,9 @@ let str = "Hello"
 let x = 1
 let arr = [9, 2, -3, 6]
 let var = ["hello", "world"]
-# 'fizz' is now 8
-let fizz = foo + x
-# 'buzz' is now 'world'
-let buzz = var[x]
-# 'bar' is now 4
-let bar = var[2] + 7
+let fizz = foo + x                           # this will be 8
+let buzz = var[x]				# this will be 'world'
+let bar = var[2] + 7                         # this will be 4
 let obj = {a:1,b:2+3}
 ```
 
@@ -120,10 +117,8 @@ Variables can be changed by simply redeclaring them.
 
 EX.
 ```ruby
-# 'foo' is now 7
 let foo = 7
-# 'foo' is now 8 instead of 7
-let foo = 8
+let foo = 8                                           # foo is now 8 instead of 7
 ```
 
 Arrays can be added and removed from via addition and subtraction.
@@ -131,13 +126,9 @@ Arrays can be added and removed from via addition and subtraction.
 EX.
 ```ruby
 let arr = [0, 1, 2]
-# 'arr' is now [0, 1, 2]
-let arr = arr + 3
-# 'arr' is now [0, 1, 2, 3]
-let arr = arr - 1
-# 'arr' is now [0, 1, 2]
-let arr = arr - -1
-# 'arr' is now [1, 2]
+let arr = arr + 3				# arr is now [0,1,2,3]
+let arr = arr - 1				# arr is now [0,1,2]
+let arr = arr - -1				# arr is now [1,2]
 ```
 
 Objects can be added and removed from via addition and subtraction.
@@ -145,11 +136,8 @@ Objects can be added and removed from via addition and subtraction.
 EX.
 ```ruby
 let obj = {a:1,b:2,c:3}
-# 'obj' is now {a:1,b:2,c:3}
-let obj = obj - "a"        
-# 'obj' is now {b:2,c:3}
-let obj = obj + {c:5,d:4}        
-# 'obj' is now {b:2,c:5,d:4}
+let obj = obj - "a"				# obj is now {b:2,c:3}
+let obj = obj + {c:5,d:4}				# obj is now {b:2,c:5,d:4}
 ```
 
 Strings can be added to with addition.
@@ -157,11 +145,9 @@ Strings can be added to with addition.
 EX.
 ```ruby
 let str = "hello"
-print(str)                                               
-# This will print 'hello'
+print str                                               # this will print 'hello'
 let var = str + ", world!"   
-print(var)                                              
-# This will print 'hello, world!'
+print var                                              # this will print 'hello, world!'
 ```
 
 Strings are just arrays of characters, so they can be indexed just like an array.
@@ -169,8 +155,7 @@ Strings are just arrays of characters, so they can be indexed just like an array
 EX.
 ```ruby
 let str = "hello, world!"
-print(str[1])                                          
-# This will print 'e'
+print str[1]                                          # this will print 'e'
 ```
 
 ## 3. Printing
@@ -184,20 +169,13 @@ let bar = "xokz"
 let arr = [0, 4, 7]
 let obj = {hello:"world"}
 
-print("Hello, world!")                             
-# This will print 'Hello, world!'
-print(foo)                                              
-# This will print 8  
-print(name)                                          
-# This will print 'xokz'
-print(arr)                                               
-# This will print '[0, 4, 7]'
-print(arr[1])                                          
-# This will print 4
-print(arr[1] + foo)                             
-# This will print 12
-print(obj["hello"])                             
-# This will print 'world'
+print "Hello, world!"                             # this will print 'Hello, world!'
+print foo                                              # this will print 8	
+print name                                          # this will print 'xokz'
+print arr                                               # this will print '[0, 4, 7]'
+print arr[1]                                          # this will print 4
+print arr[1] + foo                             # this will print 12
+print obj["hello"]                             # this will print 'world'
 ```
 
 ## 4. Sleep
@@ -208,10 +186,8 @@ The provided value is how many ticks the golem will sleep for.
 EX.
 ```ruby
 let time = 7
-# Sleep for 7 ticks
-sleep time
-# Sleep for 2 seconds, since 1 second is 20 ticks
-sleep 40
+sleep time                                           # sleep for 7 ticks
+sleep 40                                                # sleep for 2 seconds, since 1 second is 20 ticks
 ```
 
 ## 5. If Statements
@@ -223,26 +199,22 @@ EX.
 ```ruby
 let foo = 0
 if foo
-  print("success!")                                   
-  # This will not print since the condition results in 0
+	print "success!"                                   # this will not print since the condition results in 0
 end
 
 let foo = 5
 if foo
-  print("success!")                                   
-  # This will print because the condition did not result in 0
+  print "success!"                                   # this will print because the condition did not result in 0
 end
 
 let bar = ""
 if bar
-  print("success!")                                   
-  # This will not print since the condition results in an empty string
+	print "success!"                                   # this will not print since the condition results in an empty string
 end
 
 let bar = "i love this datapack"
 if bar
-  print("success!")                                   
-  # This will print since the condition did not result in an empty string
+	print "success!"                                   # this will print since the condition did not result in an empty string
 end
 ```
 
@@ -256,15 +228,13 @@ let foo = 7
 let bar = 5
 
 if foo > bar
-  print("success")                                   
-  # This will print since foo is greater than bar
+	print "success"                                   # this will print since foo is greater than bar
 end
 
 let var = "hello, world"
 
 if var = "goodbye, world"
-  print("success")                                   
-  # This will not print since var is not "goodbye, world"
+	print "success"                                   # this will not print since var is not "goodbye, world"
 end
 ```
 
@@ -273,9 +243,8 @@ Strings and arrays have lengths, which can be compared against integers.
 EX.
 ```ruby
 let str = "hello"
-# This will execute because the str of is less than ten
 if str < 10
-  print("Success!")
+	print "The length of the string is less than 10!"
 end
 ```
 
@@ -288,25 +257,24 @@ They execute while a condition is met.
 
 EX.
 ```ruby
+# this will print the numbers 0-19
 let i = 0
-# This will print the numbers 0-19
 while i < 20
-  print(i)
+	print i
   let i = i + 1
 end
 
-# This will run forever
+# this will go on forever
 while 1
-  print("wheee!")
+	print "wheee!"
 end
 ```
 
-`N` loops execute a set number of times.
+N loops execute a set number of times.
 
 ```ruby
-# This will execute 10 times
 loop 10
-  print("Loop")
+  print "This will print 10 times"
 end
 ```
 
@@ -318,8 +286,7 @@ The array can use variables or literals.
 EX.
 ```ruby
 let var = 1
-move(0, var, 0)                                  
-# The golem will jump up one block
+move [0, var, 0]                                  # the golem will jump up one block
 ```
 
 ## 8. Getblock
@@ -330,14 +297,11 @@ EX.
 ```ruby
 let best_block = "minecraft:dirt"
 
-getblock(0, -1, 0)                                
-# The block under the golem is a dirt block in this example
-print(BLOCK)                                        
-# This will print 'minecraft:dirt'
+getblock [0, -1, 0]                                # the block under the golem is a dirt block in this example
+print BLOCK                                        # will print 'minecraft:dirt'
 
-# This will execute because the block below is dirt
 if BLOCK = best_block
-  print("Yes, dirt is the best.")
+	print "Yes, dirt is the best." 	# this will print because the block below is dirt
 end
 ```
 
@@ -349,10 +313,10 @@ The slot number is 0 indexed.
 
 EX.
 ```ruby
-# In slot 6, we have put a dirt block.
+# in slot 6, we have put a dirt block.
 
-place(5, [1, 0, 1])
-# This will place a dirt block diagonally to the 
+place 5, [1,0,1]
+# this will place a dirt block diagonally to the 
 # golem, provided there is not already a block there
 ```
 
@@ -361,10 +325,9 @@ The pickaxe will still lose durability.
 
 EX.
 ```ruby
-# In slot 7, we have an iron pickaxe.
+# in slot 7, we have an iron pickaxe.
 
-# This will mine the dirt block we placed earlier and take it back into the inventory.
-place(6, [1, 0, 1])
+place 6, [1,0,1] # this will mine the dirt block we placed earlier and take it back into the inventory.
 ```
 
 If there is nothing in the slot, then nothing will happen.
@@ -376,9 +339,9 @@ It can be indexed like any other array.
 
 EX.
 ```ruby
-# If there is dirt in the first slot, print a message.
+# if there is dirt in the first slot, print a message.
 if INVENTORY[0] = "minecraft:dirt"
-  print("yeah you got the good stuff")
+	print "yeah you got the good stuff"
 end
 ```
 
@@ -392,6 +355,5 @@ EX.
 ```ruby
 let regex = /ab?c/
 match regex, "abcdefg"
-# This prints 'abc'
-print(MATCH)
+print MATCH         # prints "abc"
 ```
