@@ -1,5 +1,5 @@
 data modify storage moxlib:api/data/get target set from entity @s data.functions
-data modify storage moxlib:api/data/get key set value {name: {type: "string", value: []}}
+data modify storage moxlib:api/data/get key set value {name: {type: "literal", variant: "string", value: []}}
 data modify storage moxlib:api/data/get key.name.value set from storage bot:interpreter/execution current.name
 
 function moxlib:api/data/get
