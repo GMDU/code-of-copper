@@ -74,7 +74,7 @@ data modify storage moxlib:test/it describes set value "A compound array"
 
 data modify storage moxlib:test/it describes set value "A simple object"
 
-  data modify storage bot:io In set value {"type":"literal","variant":"object","value":[{"key":["f","o","o"],"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":["h","e","l","l","o"],"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}]}
+  data modify storage bot:io In set value {"type":"literal","variant":"object","value":[{"key":{type: "literal", variant: "string", value: ["f","o","o"]},"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":{type: "literal", variant: "string", value: ["h","e","l","l","o"]},"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}]}
   function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "object", value: [{key: {type: "string", value: ["f","o","o"]}, value: {type: "string", value: ["b","a","r"]}}, {key: {type: "string", value: ["h","e","l","l","o"]}, value: {type: "string", value: ["w","o","r","l","d"]}}]}
@@ -84,10 +84,10 @@ data modify storage moxlib:test/it describes set value "A simple object"
 
 data modify storage moxlib:test/it describes set value "A compound object"
 
-  data modify storage bot:io In set value {"type":"literal","variant":"object","value":[{"key":["f","o","o"],"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":["o","b","j"],"value":{"type":"literal","variant":"object","value":[{"key":["t","e","s","t"],"value":{"type":"literal","variant":"integer","value":1}}]}}]}
+  data modify storage bot:io In set value {"type":"literal","variant":"object","value":[{"key":{type: "literal", variant: "string", value: ["f","o","o"]},"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":{type: "literal", variant: "string", value: ["o","b","j"]},"value":{"type":"literal","variant":"object","value":[{"key":{type: "literal", variant: "string", value: ["t","e","s","t"]},"value":{"type":"literal","variant":"integer","value":1}}]}}]}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {"type":"object","value":[{"key":{"type":"string","value":["f","o","o"]},"value":{"type":"string","value":["b","a","r"]}},{"key":{"type":"string","value":["o","b","j"]},"value":{"type":"object","value":[{"key":{"type":"string","value":["t","e","s","t"]},"value":{"type":"integer","value":1}}]}}]}
+  data modify storage moxlib:test/it expects set value {"type":"object","value":[{"key":{type: "string", value: ["f","o","o"]},"value":{"type":"string","value":["b","a","r"]}},{"key":{type: "string", value: ["o","b","j"]},"value":{"type":"object","value":[{"key":{type:  "string", value: ["t","e","s","t"]},"value":{"type":"integer","value":1}}]}}]}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform
@@ -124,7 +124,7 @@ data modify storage moxlib:test/it describes set value "Indexing an array with a
 
 data modify storage moxlib:test/it describes set value "Indexing an object by a number"
 
-  data modify storage bot:io In set value {type: "literal", variant: "object", value: [{"key":["f","o","o"],"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":["h","e","l","l","o"],"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}], parameters: [{type: "literal", variant: "integer", value: 0}]}
+  data modify storage bot:io In set value {type: "literal", variant: "object", value: [{"key":{type: "literal", variant: "string", value: ["f","o","o"]},"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":{type: "literal", variant: "string", value: ["h","e","l","l","o"]},"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}], parameters: [{type: "literal", variant: "integer", value: 0}]}
   function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "string", value: ["b","a","r"]}
@@ -134,7 +134,7 @@ data modify storage moxlib:test/it describes set value "Indexing an object by a 
 
 data modify storage moxlib:test/it describes set value "Indexing an object by a string"
 
-  data modify storage bot:io In set value {type: "literal", variant: "object", value: [{"key":["f","o","o"],"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":["h","e","l","l","o"],"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}], parameters: [{type: "literal", variant: "string", value: ["h","e","l","l","o"]}]}
+  data modify storage bot:io In set value {type: "literal", variant: "object", value: [{"key":{type: "literal", variant: "string", value: ["f","o","o"]},"value":{"type":"literal","variant":"string","value":["b","a","r"]}},{"key":{type: "literal", variant: "string", value: ["h","e","l","l","o"]},"value":{"type":"literal","variant":"string","value":["w","o","r","l","d"]}}], parameters: [{type: "literal", variant: "string", value: ["h","e","l","l","o"]}]}
   function bot:interpreter/evaluate
 
   data modify storage moxlib:test/it expects set value {type: "string", value: ["w","o","r","l","d"]}
