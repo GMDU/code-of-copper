@@ -1,0 +1,6 @@
+data modify storage bot:interpreter/evaluate stack set from entity @s data.function_stack[-1]
+data remove entity @s data.function_stack[-1]
+
+data modify entity @s data.return_value set value {type:"undefined",value:undefined}
+
+execute if data storage bot:interpreter/evaluate stack[0] run function bot:interpreter/_evaluate
