@@ -7,4 +7,4 @@ data modify storage bot:version suffix set value "alpha-1"
 
 execute if data storage bot:version {suffix:""} run tellraw @a {"nbt":"name","storage":"bot:version","extra":[{"text":" v","extra":[{"nbt":"major","storage":"bot:version","extra":[{"text":"."},{"nbt":"minor","storage":"bot:version"},{"text":".","extra":[{"nbt":"patch","storage":"bot:version"}]}]}]}]}
 
-execute unless data storage bot:version {suffix:""} run tellraw @a {"nbt":"name","storage":"bot:version","extra":[{"text":" v","extra":[{"nbt":"major","storage":"bot:version","extra":[{"text":"."},{"nbt":"minor","storage":"bot:version"},{"text":".","extra":[{"nbt":"patch","storage":"bot:version"},{"text":"-","extra":[{"nbt":"suffix","storage":"bot:version"}]}]}]}]}
+execute unless data storage bot:version {suffix:""} run tellraw @a {"nbt":"name","storage":"bot:version","extra":[{"text":" v","extra":[{"nbt":"major","storage":"bot:version","extra":[{"text":"."},{"nbt":"minor","storage":"bot:version"},{"text":".","extra":[{"nbt":"patch","storage":"bot:version"},{"text":"-","extra":[{"nbt":"suffix","storage":"bot:version"}]}]}]}]}]}

@@ -7,7 +7,7 @@ data modify storage moxlib:api/data/get key.name set from storage bot:interprete
 
 function moxlib:api/data/get
 
-execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter/execution Error set value [["Let - cannot redeclare variable "],[]]
+execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter/execution Error set value [["Const - cannot redeclare variable "],[]]
 execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter/execution Error[1] set from storage bot:interpreter/execution varName
 
-execute unless data storage bot:interpreter/execution Error run function bot:interpreter/execution/let/set
+execute unless data storage bot:interpreter/execution Error run function bot:interpreter/execution/const/set
