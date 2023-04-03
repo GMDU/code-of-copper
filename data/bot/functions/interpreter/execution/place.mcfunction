@@ -23,3 +23,5 @@ function bot:interpreter/utils/put_item_at_index
 data modify entity @s Items set from storage bot:io Out
 
 function bot:interpreter/execution/move_back
+
+execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify entity @s data.return_value set value {type:"undefined",value:undefined}

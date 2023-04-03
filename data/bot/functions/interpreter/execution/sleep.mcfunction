@@ -7,3 +7,5 @@ execute store result entity @s data.instructions[-1].sleepTime int 1 run scorebo
 data modify storage bot:dev_mode logs append value '[{"text": "Sleep: sleeping for ", "color": "green"},{"nbt":"current.decoded_args[0]", "storage": "bot:interpreter/execution","color":"yellow"},{"text": " ticks, ", "color": "green"}, {"score":{"name":".sleep_time","objective":"bot.execution.variables"},"color":"yellow"},{"text": " left.", "color": "green"}]'
 
 execute if score .sleep_time bot.execution.variables matches ..0 run data modify entity @s data.instructions[-1].isLooping set value false
+
+execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify entity @s data.return_value set value {type:"undefined",value:undefined}

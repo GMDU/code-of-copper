@@ -7,3 +7,5 @@ execute at @s unless block ~ ~ ~ #bot:traversable run data modify storage bot:de
 execute if data storage bot:interpreter/execution Error run data modify storage bot:dev_mode logs append value '[{"text": "Move: moving to ", "color": "green"},{"nbt":"current.decoded_args", "storage": "bot:interpreter/execution","color":"yellow"},{"text": ", failed: Invalid arguments", "color": "red"}]'
 
 execute at @s unless block ~ ~ ~ #bot:traversable run function bot:interpreter/execution/move_back
+
+execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify entity @s data.return_value set value {type:"undefined",value:undefined}
