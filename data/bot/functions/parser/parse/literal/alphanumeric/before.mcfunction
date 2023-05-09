@@ -1,6 +1,3 @@
-function bot:parser/parse/literal/alphanumeric/filters/first
-data remove storage bot:parser temp
-execute if data storage moxlib:api/string/filter {output:true} run data modify storage bot:parser raise set value '["[Alphanumeric] Unexpected: \'",{"storage":"bot:parser","nbt":"current.value"},"\', expected [A-Z,a-z]."]'
-
-data modify storage bot:parser current.consumed set value true
-data modify storage bot:parser stack[-1].value append from storage bot:parser current.value
+execute if data storage bot:parser stack[-1].metadata.close run function bot:parser/close/check
+execute if data storage bot:parser stack[-1].metadata.close{closed:true} run data modify storage bot:parser stack[-1].metadata.status set value "closed"
+execute unless data storage bot:parser stack[-1].metadata.close{closed:true} run function bot:parser/parse/literal/alphanumeric/filter
