@@ -10,7 +10,7 @@ scoreboard players set .mod bot.execution.variables 1
 scoreboard players operation .mod bot.execution.variables += .max bot.execution.variables
 scoreboard players operation .mod bot.execution.variables -= .min bot.execution.variables
 
-scoreboard players operation .result bot.execution.variables = $rng moxlib.math.random
+scoreboard players operation .result bot.execution.variables = $rng moxlib.api.math.random
 scoreboard players operation .result bot.execution.variables %= .mod bot.execution.variables
 scoreboard players operation .result bot.execution.variables += .min bot.execution.variables
 
