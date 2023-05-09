@@ -10,5 +10,5 @@ execute if score .sleep_time bot.execution.variables matches ..0 run data modify
 
 execute on passengers as @s[type=marker,tag=bot.golem.brain] run data modify entity @s data.return_value set value {type:"undefined",value:undefined}
 
-# Remove argument to prevent dulication
+# Remove argument to prevent duplication
 data remove entity @s data.instructions[-1].value[0].decoded_args[0]
