@@ -17,4 +17,4 @@ scoreboard players operation .result bot.execution.variables += .min bot.executi
 data modify entity @s data.return_value set value {type: "integer", value: 0}
 execute store result entity @s data.return_value.value int 1 run scoreboard players get .result bot.execution.variables
 
-data modify storage bot:dev_mode logs append value '[{"text": "Random: generating random number, got ", "color": "green"},{"nbt":"data.return_value", "entity": "@s","color":"yellow"}]'
+data modify storage bot:dev_mode logs append value '[{"text": "Random: generating random number between ","color":"green"},{"nbt":"current.decoded_args[0]", "storage": "bot:interpreter/execution","color":"yellow"},{"text": " and ","color":"green"},{"nbt":"current.decoded_args[1]", "storage": "bot:interpreter/execution","color":"yellow"},{"text":", got ", "color": "green"},{"nbt":"data.return_value", "entity": "@s","color":"yellow"}]'
