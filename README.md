@@ -94,11 +94,11 @@ EX.
 ```
 
 ## 2. Variables
-A variable can be an signed integer, array, or a string.
+A variable can be a signed integer, array, object, boolean, or a string.
 
-Variables can use the +, -, *, /, and % operators.
+You can perform the same operations on variables as most other programming languages, including +, -, *, /, %, **, ||, etc.
 
-Only one operator is supported per line, so that means `let x = a / b + c` will not work.
+GolemScript has order of operations, meaning that 1 + 2 * 3 will return 7, as expected.
 
 EX.
 ```ruby
@@ -116,14 +116,39 @@ let bar = var[2] + 7
 let obj = {a:1,b:2+3}
 ```
 
-Variables can be changed by simply redeclaring them.
+Variables can be changed with the reassignment operator
 
 EX.
 ```ruby
 # 'foo' is now 7
 let foo = 7
 # 'foo' is now 8 instead of 7
-let foo = 8
+foo = 8
+```
+
+You can declare variables with the `const` keyword, to make them constants
+
+EX.
+```ruby
+const pi = 3 # No floating point numbers :(
+print(pi) # prints 3
+pi = 4 # Throws an error
+```
+
+Variables only exist inside the scope in which they are created, unless the `var` keyword is used, which makes the global
+
+EX.
+```ruby
+const a = 4
+
+if true # Demonstrating a level of nesting
+  const b = 5
+  var c = 6
+  print(a) # Prints 4, because it is inside the scope where a was declared
+end
+
+print(b) # Prints undefined
+print(c) # Prints 6
 ```
 
 Arrays can be added and removed from via addition and subtraction.
@@ -180,7 +205,7 @@ String literals and variables can both be printed, but not on the same line.
 EX.
 ```ruby
 let foo = 8
-let bar = "xokz"
+let name = "xokz"
 let arr = [0, 4, 7]
 let obj = {hello:"world"}
 
@@ -205,19 +230,24 @@ print(obj["hello"])
 The golem can pause code execution for a specified amount of time with the `sleep` command.
 The provided value is how many ticks the golem will sleep for.
 
+NOTE: The golem runs at 10 tps, as opposed to minecraft, which runs at 20. Keep that in mind when calculating sleep times.
+
 EX.
 ```ruby
 let time = 7
-# Sleep for 7 ticks
-sleep time
-# Sleep for 2 seconds, since 1 second is 20 ticks
-sleep 40
+# Sleep for 7 ticks (0.7 seconds)
+sleep(time)
+# Sleep for 4 seconds, since 1 second is 10 ticks
+sleep(40)
 ```
 
 ## 5. If Statements
 
 If statements allow parts of the code to execute only if a condition is met. 
-The if statement will execute if the result is not 0 or and empty string.
+The if statement will execute if the result is not falsey.
+
+The list of falsey literals is: 
+false, 0, an empty string, an empty array, an empty object
 
 EX.
 ```ruby
@@ -227,7 +257,7 @@ if foo
   # This will not print since the condition results in 0
 end
 
-let foo = 5
+foo = 5
 if foo
   print("success!")                                   
   # This will print because the condition did not result in 0
@@ -239,15 +269,15 @@ if bar
   # This will not print since the condition results in an empty string
 end
 
-let bar = "i love this datapack"
+bar = "i love this datapack"
 if bar
   print("success!")                                   
   # This will print since the condition did not result in an empty string
 end
 ```
 
-There are also operators: =, <, and >. 
-They represent equal to, less than, and greater than, respectively.
+There are also comparison operators: ==, !=, <, >, <=, and >=.
+They represent equal to, not equal to, less than, greater than, less than or equal to, and greater than or equal to respectively.
 They can compare variables and/or literals.
 
 EX.
@@ -260,9 +290,11 @@ if foo > bar
   # This will print since foo is greater than bar
 end
 
+print(3 < 4) # Prints true
+
 let var = "hello, world"
 
-if var = "goodbye, world"
+if var == "goodbye, world"
   print("success")                                   
   # This will not print since var is not "goodbye, world"
 end
@@ -292,7 +324,7 @@ let i = 0
 # This will print the numbers 0-19
 while i < 20
   print(i)
-  let i = i + 1
+  i += 1 # This is shorthand for i = i + 1
 end
 
 # This will run forever
@@ -301,7 +333,7 @@ while 1
 end
 ```
 
-`N` loops execute a set number of times.
+N loops execute a set number of times.
 
 ```ruby
 # This will execute 10 times
@@ -317,6 +349,8 @@ The array can use variables or literals.
 
 EX.
 ```ruby
+move(1, 0, 1) # The golem moves diagonally
+
 let var = 1
 move(0, var, 0)                                  
 # The golem will jump up one block
@@ -324,19 +358,21 @@ move(0, var, 0)
 
 ## 8. Getblock
 
-The `getblock` command stores the name of the block at the given position in the `BLOCK` variable.
+The `getblock` command returns the block at a given position, relative to the golem.
+
+NOTE: It can only get blocks up to 5 blocks in each directs, so `getblock(5, 5, 5)` is fine, but `getblock(0, -6, 0)` is not.
 
 EX.
 ```ruby
 let best_block = "minecraft:dirt"
 
-getblock(0, -1, 0)                                
+let block = getblock(0, -1, 0)                                
 # The block under the golem is a dirt block in this example
-print(BLOCK)                                        
+print(block)                                        
 # This will print 'minecraft:dirt'
 
 # This will execute because the block below is dirt
-if BLOCK = best_block
+if block == best_block
   print("Yes, dirt is the best.")
 end
 ```
@@ -347,6 +383,8 @@ The `place` command can place or mine blocks. It takes in a slot index, and a po
 If there is a block in the specified slot, it will attempt to place the block at the given coords.
 The slot number is 0 indexed.
 
+NOTE: The index system only counts slots where items are present, so having only one item in the last slot will be counted as slot zero.
+
 EX.
 ```ruby
 # In slot 6, we have put a dirt block.
@@ -356,7 +394,7 @@ place(5, [1, 0, 1])
 # golem, provided there is not already a block there
 ```
 
-If there is a pickaxe in the slot instead, it will break a block at the given coordinates, and put it in its inventory.
+If there is a pickaxe (or other tool) in the slot instead, it will break a block at the given coordinates, and put it in its inventory.
 The pickaxe will still lose durability.
 
 EX.
@@ -374,6 +412,8 @@ If there is nothing in the slot, then nothing will happen.
 The `INVENTORY` variable is an array with the names of all the items in the golems inventory.
 It can be indexed like any other array.
 
+The inventory variable only contains ids of items that are actually there, in the same way as `place`.
+
 EX.
 ```ruby
 # If there is dirt in the first slot, print a message.
@@ -386,12 +426,9 @@ end
 
 Strings can be compared using the `match` command and they use Regular Expressions, So this command is kind of advanced. (See [RegExr](https://regexr.com)).
 
-The matched sub-string will return to `MATCH`.
-
 EX.
 ```ruby
 let regex = /ab?c/
-match regex, "abcdefg"
 # This prints 'abc'
-print(MATCH)
+print(match(regex, "abcdefg"))
 ```
