@@ -1,5 +1,5 @@
 data modify storage bot:interpreter/evaluate stack append from storage bot:interpreter/evaluate stack[-1].parameters[0]
-function bot:interpreter/_evaluate
+function bot:interpreter/evaluate_stack
 execute unless data storage bot:io Out{type:"integer"} run data modify storage bot:interpreter/execution Error set value ["Expected type integer for array index, but got type "]
 execute unless data storage bot:io Out{type:"integer"} run data modify storage bot:interpreter/execution Error append from storage bot:io Out.type
 
