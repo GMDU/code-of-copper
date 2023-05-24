@@ -432,3 +432,18 @@ let regex = /ab?c/
 # This prints 'abc'
 print(match(regex, "abcdefg"))
 ```
+
+# 12. Functions
+
+You can also define functions, blocks of code that execute under one name. You call them in the same way as the built-in function, with brackets and the given arguments.
+
+EX.
+```ruby
+# This will return the result of adding the "a" argument to the "b" argument.
+func add (a, b)
+  return a + b
+end
+
+# Prints 3
+print(add(1, 2))
+```
