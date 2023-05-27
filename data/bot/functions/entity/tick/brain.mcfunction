@@ -1,5 +1,4 @@
 data modify storage bot:private temp.golem.program set from entity @s data.program
-execute unless data entity @s data.instructions[] run data modify entity @s data.instructions set value []
 
 execute unless data entity @s data{status:"rusted"} unless data entity @s data{status:"deoxidise"} unless data entity @s data{waxed:true} run function bot:entity/tick/brain/oxidisation
 execute if data entity @s data{waxed:true} run scoreboard players reset @s bot.golem.execute

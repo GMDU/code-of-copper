@@ -1,0 +1,2 @@
+execute unless data storage bot:interpreter evaluate.current.metadata{open:true} run function bot:interpreter/decode/evaluate/array/before
+execute if data storage bot:interpreter evaluate.current.metadata{open:true} run function bot:interpreter/decode/evaluate/array/open
