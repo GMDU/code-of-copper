@@ -7,10 +7,7 @@ scoreboard objectives add bot.parser.expression dummy
 scoreboard objectives add bot.parser.literal dummy
 
 # Interpreter objectives
-scoreboard objectives add bot.execution.variables dummy
-scoreboard objectives add bot.execution.pos dummy
-scoreboard objectives add bot.execution.cooldown dummy
-scoreboard objectives add bot.pipeline dummy
+scoreboard objectives add bot.interpreter dummy
 
 # Misc objectives
 scoreboard objectives add bot.interface dummy
