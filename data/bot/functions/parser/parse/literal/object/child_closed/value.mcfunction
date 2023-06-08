@@ -1,2 +1,1 @@
-data modify storage bot:parser stack[-1].metadata.pair.key set value {type:"literal",variant:"string"}
-data modify storage bot:parser stack[-1].metadata.pair.key.value set from storage bot:parser parsed.value
+data modify storage bot:parser stack[-1].metadata.pair.key set from storage bot:parser parsed.value

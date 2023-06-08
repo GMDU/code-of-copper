@@ -1,0 +1,2 @@
+execute if data storage bot:interpreter evaluate.stack[-1].metadata{status:"parameters"} run function bot:interpreter/decode/evaluate/string/parameters/init
+execute unless data storage bot:interpreter evaluate.stack[-1].metadata.status run function bot:interpreter/decode/evaluate/string/before
