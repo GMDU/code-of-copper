@@ -12,4 +12,4 @@ execute if score .index bot.interpreter matches 1.. run scoreboard players remov
 execute if score .index bot.interpreter matches ..-2 run data remove storage bot:interpreter evaluate.stack[-1].value[-1]
 execute if score .index bot.interpreter matches ..-2 run scoreboard players add .index bot.interpreter 1
 
-function bot:interpreter/decode/evaluate/string/parameters/iterate
+function bot:interpreter/evaluate/literal/string/parameters/iterate
