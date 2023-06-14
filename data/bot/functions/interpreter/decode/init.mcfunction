@@ -1,3 +1,3 @@
-function bot:interpreter/decode/evaluate/init
+data modify storage bot:interpreter evaluate merge value {break:false}
 
-execute if data storage bot:interpreter evaluate.stack[] run function bot:interpreter/decode/init
+function bot:interpreter/decode/evaluate/init

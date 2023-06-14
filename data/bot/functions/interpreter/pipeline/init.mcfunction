@@ -1,2 +1,2 @@
-execute if data entity @s data.interpreter{pipeline_stage:"decode"} run function bot:interpreter/decode/init
-execute if data entity @s data.interpreter{pipeline_stage:"execute"} run function bot:interpreter/execute/init
+function bot:interpreter/decode/init
+function bot:interpreter/execute/init
