@@ -1,5 +1,6 @@
 data modify storage bot:interpreter evaluate.current set from storage bot:interpreter evaluate.stack[-1]
 
+execute if data storage bot:interpreter evaluate.current{type:"block"} run function bot:interpreter/evaluate/block/init
 execute if data storage bot:interpreter evaluate.current{type:"literal"} run function bot:interpreter/evaluate/literal/init
 execute if data storage bot:interpreter evaluate.current{type:"expression"} run function bot:interpreter/evaluate/expression/init
 execute if data storage bot:interpreter evaluate.current{type:"binary_operation"} run function bot:interpreter/evaluate/binary_operation/init
