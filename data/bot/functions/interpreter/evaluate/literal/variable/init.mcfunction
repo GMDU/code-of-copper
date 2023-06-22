@@ -1,6 +1,5 @@
 data modify storage moxlib:api/data/get key.name set from storage bot:interpreter evaluate.stack[-1].value
-data modify storage moxlib:api/data/get target set from storage bot:interpreter instructions[-1].variables
-data modify storage moxlib:api/data/get target append from storage bot:interpreter global_variables[]
+data modify storage moxlib:api/data/get target set from storage bot:interpreter variables
 
 data modify storage bot:interpreter evaluate.stack[-1] set value {type:"undefined",value:undefined}
 function moxlib:api/data/get
