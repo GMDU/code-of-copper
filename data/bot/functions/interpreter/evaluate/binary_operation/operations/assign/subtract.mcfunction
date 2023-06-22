@@ -1,6 +1,6 @@
-function bot:interpreter/evaluate/expression/operations/maths/subtract
+function bot:interpreter/evaluate/binary_operation/operations/maths/subtract
 
-data modify storage bot:interpreter/execution varName set from storage bot:interpreter/evaluate stack[-1].a_raw.value
-data modify storage bot:interpreter/execution value set from storage bot:io Out
+data modify storage bot:interpreter evaluate.assign.name set from storage bot:interpreter evaluate.stack[-1].a.value
+data modify storage bot:interpreter evaluate.assign.value set from storage bot:interpreter evaluate.binary_operation.result
 
-function bot:interpreter/evaluate/expression/operations/assign/set
+function bot:interpreter/evaluate/binary_operation/operations/assign/set

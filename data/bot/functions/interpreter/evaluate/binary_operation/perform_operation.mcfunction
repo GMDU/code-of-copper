@@ -6,12 +6,12 @@ execute store result score .b bot.interpreter run data get storage bot:interpret
 
 data modify storage bot:interpreter evaluate.binary_operation.result set value {type:"undefined",value:undefined}
 
-# execute if data storage bot:interpreter evaluate{operation:"assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/assign
-# execute if data storage bot:interpreter evaluate{operation:"add_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/add
-# execute if data storage bot:interpreter evaluate{operation:"subtract_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/subtract
-# execute if data storage bot:interpreter evaluate{operation:"multiply_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/multiply
-# execute if data storage bot:interpreter evaluate{operation:"divide_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/divide
-# execute if data storage bot:interpreter evaluate{operation:"modulo_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/modulo
+execute if data storage bot:interpreter evaluate{operation:"assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/assign
+execute if data storage bot:interpreter evaluate{operation:"add_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/add
+execute if data storage bot:interpreter evaluate{operation:"subtract_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/subtract
+execute if data storage bot:interpreter evaluate{operation:"multiply_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/multiply
+execute if data storage bot:interpreter evaluate{operation:"divide_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/divide
+execute if data storage bot:interpreter evaluate{operation:"modulo_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/modulo
 
 execute if data storage bot:interpreter evaluate{operation:"add"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add
 execute if data storage bot:interpreter evaluate{operation:"subtract"} run function bot:interpreter/evaluate/binary_operation/operations/maths/subtract
