@@ -8,6 +8,9 @@ scoreboard objectives add bot.parser.literal dummy
 
 # Interpreter objectives
 scoreboard objectives add bot.interpreter dummy
+scoreboard objectives add bot.interpreter.move.x dummy
+scoreboard objectives add bot.interpreter.move.y dummy
+scoreboard objectives add bot.interpreter.move.z dummy
 
 # Misc objectives
 scoreboard objectives add bot.interface dummy
