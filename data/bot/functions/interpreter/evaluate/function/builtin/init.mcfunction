@@ -3,3 +3,4 @@ execute if data storage bot:interpreter temp.function.signature{id:"print"} run 
 execute if data storage bot:interpreter temp.function.signature{id:"random"} run function bot:interpreter/evaluate/function/builtin/random
 execute if data storage bot:interpreter temp.function.signature{id:"move"} run function bot:interpreter/evaluate/function/builtin/move/init
 execute if data storage bot:interpreter temp.function.signature{id:"sleep"} run function bot:interpreter/evaluate/function/builtin/sleep
+execute if data storage bot:interpreter temp.function.signature{id:"getblock"} run function bot:interpreter/evaluate/function/builtin/getblock
