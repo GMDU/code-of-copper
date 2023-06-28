@@ -27,5 +27,5 @@ kill 48478533-d8a3-459d-a948-248ada5a6490
 data modify storage moxlib:api/string/to_array target set from storage moxlib:api/helpers/block/get output.block
 function moxlib:api/string/to_array
 
-data modify storage bot:interpreter evaluate.return_value set value {type: "string", value: []}
+data modify storage bot:interpreter evaluate.return_value set value {type: "literal", variant: "string", value: []}
 data modify storage bot:interpreter evaluate.return_value.value set from storage moxlib:api/string/to_array output
