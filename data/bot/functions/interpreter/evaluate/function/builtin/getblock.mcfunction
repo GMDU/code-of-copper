@@ -24,8 +24,8 @@ execute at 48478533-d8a3-459d-a948-248ada5a6490 run function moxlib:api/helpers/
 
 kill 48478533-d8a3-459d-a948-248ada5a6490
 
-data modify storage moxlib:api/string/to_array target set from storage moxlib:api/helpers/block/get output.block
+data modify storage moxlib:api/string/to_array target set string storage moxlib:api/helpers/block/get output.block 10
 function moxlib:api/string/to_array
 
-data modify storage bot:interpreter evaluate.return_value set value {type: "literal", variant: "string", value: []}
-data modify storage bot:interpreter evaluate.return_value.value set from storage moxlib:api/string/to_array output
+data modify storage bot:interpreter evaluate.return_value set value {type: "literal", variant: "resource", namespace:[m,i,n,e,c,r,a,f,t]}
+data modify storage bot:interpreter evaluate.return_value.id set from storage moxlib:api/string/to_array output

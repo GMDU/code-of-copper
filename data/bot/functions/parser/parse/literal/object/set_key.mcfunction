@@ -1,2 +1,2 @@
 data modify storage bot:parser stack[-1].metadata.status set value "value"
-data modify storage bot:parser stack append value {type:"literal",variant:"alphanumeric",metadata:{close:{type:"single",value:":"},exclude:["function"]}}
+data modify storage bot:parser stack append value {type:"literal",variant:"alphanumeric",metadata:{close:{type:"single",value:":"},exclude:["function","resource"]}}

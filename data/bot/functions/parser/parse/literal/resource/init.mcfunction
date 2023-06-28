@@ -1,0 +1,2 @@
+execute unless data storage bot:parser stack[-1].metadata.status run function bot:parser/parse/literal/resource/before
+execute if data storage bot:parser stack[-1].metadata{status:"open"} unless data storage bot:parser current{consumed:true} run data modify storage bot:parser stack append value {type:"literal",variant:"alphanumeric"}
