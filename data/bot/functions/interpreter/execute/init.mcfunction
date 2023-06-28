@@ -1,1 +1,0 @@
-data modify storage bot:private temp.execute set from entity @s data.instruction
