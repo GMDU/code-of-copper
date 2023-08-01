@@ -1,0 +1,1 @@
+function bot:interpreter/evaluate/instruction/execute/assign/assign

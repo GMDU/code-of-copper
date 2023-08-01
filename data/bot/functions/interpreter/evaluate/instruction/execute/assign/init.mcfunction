@@ -1,0 +1,3 @@
+execute if data storage bot:interpreter evaluate.current{variant:"let"} run function bot:interpreter/evaluate/instruction/execute/assign/let
+execute if data storage bot:interpreter evaluate.current{variant:"const"} run function bot:interpreter/evaluate/instruction/execute/assign/const
+execute if data storage bot:interpreter evaluate.current{variant:"var"} run function bot:interpreter/evaluate/instruction/execute/assign/var

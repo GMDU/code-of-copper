@@ -10,4 +10,5 @@ execute if data storage moxlib:api/data/get {success:true} run return -1
 data modify storage bot:interpreter variables prepend value {}
 data modify storage bot:interpreter variables[0].name set from storage bot:interpreter evaluate.stack[-1].evaluated_args[0].value
 data modify storage bot:interpreter variables[0].value set from storage bot:interpreter evaluate.stack[-1].evaluated_args[1]
+
 execute store result storage bot:interpreter variables[0].scope byte 1 run scoreboard players get $scope bot.interpreter
