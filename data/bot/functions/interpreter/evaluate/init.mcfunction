@@ -9,6 +9,7 @@ execute if data storage bot:interpreter evaluate.current{type:"function"} run fu
 execute if data storage bot:interpreter evaluate.current{type:"instruction"} run function bot:interpreter/evaluate/instruction/init
 
 execute unless data storage bot:interpreter evaluate.next unless data storage bot:interpreter evaluate{loop:true} run function bot:interpreter/evaluate/close
+execute if data storage bot:interpreter evaluate.replace run data modify storage bot:interpreter evaluate.next set from storage bot:interpreter evaluate.replace
 execute if data storage bot:interpreter evaluate.next run function bot:interpreter/evaluate/next
 
 execute if data storage bot:interpreter evaluate{break:true} run return -1
