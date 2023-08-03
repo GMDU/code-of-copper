@@ -23,7 +23,7 @@ execute if data storage bot:interpreter evaluate{operation:"modulo"} run functio
 execute if data storage bot:interpreter evaluate{operation:"equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/equal
 execute if data storage bot:interpreter evaluate{operation:"not_equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/not_equal
 execute if data storage bot:interpreter evaluate{operation:"greater"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/greater_than
-execute if data storage bot:interpreter evaluate{operation:"greater_or_equal"} run function bot:interpreter/evaluate/binary_operation/operationscomparison//greater_than_eq
+execute if data storage bot:interpreter evaluate{operation:"greater_or_equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/greater_than_eq
 execute if data storage bot:interpreter evaluate{operation:"lesser"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/less_than
 execute if data storage bot:interpreter evaluate{operation:"lesser_or_equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/less_than_eq
 
