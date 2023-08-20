@@ -6,6 +6,7 @@ scoreboard players add @s bot.golem.execute 1
 
 data modify storage bot:interpreter evaluate.stack set from entity @s data.interpreter.evaluate.stack
 data modify storage bot:interpreter variables set from entity @s data.interpreter.variables
+data modify storage bot:interpreter registry.custom set from entity @s data.interpreter.functions
 execute store result score $scope bot.interpreter run data get entity @s data.interpreter.scope
 
 execute if data entity @s data.interpreter.evaluate.stack[] on vehicle run function bot:interpreter/init
