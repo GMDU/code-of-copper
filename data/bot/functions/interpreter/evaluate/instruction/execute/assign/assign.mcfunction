@@ -4,7 +4,7 @@ execute store result storage moxlib:api/data/get key.scope byte 1 run scoreboard
 
 function moxlib:api/data/get
 
-execute if data storage moxlib:api/data/get {success:true} run tellraw @a "Error: Yo dog, you can't re-declare a variable!"
+execute if data storage moxlib:api/data/get {success:true} run data modify storage bot:interpreter error set value '[{"text":"RuntimeError: Cannot redeclare variable "},{"storage":"moxlib:api/data/get","nbt":"output.name","interpret":true}]'
 execute if data storage moxlib:api/data/get {success:true} run return -1
 
 data modify storage bot:interpreter variables prepend value {}

@@ -3,7 +3,7 @@ data modify storage moxlib:api/data/get key.name set from storage bot:interprete
 
 function moxlib:api/data/get
 
-execute if data storage moxlib:api/data/get output{constant:true} run tellraw @a "Error: Yo dog, you can't re-assign a constant!"
+execute if data storage moxlib:api/data/get output{constant:true} run data modify storage bot:interpreter error set value '[{"text":"RuntimeError: Cannot reassign constant "},{"storage":"moxlib:api/data/get","nbt":"output.name","interpret":true}]'
 execute if data storage moxlib:api/data/get output{constant:true} run return -1
 
 data modify storage moxlib:api/data/set target set from storage bot:interpreter variables

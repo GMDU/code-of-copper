@@ -3,7 +3,7 @@ data modify storage moxlib:api/data/get key.name set from storage bot:interprete
 
 function moxlib:api/data/get
 
-execute if data storage moxlib:api/data/get {success:false} run tellraw @a "Error: Could not find function."
+execute if data storage moxlib:api/data/get {success:false} run data modify storage bot:interpreter error set value '[{"text":"RuntimeError: Undefined function "},{"storage":"bot:interpreter","nbt":"evaluate.stack[-1].name","interpret":true}]'
 execute if data storage moxlib:api/data/get {success:false} run return -1
 
 data modify storage bot:interpreter evaluate.replace set from storage moxlib:api/data/get output.value
