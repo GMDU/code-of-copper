@@ -5,7 +5,8 @@ execute if data entity @s data{waxed:true} run scoreboard players reset @s bot.g
 
 execute if data entity @s data{status:"stopped"} run function bot:entity/tick/brain/stopped
 execute if data entity @s data{status:"active"} run function bot:entity/tick/brain/active
-execute if data entity @s data{status:"error"} run function bot:entity/tick/brain/error
+execute if data entity @s data{status:"parse_error"} run function bot:entity/tick/brain/error
+execute if data entity @s data{status:"runtime_error"} run function bot:entity/tick/brain/error
 execute if data entity @s data{status:"rusted"} run function bot:entity/tick/brain/rusted
 execute if data entity @s data{status:"deoxidise"} unless data entity @s data{waxed:true} run function bot:entity/tick/brain/deoxidise
 execute if data entity @s data{status:"deoxidise"} if data entity @s data{waxed:true} run function bot:entity/tick/brain/unwax
