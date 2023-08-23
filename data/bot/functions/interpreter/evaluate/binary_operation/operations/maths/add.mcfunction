@@ -1,2 +1,4 @@
-data modify storage bot:interpreter evaluate.binary_operation.result set value {type: "literal", variant: "integer", value: 0}
-execute store result storage bot:interpreter evaluate.binary_operation.result.value int 1 run scoreboard players operation .a bot.interpreter += .b bot.interpreter
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"array"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/array
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"integer"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/integer
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"object"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/object/init
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"string"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/string

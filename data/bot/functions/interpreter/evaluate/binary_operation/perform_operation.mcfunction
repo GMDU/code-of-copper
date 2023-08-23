@@ -1,8 +1,8 @@
-data modify storage bot:interpreter evaluate.stack[-1].b_evaluated set from storage bot:interpreter evaluate.result
+data modify storage bot:interpreter evaluate.stack[-1].b set from storage bot:interpreter evaluate.result
 
 data modify storage bot:interpreter evaluate.operation set from storage bot:interpreter evaluate.stack[-1].op.variant
-execute store result score .a bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].a_evaluated.value
-execute store result score .b bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].b_evaluated.value
+execute store result score .a bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].a.value
+execute store result score .b bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].b.value
 
 data modify storage bot:interpreter evaluate.binary_operation.result set value {type:"undefined",value:undefined}
 
