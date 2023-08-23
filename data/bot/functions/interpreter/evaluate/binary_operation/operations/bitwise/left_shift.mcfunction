@@ -1,0 +1,2 @@
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"array"} run function bot:interpreter/evaluate/binary_operation/operations/bitwise/left_shift/array
+execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"integer"} run function bot:interpreter/evaluate/binary_operation/operations/bitwise/left_shift/integer

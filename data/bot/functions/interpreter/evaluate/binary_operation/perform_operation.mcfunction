@@ -30,5 +30,8 @@ execute if data storage bot:interpreter evaluate{operation:"lesser_or_equal"} ru
 execute if data storage bot:interpreter evaluate{operation:"and"} run function bot:interpreter/evaluate/binary_operation/operations/boolean/and
 execute if data storage bot:interpreter evaluate{operation:"or"} run function bot:interpreter/evaluate/binary_operation/operations/boolean/or
 
+execute if data storage bot:interpreter evaluate{operation:"left_shift"} run function bot:interpreter/evaluate/binary_operation/operations/bitwise/left_shift
+execute if data storage bot:interpreter evaluate{operation:"right_shift"} run function bot:interpreter/evaluate/binary_operation/operations/bitwise/right_shift
+
 data remove storage bot:interpreter evaluate.stack[-1]
 data modify storage bot:interpreter evaluate.stack append from storage bot:interpreter evaluate.binary_operation.result
