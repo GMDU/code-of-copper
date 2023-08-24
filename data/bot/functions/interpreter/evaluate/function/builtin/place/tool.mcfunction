@@ -25,7 +25,10 @@ kill 704a8f67-58d9-429d-8535-8eb0957136ca
 
 execute store result score $tile_drops bot.interpreter run gamerule doTileDrops
 execute if score $tile_drops bot.interpreter matches 1 run scoreboard players set $tile_drop_guard bot.interpreter 1
-gamerule doTileDrops false
-setblock ~ ~ ~ air destroy
+
+scoreboard players set $gamerule_success bot.interpreter 0
+execute store success score $gamerule_success bot.interpreter run gamerule doTileDrops false
+execute if score $gamerule_success bot.interpreter matches 1 run setblock ~ ~ ~ air destroy
 execute if score $tile_drops bot.interpreter matches 1 run gamerule doTileDrops true
+
 scoreboard players set $tile_drop_guard bot.interpreter 0

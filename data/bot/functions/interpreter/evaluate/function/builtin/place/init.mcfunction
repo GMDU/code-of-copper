@@ -1,3 +1,4 @@
+data remove storage bot:interpreter temp.item
 data modify storage bot:interpreter helpers.search_inventory.key set from storage bot:interpreter evaluate.stack[-1].args[0]
 data modify storage bot:interpreter helpers.search_inventory.inventory set from entity @s Items
 function bot:interpreter/evaluate/function/helpers/search_inventory/init
@@ -5,7 +6,7 @@ function bot:interpreter/evaluate/function/helpers/search_inventory/init
 execute if data storage bot:interpreter helpers.search_inventory.output{slot:-1b} run return -1
 
 # UUID: 3efca315-0b20-4026-8024-2450ff25b92f
-execute at @s run summon text_display ~ ~ ~ {text:'{"nbt":"temp.resource","storage": "bot:interpreter"}',UUID:[I; 1056744213, 186662950, -2145115056, -14304977],Tags:["bot.temp"]}
+execute at @s run summon text_display ~ ~ ~ {text:'{"nbt":"temp.resource","storage": "bot:interpreter"}',UUID:[I; 1056744213, 186662950, -2145115056, -14304977],Tags:["bot.temp"],text_opacity:0,background:0}
 
 execute store result score $x bot.interpreter run data get entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[0]
 execute store result score $dx bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].evaluated_value[0].value
