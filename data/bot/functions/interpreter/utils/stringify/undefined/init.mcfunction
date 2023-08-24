@@ -1,0 +1,1 @@
+data modify storage bot:interpreter utils.stringify.result append value ["undefined"]
