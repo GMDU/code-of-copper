@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0-beta-2] - 2023-05-25
+We rewrote the entire interpreter.
+
+### Added
+- Resource literal
+- Added << and >> operators
+- Objects can be indexed with dot (.) notation
+
+### Changed
+- Predicates updated to use 1.20 format
+- The entire interpreter was re-written from the ground up
+  - It should now be far more reliable going forwards
+- Place now takes a resource rather than a slot number
+- Minus operator no longer removes items from objects/arrays
+
+### Fixed
+- Custom functions now can be called from expressions.
+
+## [0.3.0-beta-1] - 2023-05-25
+Fix all the stupid bugs of 0.3.0-alpha-1
+
+### Added
+- Constants
+
+### Fixed
+- Prevent running bots with compile errors
+- Bot no longer loses error messages when recompiling programs
+- Return not exiting functions
+- Functions can be called within expressions
+- Functions called within functions return values properly
+- Random function is now actually random
+- Functions can be defined and called with no arguments/parameters
+
 ## [0.3.0-alpha-1] - 2023-03-23
 Functions
 
