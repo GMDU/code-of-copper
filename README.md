@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/GMDU/code-of-copper">
-    <img src="logo.png" alt="Logo" width="128" height="128">
+    <img src="docs/assets/logo.png" alt="Logo" width="128" height="128">
   </a>
 
 <strong><h2 align="center">Code of Copper</h2></strong>
