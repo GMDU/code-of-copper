@@ -22,6 +22,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes
 extra:
   social:
     - icon: simple/discord
