@@ -168,7 +168,7 @@ data modify storage moxlib:test/it describes set value "An unsuccessful evaluati
   data modify storage bot:io In set value {type: "literal", variant: "foo"}
   function bot:interpreter/evaluate
 
-  data modify storage moxlib:test/it expects set value {type: "undefined", value: undefined}
+  data modify storage moxlib:test/it expects set value {type: "undefined", value: false}
   data modify storage moxlib:test/it receives set from storage bot:io Out
 
   function moxlib:api/test/perform

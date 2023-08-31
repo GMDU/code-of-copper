@@ -1,5 +1,5 @@
 execute store result score .index bot.interpreter run data get storage bot:interpreter evaluate.result.value
-data modify storage bot:interpreter evaluate.parameters.result set value {type:"undefined",value:undefined}
+data modify storage bot:interpreter evaluate.parameters.result set value {type:"undefined",value: false}
 
 function bot:interpreter/evaluate/literal/array/parameters/iterate
 

@@ -4,7 +4,7 @@ data modify storage bot:interpreter evaluate.operation set from storage bot:inte
 execute store result score .a bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].a.value
 execute store result score .b bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].b.value
 
-data modify storage bot:interpreter evaluate.binary_operation.result set value {type:"undefined",value:undefined}
+data modify storage bot:interpreter evaluate.binary_operation.result set value {type:"undefined",value: false}
 
 execute if data storage bot:interpreter evaluate{operation:"assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/assign
 execute if data storage bot:interpreter evaluate{operation:"add_assign"} run function bot:interpreter/evaluate/binary_operation/operations/assign/add
