@@ -1,5 +1,8 @@
 # Standard Library
 
+The standard library is the set of builtin functions, avaliable in every GolemScript program.  
+They are all coded in native MCFunction, and execute within one game tick. (1/20 of a second)
+
 ## [void](/data_types#undefined) print ( [any](/data_types) value ) {data-toc-label='Print'}
 Outputs `value` to the game chat of anyone within 16 blocks of the golem.
 

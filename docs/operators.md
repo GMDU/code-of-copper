@@ -1,5 +1,13 @@
 # Operators
 
+Each operator has a precedence value. When an operator is part of an expression, it will bind more tightly to its operands the higher its precedence value.
+```ruby title="Example"
+# Since "*" has higher precedence than "+",
+# it will bind more tightly to 2 and 3,
+# so this expression is evaluated (1 + (2 * 3))
+1 + 2 * 3
+```
+
 ## Precedence 8
 
 ### Power (`**`) {data-toc-label='Power'}
@@ -133,7 +141,7 @@ If `left` is truthy[^3], return `left`. Otherwise, return `right`.
 
 ### Assign (`=`) {data-toc-label='Assign'}
 
-[variable](/keywords#let) = [any](/data_types)
+[variable](/keywords#let) = [any](/data_types)  
 Sets the value of `left` to `right`.
 
 ### Operator assignments (`+=`/`-=`/`*=`/`/=`/`%=`) {data-toc-label='Operator assignments'}
