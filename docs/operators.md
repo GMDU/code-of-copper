@@ -162,4 +162,4 @@ The size of an array is its length
 The size of an object is the number of keys
 [^3]:
 A value is truthy if its size[^2] is not zero.  
-A resource is always truthy.
+A resource is always truthy. Undefined is always falsey.
