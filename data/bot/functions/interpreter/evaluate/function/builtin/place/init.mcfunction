@@ -9,19 +9,19 @@ execute if data storage bot:interpreter helpers.search_inventory.output{slot:-1b
 execute at @s run summon text_display ~ ~ ~ {text:'{"nbt":"temp.resource","storage": "bot:interpreter"}',UUID:[I; 1056744213, 186662950, -2145115056, -14304977],Tags:["bot.temp"],text_opacity:0,background:0}
 
 execute store result score $x bot.interpreter run data get entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[0]
-execute store result score $dx bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].evaluated_value[0].value
+execute store result score $dx bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].value[0].value
 execute if score $dx bot.interpreter matches 6.. run scoreboard players set $dx bot.interpreter 5
 execute if score $dx bot.interpreter matches ..-6 run scoreboard players set $dx bot.interpreter -5
 execute store result entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[0] double 1 run scoreboard players operation $x bot.interpreter += $dx bot.interpreter
 
 execute store result score $y bot.interpreter run data get entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[1]
-execute store result score $dy bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].evaluated_value[1].value
+execute store result score $dy bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].value[1].value
 execute if score $dy bot.interpreter matches 6.. run scoreboard players set $dy bot.interpreter 5
 execute if score $dy bot.interpreter matches ..-6 run scoreboard players set $dy bot.interpreter -5
 execute store result entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[1] double 1 run scoreboard players operation $y bot.interpreter += $dy bot.interpreter
 
 execute store result score $z bot.interpreter run data get entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[2]
-execute store result score $dz bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].evaluated_value[2].value
+execute store result score $dz bot.interpreter run data get storage bot:interpreter evaluate.stack[-1].args[1].value[2].value
 execute if score $dz bot.interpreter matches 6.. run scoreboard players set $dz bot.interpreter 5
 execute if score $dz bot.interpreter matches ..-6 run scoreboard players set $dz bot.interpreter -5
 execute store result entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[2] double 1 run scoreboard players operation $z bot.interpreter += $dz bot.interpreter

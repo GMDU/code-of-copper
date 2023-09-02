@@ -1,6 +1,6 @@
 data modify storage bot:interpreter evaluate.binary_operation.result set from storage bot:interpreter evaluate.stack[-1].a
-data modify storage bot:interpreter evaluate.binary_operation.result.evaluated_value append from storage bot:interpreter evaluate.stack[-1].b
-data modify storage bot:interpreter evaluate.binary_operation.result.value append from storage bot:interpreter evaluate.stack[-1].b_original
+data modify storage bot:interpreter evaluate.binary_operation.result.value append from storage bot:interpreter evaluate.stack[-1].b
+data modify storage bot:interpreter evaluate.binary_operation.result.original_value append from storage bot:interpreter evaluate.stack[-1].b_original
 
 execute unless data storage bot:interpreter evaluate.stack[-1].a_original{type:"literal",variant:"variable"} run return -1
 
