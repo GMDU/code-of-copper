@@ -1,0 +1,3 @@
+data modify storage bot:interpreter utils.stringify.result append value []
+execute if data storage bot:interpreter utils.stringify.current{value:true} run data modify storage bot:interpreter utils.stringify.result[-1] append value "true"
+execute if data storage bot:interpreter utils.stringify.current{value:false} run data modify storage bot:interpreter utils.stringify.result[-1] append value "false"
