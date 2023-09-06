@@ -14,7 +14,7 @@ Each operator has a precedence value. When an operator is part of an expression,
 
 [int](/data_types#integer) ** [int](/data_types#integer)  
 Returns `left` to the power of `right`.  
-Note: Power is [left associative](https://en.wikipedia.org/wiki/Operator_associativity).
+Note: Power is [left associative](https://en.wikipedia.org/wiki/Operator_associativity){target=_blank}.
 
 ---
 
@@ -44,7 +44,7 @@ Returns the remainder of dividing `left` by `right`.
 Returns `left` plus `right`.
 
 [string](/data_types#string) + [string](/data_types#string)  
-Returns the [concatenated](https://en.wikipedia.org/wiki/Concatenation) string, `left` followed by `right`.
+Returns the [concatenated](https://en.wikipedia.org/wiki/Concatenation){target=_blank} string, `left` followed by `right`.
 
 [array](/data_types#array) + [array](/data_types#array)  
 Returns the merged array containing all of `left`'s values followed by all of `right`'s values.
@@ -65,7 +65,7 @@ Returns `left` minus `right`.
 [int](/data_types#integer) << [int](/data_types#integer)  
 Returns `left`, with all the bits in it shifted left, `right` amount of times.  
 Equivalent to `left * (2 ** right)`.
-See [wikipedia](https://en.wikipedia.org/wiki/Logical_left_shift) for more details.
+See [wikipedia](https://en.wikipedia.org/wiki/Logical_left_shift){target=_blank} for more details.
 
 [array](/data_types#array) << [any](/data_types)  
 Returns `left` with `right` appended to it.  
@@ -77,7 +77,7 @@ If `left` is a variable, it mutates it.
 [int](/data_types#integer) >> [int](/data_types#integer)  
 Returns `left`, with all the bits in it shifted right, `right` amount of times.  
 Equivalent to `left / (2 ** right)`.
-See [wikipedia](https://en.wikipedia.org/wiki/Logical_right_shift) for more details.
+See [wikipedia](https://en.wikipedia.org/wiki/Logical_right_shift){target=_blank} for more details.
 
 [any](/data_types) >> [array](/data_types#array)  
 Returns `right` with `left` prepended to it.  

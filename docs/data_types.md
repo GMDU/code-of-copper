@@ -50,7 +50,7 @@ Strings can be indexed with a following index integer, contained in square brack
 Regex describes a pattern for a regular expression, and can be used in the [match](/stdlib#match) function.  
 They are written as a regular expression pattern, between two `/`.
 
-For more details on valid regular expressions, see the [regex library](https://modrinth.com/datapack/regex).
+For more details on valid regular expressions, see the [regex library](https://modrinth.com/datapack/regex){target=_blank}.
 
 ```ruby title="Examples of valid Regexes"
 /hello?world/
