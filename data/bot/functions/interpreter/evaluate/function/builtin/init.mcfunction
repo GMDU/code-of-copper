@@ -6,3 +6,5 @@ execute if data storage bot:interpreter temp.function.signature{id:"sleep"} run 
 execute if data storage bot:interpreter temp.function.signature{id:"getblock"} run function bot:interpreter/evaluate/function/builtin/getblock
 execute if data storage bot:interpreter temp.function.signature{id:"match"} run function bot:interpreter/evaluate/function/builtin/match
 execute if data storage bot:interpreter temp.function.signature{id:"place"} run function bot:interpreter/evaluate/function/builtin/place/init
+execute if data storage bot:interpreter temp.function.signature{id:"pos"} run function bot:interpreter/evaluate/function/builtin/pos
+execute if data storage bot:interpreter temp.function.signature{id:"inventory"} run function bot:interpreter/evaluate/function/builtin/inventory/init
