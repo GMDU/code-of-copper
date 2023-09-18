@@ -30,7 +30,7 @@ if <condition>
   ...
 end
 ```
-Executes the code in the given [block](/syntax#blocks) if `condition` is [truthy](/operators#fn:3).
+Executes the code in the given [block](syntax.md#blocks) if `condition` is [truthy](operators.md#fn:3).
 
 ### While
 ```ruby
@@ -38,7 +38,7 @@ while <condition>
   ...
 end
 ```
-Repeatedly executes the code in the given [block](/syntax#blocks) while `condition` is [truthy](/operators#fn:3).
+Repeatedly executes the code in the given [block](syntax.md#blocks) while `condition` is [truthy](operators.md#fn:3).
 
 ### Loop
 ```ruby
@@ -46,7 +46,7 @@ loop <times>
   ...
 end
 ```
-Repeatedly executes the code in the given [block](/syntax#blocks) `times` amount of times.
+Repeatedly executes the code in the given [block](syntax.md#blocks) `times` amount of times.
 
 ### Break
 ```ruby
@@ -75,7 +75,7 @@ func <name>(<param1>,<param2>...)
 end
 ```
 Defines a function with the name `name` and parameters `param1`, `param2`... etc.  
-Functions can be called using the [function call](/syntax#functions) syntax.
+Functions can be called using the [function call](syntax.md#functions) syntax.
 
 ### Return
 ```go
@@ -88,6 +88,6 @@ Sets `value` as the result of calling the current function, and stops executing 
 If used outside of a function, it throws an error.
 
 [^1]:
-A scope begins when you enter a [block](/syntax#blocks), and ends when you leave it.  
+A scope begins when you enter a [block](syntax.md#blocks), and ends when you leave it.  
 When a block is left, variables defined in that scope are removed.  
 Variables defined before a block is entered are also accessible in that block.

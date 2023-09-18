@@ -2,7 +2,7 @@
 
 ## Installation
 To install the datapack, first download the latest release from [Modrinth](https://modrinth.com/datapack/code-of-copper){target=_blank}.  
-You will also need [Moxlib](https://modrinth.com/datapack/moxlib){target=_blank}, and if you want [Regular Expression](/data_types#regex) support, [Regex](https://modrinth.com/datapack/regex){target=_blank}.
+You will also need [Moxlib](https://modrinth.com/datapack/moxlib){target=_blank}, and if you want [Regular Expression](data_types.md#regex) support, [Regex](https://modrinth.com/datapack/regex){target=_blank}.
 
 Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack){target=_blank}.
 
@@ -18,8 +18,8 @@ If you would like to follow along with the datapack and learn the language as yo
 
 ## Getting started with GolemScript
 GolemScript is written in Minecraft books, which are applied to the golem to give it a program.  
-There are many built-in [functions](/stdlib), [keywords](/keywords) and [operators](/operators). These are all documented throughout this site.
+There are many built-in [functions](stdlib.md), [keywords](keywords.md) and [operators](operators.md). These are all documented throughout this site.
 
-For the basic GolemScript syntax, see [syntax](/syntax).  
-For the various data-types and values you will use, see [data types](/data_types).  
-And for some example programs utilising these features, see [examples](/examples).
+For the basic GolemScript syntax, see [syntax](syntax.md).  
+For the various data-types and values you will use, see [data types](data_types.md).  
+And for some example programs utilising these features, see [examples](examples.md).

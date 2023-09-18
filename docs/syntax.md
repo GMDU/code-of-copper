@@ -6,7 +6,7 @@ Code of Copper uses a familiar syntax, hoping to be easy to read and write with.
 Any line starting with a `#` is a commented line. Commented lines are ignored by the interpreter.
 
 ## Blocks
-Blocks in Code of Copper are defined by a [keyword](/keywords), and closed with the keyword [end](/keywords#end).
+Blocks in Code of Copper are defined by a [keyword](keywords.md), and closed with the keyword [end](keywords.md#end).
 
 For example, if statements in Code of Copper look as such:
 
@@ -35,7 +35,7 @@ _greetings
 Functions can be called using the function name, followed by parentheses containing comma separated arguments.
 Function names follow the same constraints as variables.
 
-For example, here is the [move](/stdlib#move) function:
+For example, here is the [move](stdlib.md#move) function:
 ```ruby
 move(1, 0, 0)
 ```
