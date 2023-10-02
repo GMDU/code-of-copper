@@ -1,4 +1,3 @@
-execute unless data storage bot:parser stack[-1].metadata.registry run function bot:parser/parse/expression/operator/registry
 data modify storage bot:helpers/registry target set from storage bot:parser stack[-1].metadata.registry
 data modify storage bot:helpers/registry key set from storage bot:parser current.value
 
