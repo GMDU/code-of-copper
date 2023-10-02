@@ -1,10 +1,13 @@
 data modify storage bot:interpreter evaluate.current set from storage bot:interpreter evaluate.stack[-1]
 data modify storage bot:interpreter evaluate merge value {break:false,loop:false}
 
+tellraw @a {"storage":"bot:interpreter","nbt":"evaluate.stack[-1].type"}
+
 execute if data storage bot:interpreter evaluate.current{type:"block"} run function bot:interpreter/evaluate/block/init
 execute if data storage bot:interpreter evaluate.current{type:"literal"} run function bot:interpreter/evaluate/literal/init
 execute if data storage bot:interpreter evaluate.current{type:"expression"} run function bot:interpreter/evaluate/expression/init
 execute if data storage bot:interpreter evaluate.current{type:"binary_operation"} run function bot:interpreter/evaluate/binary_operation/init
+execute if data storage bot:interpreter evaluate.current{type:"unary_operation"} run function bot:interpreter/evaluate/unary_operation/init
 execute if data storage bot:interpreter evaluate.current{type:"function"} run function bot:interpreter/evaluate/function/init
 execute if data storage bot:interpreter evaluate.current{type:"instruction"} run function bot:interpreter/evaluate/instruction/init
 
