@@ -10,4 +10,3 @@ execute if data storage bot:interpreter evaluate.operation{current:"logical_not"
 
 data remove storage bot:interpreter evaluate.stack[-1]
 data modify storage bot:interpreter evaluate.stack append from storage bot:interpreter evaluate.operation.result
-tellraw @a {"storage":"bot:interpreter","nbt":"evaluate.operation.result"}
