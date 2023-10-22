@@ -41,3 +41,13 @@ Returns a random integer between `min` and `max`, inclusive.
 ## [string](data_types.md#string) match ( [regex](data_types.md#regex) pattern, [string](data_types.md#string) target ) {data-toc-label='Match'}
 Returns the first substring of `string` to match `pattern`.  
 If `pattern` does not match `string`, it returns an empty string.
+
+---
+
+## [object](data_types.md#object) { x: [int](data_types.md#integer), y: [int](data_types.md#integer), z: [int](data_types.md#integer) } pos () {data-toc-label='Pos'}
+Returns the `x`, `y` and `z` coordinates of the golem.
+
+---
+
+## [array](data_types.md#array) \[ [resource](data_types.md#resource) \] inventory () {data-toc-label='Inventory'}
+Returns an array of resources, the namespaced IDs of every item in the golem's inventory.
