@@ -8,3 +8,4 @@ execute if data storage bot:interpreter temp.function.signature{id:"match"} run 
 execute if data storage bot:interpreter temp.function.signature{id:"place"} run function bot:interpreter/evaluate/function/builtin/place/init
 execute if data storage bot:interpreter temp.function.signature{id:"pos"} run function bot:interpreter/evaluate/function/builtin/pos
 execute if data storage bot:interpreter temp.function.signature{id:"inventory"} run function bot:interpreter/evaluate/function/builtin/inventory/init
+execute if data storage bot:interpreter temp.function.signature{id:"time"} run function bot:interpreter/evaluate/function/builtin/time
