@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> REGEX\")\nprint(\"Expected output: \\'aaabc1\\'\")\nprint(\"---\")\n\nlet rgx = /a+b?c./\nlet str = \"aaabc123\"\n\nprint(\n match(rgx, str)\n) \n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

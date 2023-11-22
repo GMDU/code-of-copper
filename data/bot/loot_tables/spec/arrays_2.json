@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> ARRAYS 2\")\nprint(\"Expected output:\")\nprint(\"[1, 3, 2, \\'bar\\']\")\nprint(\"---\")\nprint([\n [1,2,3][0],\n [1,2,3][-1],\n [[1,2]][0][1],\n [{foo:[\"bar\"]}][0].foo[-1]\n])\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

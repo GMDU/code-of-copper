@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> VARIABLES\")\nprint(\"Expected output:\")\nprint(2)\nprint([1, undefined])\nprint(\"---\")\n\nif true\n  var a = 1\n  let b = 2\n  print(b)\nend\nprint([a, b])\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

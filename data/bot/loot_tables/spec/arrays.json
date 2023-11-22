@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> ARRAYS\")\nprint(\"Expected output: [1, 2, 3, 4] x 5\")\n\nprint([1, 2, 3] << 4)\nprint(1 >> [2, 3, 4])\nprint(1 >> [2, 3] << 4)\n\nlet arr = [1, 2, 3]\narr << 4\nprint(arr)\nprint([1, 2] + [3, 4])\nprint(\">>>\")\n']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

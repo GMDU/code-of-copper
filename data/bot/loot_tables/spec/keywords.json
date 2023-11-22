@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> KEYWORDS\")\nprint(\"Expected output:\")\n\nprint([1, undefined])\nprint(\"\\'Looping...\\' x 3\")\nprint(\"\\'This prints once.\\'\")','print(\"---\")\n\nif true\n var x = 1\n let y = 2\nend\n\nprint([x, y])','loop 3\n print(\"Looping...\")\n next\n print(\"THIS IS AN ERROR!\")\nend\n\nloop 10\n print(\"This prints once.\")\n break\nend\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
