@@ -28,6 +28,7 @@ execute store result entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[2] double 1
 
 data modify storage bot:interpreter temp.resource set from storage bot:interpreter evaluate.stack[-1].args[0]
 data remove storage bot:interpreter temp.resource.type
+data remove storage bot:interpreter temp.resource.value
 data remove storage bot:interpreter temp.resource.variant
 
 data modify entity 3efca315-0b20-4026-8024-2450ff25b92f Tags set from storage bot:interpreter registry.tools
