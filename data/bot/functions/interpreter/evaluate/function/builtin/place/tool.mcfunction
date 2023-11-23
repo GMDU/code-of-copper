@@ -1,3 +1,4 @@
+execute if block ~ ~ ~ #bot:unbreakable run data modify storage bot:interpreter temp.item set from storage bot:interpreter helpers.search_inventory.output
 execute if block ~ ~ ~ #bot:unbreakable run return -1
 
 # 704a8f67-58d9-429d-8535-8eb0957136ca
