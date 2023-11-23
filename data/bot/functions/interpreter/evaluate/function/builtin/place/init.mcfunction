@@ -5,6 +5,11 @@ function bot:interpreter/evaluate/function/helpers/search_inventory/init
 
 execute if data storage bot:interpreter helpers.search_inventory.output{slot:-1b} run return -1
 
+data modify storage bot:interpreter temp.resource set from storage bot:interpreter evaluate.stack[-1].args[0]
+data remove storage bot:interpreter temp.resource.type
+data remove storage bot:interpreter temp.resource.value
+data remove storage bot:interpreter temp.resource.variant
+
 # UUID: 3efca315-0b20-4026-8024-2450ff25b92f
 execute at @s run summon text_display ~ ~ ~ {text:'{"nbt":"temp.resource","storage": "bot:interpreter"}',UUID:[I; 1056744213, 186662950, -2145115056, -14304977],Tags:["bot.temp"],text_opacity:0,background:0}
 
@@ -25,11 +30,6 @@ execute store result score $dz bot.interpreter run data get storage bot:interpre
 execute if score $dz bot.interpreter matches 6.. run scoreboard players set $dz bot.interpreter 5
 execute if score $dz bot.interpreter matches ..-6 run scoreboard players set $dz bot.interpreter -5
 execute store result entity 3efca315-0b20-4026-8024-2450ff25b92f Pos[2] double 1 run scoreboard players operation $z bot.interpreter += $dz bot.interpreter
-
-data modify storage bot:interpreter temp.resource set from storage bot:interpreter evaluate.stack[-1].args[0]
-data remove storage bot:interpreter temp.resource.type
-data remove storage bot:interpreter temp.resource.value
-data remove storage bot:interpreter temp.resource.variant
 
 data modify entity 3efca315-0b20-4026-8024-2450ff25b92f Tags set from storage bot:interpreter registry.tools
 data modify storage bot:interpreter temp.tags set from entity 3efca315-0b20-4026-8024-2450ff25b92f Tags
