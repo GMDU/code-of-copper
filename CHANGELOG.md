@@ -5,6 +5,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2023-11-26
+Overhauled the entire language.
+
+### Added
+- Custom Functions
+  - Function definitions
+  - Function calls
+  - return keyword
+- Stdlib Functions
+  - random: to genereate random numbers
+  - time: to get the current gametime
+- Var keyword for global variables
+- Assignment operators such as += and -=
+- Booleans
+- Constants
+- Resource literal
+- << and >> operators
+- Objects can be indexed with dot (.) notation
+- Other miscellaneous operators
+
+### Changed
+- Rewrote all documentation
+  - Now contains every language feature
+  - Better documented and easier to understand
+  - Available [here](https://datapack.dev/docs/code_of_copper)
+- Many instructions are now built in functions
+  - You can now use functions such as getblock inside expressions
+- $INVENTORY and $POS are now functions: inventory() and pos()
+- pos() now returns an object, instead of an array
+- inventory() now returns a array of resources, rather than strings
+- Variables only exist within the scope that they are created
+- Predicates updated to use 1.20 format
+- The entire interpreter was re-written from the ground up
+  - It should now be far more reliable going forwards
+- Place now takes a resource rather than a slot number
+- Minus operator no longer removes items from objects/arrays
+
+### Fixed
+- Regex matcher is now correctly passed a string's value
+- Backslashes, unless escaping `/`, no longer need to be escaped themselves.
+
 ## [0.3.0-beta-2] - 2023-05-25
 We rewrote the entire interpreter.
 

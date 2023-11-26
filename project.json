@@ -1,0 +1,24 @@
+{
+  "name": "Code of Copper",
+  "slug": "code-of-copper",
+  "version": "0.3.0",
+  "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2"
+  ],
+  "summary": "Programmable Copper Golems. Fully text-based programming language in a vanilla datapack.",
+  "license": "GPL-3.0-or-later",
+  "categories": [
+    "server",
+    "adventure",
+    "technology",
+    "utility",
+    "world-generation"
+  ],
+  "dependencies": {
+    "moxlib": "0.5.9",
+    "regex": "0.1.1"
+  },
+  "release_type": "release"
+}
