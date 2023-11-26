@@ -41,6 +41,4 @@ tag 3efca315-0b20-4026-8024-2450ff25b92f add bot.temp
 execute if score $is_block bot.interpreter matches 0 at 3efca315-0b20-4026-8024-2450ff25b92f run function bot:interpreter/evaluate/function/builtin/place/tool
 execute unless score $is_block bot.interpreter matches 0 at 3efca315-0b20-4026-8024-2450ff25b92f run function bot:interpreter/evaluate/function/builtin/place/block
 
-function bot:interpreter/evaluate/function/builtin/place/insert_back/init
-
 kill 3efca315-0b20-4026-8024-2450ff25b92f
