@@ -51,3 +51,6 @@ Returns the `x`, `y` and `z` coordinates of the golem.
 
 ## [array](data_types.md#array) \[ [resource](data_types.md#resource) \] inventory () {data-toc-label='Inventory'}
 Returns an array of resources, the namespaced IDs of every item in the golem's inventory.
+
+## [int](data_types.md#integer) time () {data-toc-label='Time'}
+Returns the current game time, in ticks. Equivalent to mcfunction: `/time query gametime`
