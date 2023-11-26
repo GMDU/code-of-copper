@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> PLACE\")\nprint(\"Expected output: golem places cobblestone, then breaks it\")\nprint(\"---\") \n\nplace(:cobblestone,[1,0,0])\nsleep(10)\nplace(:iron_pickaxe,[1,0,0])\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
