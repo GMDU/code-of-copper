@@ -103,8 +103,7 @@ func twosum(array, targ)
   return []
 end
 
-nums = [3,2,4]
-target = 6
-
-print(twosum(nums, target))
+print(twosum([2,7,11,15],9))
+print(twosum([3,2,4],6))
+print(twosum([3,3],6))
 ```
