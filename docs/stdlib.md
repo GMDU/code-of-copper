@@ -52,6 +52,17 @@ If `pattern` does not match `string`, it returns an empty string.
 
 ---
 
+## [string](data_types.md#string) typeof ( [any](data_types.md) value ) {data-toc-label='Typeof'}
+Returns the name of the data type of `value`.
+Example:
+```rb
+typeof(1) # integer
+typeof(/hi/) # regex
+typeof(true) # boolean
+```
+
+---
+
 ## [object](data_types.md#object) { x: [int](data_types.md#integer), y: [int](data_types.md#integer), z: [int](data_types.md#integer) } pos () {data-toc-label='Pos'}
 Returns the `x`, `y` and `z` coordinates of the golem.
 
