@@ -23,3 +23,8 @@ There are many built-in [functions](stdlib.md), [keywords](keywords.md) and [ope
 For the basic GolemScript syntax, see [syntax](syntax.md).  
 For the various data-types and values you will use, see [data types](data_types.md).  
 And for some example programs utilising these features, see [examples](examples.md).
+
+## Extending GolemScript
+GolemScript has many built-in functions, to aid you in programming with it. If there are missing functions, you can define custom functions within GolemScript.  
+However, not all behaviour is possible to implement inside GolemScript, and so sometimes you need to write it in native mcfunction.  
+Luckily, GolemScript has you covered! See [plugins](plugins.md) for information on creating your own built-in functions.
