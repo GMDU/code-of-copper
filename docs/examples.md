@@ -70,3 +70,41 @@ end
 while path(:stone)
 end
 ```
+
+## Two Sum solution
+A solution to the [leetcode two sum](https://leetcode.com/problems/two-sum/description/) problem.  
+Written by amandin on Discord.
+
+```rb
+func len(array)
+  i = 0
+  loop 100
+    if array[i] == undefined
+      return i
+    end
+    i += 1
+  end
+end
+
+func twosum(array, targ)
+  target = targ
+  len = len(array)
+  i = 0
+  loop len
+    j = 0
+    loop len
+      if array[i] + array[j] == target && i != j
+        return [i, j]
+      end
+      j += 1
+    end
+    i += 1
+  end
+  return []
+end
+
+nums = [3,2,4]
+target = 6
+
+print(twosum(nums, target))
+```
