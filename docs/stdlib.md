@@ -33,6 +33,14 @@ Pauses execution for `time` game ticks. (20 game ticks = 1 second)
 
 ---
 
+## [int](data_types.md#integer) len ( [string](data_types.md#string) | [array](data_types.md#array) | [object](data_types.md#object) value ) {data-toc-label='Len'}
+Returns the length of `value`.  
+For strings, this is the number of characters.  
+For arrays, this is the number of elements.  
+For objects, this is the number of key-value pairs.  
+
+---
+
 ## [int](data_types.md#integer) random ( [int](data_types.md#integer) min, [int](data_types.md#integer) max ) {data-toc-label='Random'}
 Returns a random integer between `min` and `max`, inclusive.
 
@@ -51,6 +59,8 @@ Returns the `x`, `y` and `z` coordinates of the golem.
 
 ## [array](data_types.md#array) \[ [resource](data_types.md#resource) \] inventory () {data-toc-label='Inventory'}
 Returns an array of resources, the namespaced IDs of every item in the golem's inventory.
+
+---
 
 ## [int](data_types.md#integer) time () {data-toc-label='Time'}
 Returns the current game time, in ticks. Equivalent to mcfunction: `/time query gametime`
