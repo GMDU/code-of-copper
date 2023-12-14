@@ -1,4 +1,5 @@
 data modify storage moxlib:api/data/get target set from storage bot:interpreter registry.builtin
+data modify storage moxlib:api/data/get target append from storage bot:interpreter registry.external[]
 data modify storage moxlib:api/data/get key.name set from storage bot:interpreter evaluate.stack[-1].name
 
 function moxlib:api/data/get
