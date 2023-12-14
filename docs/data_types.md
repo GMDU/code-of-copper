@@ -86,8 +86,11 @@ bot:golem
 Resources can be indexed with either square bracket or dot parameters.
 
 ```title="Example of Resources being indexed"
-foo:bar.id # => "bar"
-:stone["namespace"] # => "minecraft"
+let res1 = foo:bar
+res1.id # => "bar"
+
+let res2 = :stone
+res2["namespace"] # => "minecraft"
 ```
 
 ## Array
@@ -114,8 +117,13 @@ Arrays may span multiple lines.
 Arrays can be indexed with a following index integer, contained in square brackets.
 
 ```ruby title="Example of an Array being indexed"
-[1,2,3][1] # => 2
-["foo", "bar", "baz"][i] # i = 2, => "baz"
+let arr1 = [1,2,3]
+arr1[1] # => 2
+
+let arr2 = ["foo", "bar", "baz"]
+let i = 2
+
+arr2[i] # => "baz"
 ```
 
 ## Object
@@ -140,7 +148,10 @@ Objects contain key-value pairs, with the values being any data type. Keys, howe
 Objects can be indexed with either square bracket or dot parameters.
 
 ```ruby title="Example of Objects being indexed"
-{a: "foo", b: "bar", c: "baz"}.b # => "bar"
-{a: "foo", b: "bar", c: "baz"}["a"] # => "foo"
-{a: "foo", b: "bar", c: "baz"}[i] # i = "c", => "baz"
+let obj = {a: "foo", b: "bar", c: "baz"}
+obj.b # => "bar"
+obj["a"] # => "foo"
+
+let i = "c"
+obj[i] # => "baz"
 ```
