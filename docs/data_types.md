@@ -1,4 +1,17 @@
 # Data Types
+These are the base data types in GolemScript. They can be assigned to [variables](keywords.md#assignment),
+used in [expressions](syntax.md#expressions), or passed as parameters to [functions](keywords.md#functional).
+
+```ruby
+# Assign to variable
+let arr = [1, 2, 3, 4]
+
+# Use in expression
+"a" + "b" + "c"
+
+# Pass to function
+myfunc({id: 'foo', value: 'bar'})
+```
 
 ## Undefined
 Undefined is the default value for variables that have not been assigned.  
@@ -9,6 +22,8 @@ Indexing a literal that would not return a result also yields undefined.
 Booleans are written as `true` and `false`.
 
 ## Integer
+**GolemScript currently only supports integers as numerics, no floats or doubles.**
+
 Integers are represented by the digits 0-9, and have the range of  
 `-2,147,483,648 (-2^31)` to `2,147,483,647 (2^31-1)`.
 
