@@ -4,7 +4,7 @@
 To install the datapack, first download the latest release from [Modrinth](https://modrinth.com/datapack/code-of-copper){target=_blank}.  
 You will also need [Moxlib](https://modrinth.com/datapack/moxlib){target=_blank}, and if you want [Regular Expression](data_types.md#regex) support, [Regex](https://modrinth.com/datapack/regex){target=_blank}.
 
-Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack){target=_blank}.
+Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.wiki/Tutorials/Installing_a_data_pack){target=_blank}.
 
 When you install the datapack, you must leave and rejoin the world (or restart the server) for all effects to properly take place.
 

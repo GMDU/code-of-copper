@@ -8,3 +8,6 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"place
 execute if data storage bot:api/interpreter/function execute.signature{id:"pos"} run function bot:interpreter/evaluate/function/builtin/pos
 execute if data storage bot:api/interpreter/function execute.signature{id:"inventory"} run function bot:interpreter/evaluate/function/builtin/inventory/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"time"} run function bot:interpreter/evaluate/function/builtin/time
+execute if data storage bot:api/interpreter/function execute.signature{id:"len"} run function bot:interpreter/evaluate/function/builtin/len
+execute if data storage bot:api/interpreter/function execute.signature{id:"typeof"} run function bot:interpreter/evaluate/function/builtin/typeof
+execute if data storage bot:api/interpreter/function execute.signature{id:"delete"} run function bot:interpreter/evaluate/function/builtin/delete/init

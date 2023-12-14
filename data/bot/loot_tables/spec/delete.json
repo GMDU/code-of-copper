@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> DELETE\")\nprint(\"Expected output: \")\nprint(\"Hell nah\")\nprint([1,2,4])\nprint({a:1,c:3})\nprint(\"---\")\n\nlet str = \"Hello nah\"\nlet list = [1,2,3,4]\nlet obj = {a:1,b:2,c:3}\nstr = delete(str, 4)\nlist = delete(list, 2)\nobj = delete(obj, \\'b\\')','print(str)\nprint(list)\nprint(obj)\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

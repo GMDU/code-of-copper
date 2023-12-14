@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> LEN\")\nprint(\"Expected output: \")\nprint(8)\nprint(4)\nprint(2)\nprint(\"---\")\n\nprint(len(\"fizzbuzz\"))\nprint(len([1,2,3,4]))\nprint(len({foo:\"bar\",bar:\"baz\"}))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
