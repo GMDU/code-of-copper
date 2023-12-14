@@ -155,3 +155,11 @@ obj["a"] # => "foo"
 let i = "c"
 obj[i] # => "baz"
 ```
+
+## Enumerable
+An enumarable is not a data type on its own, but rather a collection of data types, for the ease of documentation.  
+An enumerable is any type that has a series of sub-elements, and can be indexed.
+The current types that belong to the enumerable category are:  
+- [string](#string)  
+- [array](#array)  
+- [object](#object)  

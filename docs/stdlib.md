@@ -33,7 +33,7 @@ Pauses execution for `time` game ticks. (20 game ticks = 1 second)
 
 ---
 
-## [int](data_types.md#integer) len ( [string](data_types.md#string) | [array](data_types.md#array) | [object](data_types.md#object) value ) {data-toc-label='Len'}
+## [int](data_types.md#integer) len ( [enumerable](data_types.md#enumerable) value ) {data-toc-label='Len'}
 Returns the length of `value`.  
 For strings, this is the number of characters.  
 For arrays, this is the number of elements.  
@@ -60,6 +60,13 @@ typeof(1) # integer
 typeof(/hi/) # regex
 typeof(true) # boolean
 ```
+
+---
+
+## [enumerable](data_types.md#enumerable) delete ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index ) {data-toc-label='Delete'}
+Returns a copy of `target` with the value at `target[index]` deleted from it.  
+For arrays, this is the nth value, where n is `index`.  
+For object, this is the value with a key of `index`.
 
 ---
 

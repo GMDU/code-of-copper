@@ -11,3 +11,4 @@ execute if data storage bot:interpreter temp.function.signature{id:"inventory"} 
 execute if data storage bot:interpreter temp.function.signature{id:"time"} run function bot:interpreter/evaluate/function/builtin/time
 execute if data storage bot:interpreter temp.function.signature{id:"len"} run function bot:interpreter/evaluate/function/builtin/len
 execute if data storage bot:interpreter temp.function.signature{id:"typeof"} run function bot:interpreter/evaluate/function/builtin/typeof
+execute if data storage bot:interpreter temp.function.signature{id:"delete"} run function bot:interpreter/evaluate/function/builtin/delete/init
