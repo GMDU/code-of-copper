@@ -8,5 +8,6 @@ execute if data storage bot:parser parent{variant:"object"} run function bot:par
 execute if data storage bot:parser parent{variant:"regex"} run function bot:parser/parse/literal/regex/init
 execute if data storage bot:parser parent{variant:"string"} run function bot:parser/parse/literal/string/init
 execute if data storage bot:parser parent{variant:"resource"} run function bot:parser/parse/literal/resource/init
+execute if data storage bot:parser parent{variant:"proc"} run function bot:parser/parse/literal/proc/init
 
 execute if data storage bot:parser stack[-1].metadata{status:"closed"} run function bot:parser/parse/literal/parameter_or_close

@@ -1,6 +1,7 @@
 data remove storage bot:parser expression.type
 
-function bot:parser/parse/expression/type/array
+function bot:parser/parse/expression/type/proc
+execute unless data storage bot:parser expression.type run function bot:parser/parse/expression/type/array
 execute unless data storage bot:parser expression.type run function bot:parser/parse/expression/type/object
 execute unless data storage bot:parser expression.type run function bot:parser/parse/expression/type/string
 execute unless data storage bot:parser expression.type run function bot:parser/parse/expression/type/regex
