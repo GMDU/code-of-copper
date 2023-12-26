@@ -14,5 +14,5 @@ scoreboard players operation .result bot.interpreter = $rng moxlib.api.math.rand
 scoreboard players operation .result bot.interpreter %= .mod bot.interpreter
 scoreboard players operation .result bot.interpreter += .min bot.interpreter
 
-data modify storage bot:interpreter evaluate.return_value set value {type:"literal", variant: "integer", value: 0}
-execute store result storage bot:interpreter evaluate.return_value.value int 1 run scoreboard players get .result bot.interpreter
+data modify storage bot:api/interpreter/function execute.return set value {type:"literal", variant: "integer", value: 0}
+execute store result storage bot:api/interpreter/function execute.return.value int 1 run scoreboard players get .result bot.interpreter

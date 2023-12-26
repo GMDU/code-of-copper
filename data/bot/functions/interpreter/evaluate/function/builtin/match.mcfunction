@@ -3,5 +3,5 @@ data modify storage regex:api/match target set from storage bot:interpreter eval
 data modify storage regex:api/match flags set value {process_target: false, parse: false}
 function regex:api/match
 
-data modify storage bot:interpreter evaluate.return_value set value {type: "literal", variant: "string", value: []}
-data modify storage bot:interpreter evaluate.return_value.value set from storage regex:api/match output
+data modify storage bot:api/interpreter/function execute.return set value {type: "literal", variant: "string", value: []}
+data modify storage bot:api/interpreter/function execute.return.value set from storage regex:api/match output

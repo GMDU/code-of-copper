@@ -1,1 +1,1 @@
-$data remove storage bot:interpreter evaluate.return_value.value[{key:$(value)}]
+$data remove storage bot:api/interpreter/function execute.return.value[{key:$(value)}]
