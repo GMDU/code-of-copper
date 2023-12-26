@@ -7,6 +7,7 @@ execute if data storage bot:interpreter utils.stringify.current{type:"literal",v
 execute if data storage bot:interpreter utils.stringify.current{type:"literal",variant:"regex"} run function bot:interpreter/utils/stringify/regex/init
 execute if data storage bot:interpreter utils.stringify.current{type:"literal",variant:"resource"} run function bot:interpreter/utils/stringify/resource/init
 execute if data storage bot:interpreter utils.stringify.current{type:"literal",variant:"string"} run function bot:interpreter/utils/stringify/string/init
+execute if data storage bot:interpreter utils.stringify.current{type:"literal",variant:"proc"} run function bot:interpreter/utils/stringify/proc/init
 execute if data storage bot:interpreter utils.stringify.current{type:"undefined"} run function bot:interpreter/utils/stringify/undefined/init
 
 data remove storage bot:interpreter utils.stringify.stack[-1]
