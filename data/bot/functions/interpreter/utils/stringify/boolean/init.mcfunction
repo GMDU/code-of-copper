@@ -1,3 +1,3 @@
-data modify storage bot:interpreter utils.stringify.result append value []
-execute if data storage bot:interpreter utils.stringify.current{value:true} run data modify storage bot:interpreter utils.stringify.result[-1] append value "true"
-execute if data storage bot:interpreter utils.stringify.current{value:false} run data modify storage bot:interpreter utils.stringify.result[-1] append value "false"
+execute if data storage bot:interpreter utils.stringify.current{value:true} run data modify storage bot:interpreter temp.text set value [t,r,u,e]
+execute if data storage bot:interpreter utils.stringify.current{value:false} run data modify storage bot:interpreter temp.text set value [f,a,l,s,e]
+data modify storage bot:interpreter utils.stringify.result append from storage bot:interpreter temp.text[]
