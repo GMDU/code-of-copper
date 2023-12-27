@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> PRINT\")\nprint(\"Expected output:\")\nprint(\"\\'Hello, World!\\'\")\nprint(\"\\'[{foo:123}], /abc/, minecraft:stone, \\'\\', true, undefined]\\'\")\nprint(\"---\")\nprint(\"Hello, World!\")\nprint([{foo:123}, /abc/, :stone, \\'\\', true, foo])\nprint(\">>>\")']}"
+              "tag": "{pages:['print(\">>> PRINT\")\nprint(\"Expected output:\")\nprint(\"\\'Hello, World!\\'\")\nprint(\"\\'[{foo:123}], /abc/, minecraft:stone, \\'\\', true, undefined, <proc:print>]\\'\")\nprint(\"---\")\nprint(\"Hello, World!\")\nprint([{foo:123}, /abc/, :stone, \\'\\', true, foo, -> print])\nprint(\">>>\")']}"
             }
           ]
         }

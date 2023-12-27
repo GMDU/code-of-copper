@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> TYPEOF\")\nprint(\"Expected output: \")\nprint(\"[\\'integer\\', string\\', \\'array\\', \\'object\\', \\'regex\\', \\'boolean\\', \\'undefined\\', \\'resource\\']\")\nprint(\"---\")','const types = [\n  typeof(1),\n  typeof(\"\"),\n  typeof([]),\n  typeof({}),\n  typeof(/hi/),\n  typeof(true),\n  typeof(undefined),\n  typeof(:foo)\n  ]\n  \n  print(types)\n  \n  print(\">>>\")']}"
+              "tag": "{pages:['print(\">>> TYPEOF\")\nprint(\"Expected output: \")\nprint(\"[\\'integer\\', string\\', \\'array\\', \\'object\\', \\'regex\\', \\'boolean\\', \\'undefined\\', \\'resource\\', \\'proc\\']\")\nprint(\"---\")','const types = [\n  typeof(1),\n  typeof(\"\"),\n  typeof([]),\n  typeof({}),\n  typeof(/hi/),\n  typeof(true),\n  typeof(undefined),\n  typeof(:foo),\n  typeof(-> () 1)\n  ]\n  \n  print(types)\n  \n  print(\">>>\")']}"
             }
           ]
         }
