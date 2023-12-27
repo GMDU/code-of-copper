@@ -147,13 +147,46 @@ Objects contain key-value pairs, with the values being any data type. Keys, howe
 
 Objects can be indexed with either square bracket or dot parameters.
 
-```ruby title="Example of Objects being indexed"
+```rb title="Example of Objects being indexed"
 let obj = {a: "foo", b: "bar", c: "baz"}
 obj.b # => "bar"
 obj["a"] # => "foo"
 
 let i = "c"
 obj[i] # => "baz"
+```
+
+## Proc
+A proc, short for process, is a function value that can be assigned to variables, etc.  
+You can pass it as arguments, just like a data-type, or call it, just like a [function](keywords.md#functional).  
+There are several ways to define procs.  
+
+You can bind an existing function to a value.
+```ruby
+let write = -> print # write is a value that refers to the "print" builtin function
+write("Hello, world!") # Prints "Hello, world!"
+
+func add(a, b)
+  return a + b
+end
+
+let sum = -> add # sum refers to the custom function "add"
+sum(2,3) # => 5
+```
+
+You can also define a proc inline.
+```ruby
+# return is implicit here
+let sum = -> (a,b) a + b # "sum" takes two arguments, a and b, and returns `a + b`
+sum(1,2) # 3
+
+# return needed to produce a value
+let complex_proc = -> (a, b) {
+  do_something(a, b)
+  print("Doing stuff...")
+  return a
+}
+complex_proc("foo", 42) # runs all code in the block of "complex_proc"
 ```
 
 ## Enumerable
