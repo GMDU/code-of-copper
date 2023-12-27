@@ -6,5 +6,6 @@ data modify storage bot:interpreter temp.proc set from storage moxlib:api/data/g
 execute if data storage bot:interpreter temp.proc.value{variant:"alphanumeric"} run function bot:interpreter/evaluate/function/proc/alphanumeric
 execute if data storage bot:interpreter temp.proc.value{variant:"alphanumeric"} run return -1
 
-execute if data storage bot:interpreter temp.proc.value{type:"block"} run function bot:interpreter/evaluate/function/proc/block
-execute if data storage bot:interpreter temp.proc.value{type:"block"} run return -1
+execute unless data storage bot:interpreter temp.proc.value{type:"block"} run function bot:interpreter/evaluate/function/proc/expression
+
+function bot:interpreter/evaluate/function/proc/block
