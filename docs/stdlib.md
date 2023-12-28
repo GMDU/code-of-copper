@@ -107,3 +107,10 @@ If `b` is less than `a`, return `b`. Otherwise, return `a`.
 
 ## [int](data_types.md#integer) max ( [int](data_types.md#integer) a, [int](data_types.md#integer) b ) {data-toc-label='Min'}
 If `b` is greater than `a`, return `b`. Otherwise, return `a`.  
+
+---
+
+## [int](data_types.md#integer) int ( [any](data_types.md) value ) {data-toc-label='Int'}
+Converts `value` into an integer.  
+If it fails, it returns zero.  
+If `value` is not a type that is convertable into an intger, it throws an error.    
