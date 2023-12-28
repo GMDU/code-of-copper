@@ -11,3 +11,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"time"
 execute if data storage bot:api/interpreter/function execute.signature{id:"len"} run function bot:interpreter/evaluate/function/builtin/len
 execute if data storage bot:api/interpreter/function execute.signature{id:"typeof"} run function bot:interpreter/evaluate/function/builtin/typeof
 execute if data storage bot:api/interpreter/function execute.signature{id:"delete"} run function bot:interpreter/evaluate/function/builtin/delete/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"str"} run function bot:interpreter/evaluate/function/builtin/str
