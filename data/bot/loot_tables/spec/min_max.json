@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> MIN/MAX\")\nprint(\"Expected output:\")\nprint(1)\nprint(10)\nprint(1)\nprint(10)\nprint(-10)\nprint(1)\nprint(\"---\")','print(min(1,10))\nprint(max(1,10))\nprint(min(10,1))\nprint(max(10,1))\n\nprint(min(-10,-9))\nprint(max(1,-2))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

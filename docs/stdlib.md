@@ -97,3 +97,13 @@ Returns the sign of `value`.
 If `value` is positive, return `1`.  
 If `value` is negative, return `-1`.  
 If `value` is zero, return `0`.  
+
+---
+
+## [int](data_types.md#integer) min ( [int](data_types.md#integer) a, [int](data_types.md#integer) b ) {data-toc-label='Min'}
+If `b` is less than `a`, return `b`. Otherwise, return `a`.  
+  
+---
+
+## [int](data_types.md#integer) max ( [int](data_types.md#integer) a, [int](data_types.md#integer) b ) {data-toc-label='Min'}
+If `b` is greater than `a`, return `b`. Otherwise, return `a`.  
