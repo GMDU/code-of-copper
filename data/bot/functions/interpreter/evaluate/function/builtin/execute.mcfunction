@@ -13,3 +13,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"typeo
 execute if data storage bot:api/interpreter/function execute.signature{id:"delete"} run function bot:interpreter/evaluate/function/builtin/delete/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"str"} run function bot:interpreter/evaluate/function/builtin/str
 execute if data storage bot:api/interpreter/function execute.signature{id:"abs"} run function bot:interpreter/evaluate/function/builtin/abs
+execute if data storage bot:api/interpreter/function execute.signature{id:"sign"} run function bot:interpreter/evaluate/function/builtin/sign

@@ -88,4 +88,12 @@ Returns the current game time, in ticks. Equivalent to mcfunction: `/time query 
 ## [int](data_types.md#integer) abs ( [int](data_types#integer) value ) {data-toc-label='Abs'}
 Returns the absolute value of `value`.  
 If `value` is positive, return `value`.  
-If `value` is negative, return `-value`.
+If `value` is negative, return `-value`.  
+
+---
+
+## [int](data_types.md#integer) sign ( [int](data_types.md#integer) value ) {data-toc-label='Sign'}
+Returns the sign of `value`.  
+If `value` is positive, return `1`.  
+If `value` is negative, return `-1`.  
+If `value` is zero, return `0`.  
