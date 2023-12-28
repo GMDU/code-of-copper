@@ -82,3 +82,10 @@ Returns an array of resources, the namespaced IDs of every item in the golem's i
 
 ## [int](data_types.md#integer) time () {data-toc-label='Time'}
 Returns the current game time, in ticks. Equivalent to mcfunction: `/time query gametime`
+
+---
+
+## [int](data_types.md#integer) abs ( [int](data_types#integer) value ) {data-toc-label='Abs'}
+Returns the absolute value of `value`.  
+If `value` is positive, return `value`.  
+If `value` is negative, return `-value`.
