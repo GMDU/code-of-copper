@@ -82,3 +82,35 @@ Returns an array of resources, the namespaced IDs of every item in the golem's i
 
 ## [int](data_types.md#integer) time () {data-toc-label='Time'}
 Returns the current game time, in ticks. Equivalent to mcfunction: `/time query gametime`
+
+---
+
+## [int](data_types.md#integer) abs ( [int](data_types#integer) value ) {data-toc-label='Abs'}
+Returns the absolute value of `value`.  
+If `value` is positive, return `value`.  
+If `value` is negative, return `-value`.  
+
+---
+
+## [int](data_types.md#integer) sign ( [int](data_types.md#integer) value ) {data-toc-label='Sign'}
+Returns the sign of `value`.  
+If `value` is positive, return `1`.  
+If `value` is negative, return `-1`.  
+If `value` is zero, return `0`.  
+
+---
+
+## [int](data_types.md#integer) min ( [int](data_types.md#integer) a, [int](data_types.md#integer) b ) {data-toc-label='Min'}
+If `b` is less than `a`, return `b`. Otherwise, return `a`.  
+  
+---
+
+## [int](data_types.md#integer) max ( [int](data_types.md#integer) a, [int](data_types.md#integer) b ) {data-toc-label='Min'}
+If `b` is greater than `a`, return `b`. Otherwise, return `a`.  
+
+---
+
+## [int](data_types.md#integer) int ( [any](data_types.md) value ) {data-toc-label='Int'}
+Converts `value` into an integer.  
+If it fails, it returns zero.  
+If `value` is not a type that is convertable into an intger, it throws an error.    
