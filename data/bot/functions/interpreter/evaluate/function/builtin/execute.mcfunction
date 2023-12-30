@@ -12,3 +12,8 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"len"}
 execute if data storage bot:api/interpreter/function execute.signature{id:"typeof"} run function bot:interpreter/evaluate/function/builtin/typeof
 execute if data storage bot:api/interpreter/function execute.signature{id:"delete"} run function bot:interpreter/evaluate/function/builtin/delete/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"str"} run function bot:interpreter/evaluate/function/builtin/str
+execute if data storage bot:api/interpreter/function execute.signature{id:"abs"} run function bot:interpreter/evaluate/function/builtin/abs
+execute if data storage bot:api/interpreter/function execute.signature{id:"sign"} run function bot:interpreter/evaluate/function/builtin/sign
+execute if data storage bot:api/interpreter/function execute.signature{id:"min"} run function bot:interpreter/evaluate/function/builtin/min
+execute if data storage bot:api/interpreter/function execute.signature{id:"max"} run function bot:interpreter/evaluate/function/builtin/max
+execute if data storage bot:api/interpreter/function execute.signature{id:"int"} run function bot:interpreter/evaluate/function/builtin/int/init
