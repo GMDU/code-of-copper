@@ -17,3 +17,5 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"sign"
 execute if data storage bot:api/interpreter/function execute.signature{id:"min"} run function bot:interpreter/evaluate/function/builtin/min
 execute if data storage bot:api/interpreter/function execute.signature{id:"max"} run function bot:interpreter/evaluate/function/builtin/max
 execute if data storage bot:api/interpreter/function execute.signature{id:"int"} run function bot:interpreter/evaluate/function/builtin/int/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"index"} run function bot:interpreter/evaluate/function/builtin/index/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"contains"} run function bot:interpreter/evaluate/function/builtin/contains
