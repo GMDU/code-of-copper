@@ -114,3 +114,14 @@ If `b` is greater than `a`, return `b`. Otherwise, return `a`.
 Converts `value` into an integer.  
 If it fails, it returns zero.  
 If `value` is not a type that is convertable into an intger, it throws an error.    
+
+---
+
+## [int](data_types.md#integer) index ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Index'}
+Returns the index of the first occurence of `element` in `array`.  
+If `array` does not contain `element`, it returns `-1`.
+
+---
+
+## [bool](data_types.md#boolean) contains? ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Contains'}
+Returns whether `array` contains `element`.
