@@ -89,23 +89,23 @@ If `right` is a variable, it mutates it.
 
 ### Less than (`<`) {data-toc-label='Less than'}
 
-[sizeable](#fn:1)[^1] < [sizeable](#fn:1)[^1]  
-Returns a boolean value, whether size[^2] of `left` is less than size[^2] of `right`.
+[sizeable](glossary.md#sizeable) < [sizeable](glossary.md#sizeable)  
+Returns a boolean value, whether [size](glossary.md#size) of `left` is less than [size](glossary.md#size) of `right`.
 
 ### Greater than (`>`) {data-toc-label='Greater than'}
 
-[sizeable](#fn:1)[^1] > [sizeable](#fn:1)[^1]  
-Returns a boolean value, whether size[^2] of `left` is greater than size[^2] of `right`.
+[sizeable](glossary.md#sizeable) > [sizeable](glossary.md#sizeable)  
+Returns a boolean value, whether [size](glossary.md#size) of `left` is greater than [size](glossary.md#size) of `right`.
 
 ### Less than or equal (`<=`) {data-toc-label='Less than or equal'}
 
-[sizeable](#fn:1)[^1] < [sizeable](#fn:1)[^1]  
-Returns a boolean value, whether size[^2] of `left` is less than or equal to size[^2] of `right`.
+[sizeable](glossary.md#sizeable) < [sizeable](glossary.md#sizeable)
+Returns a boolean value, whether [size](glossary.md#size) of `left` is less than or equal to [size](glossary.md#size) of `right`.
 
 ### Greater than or equal (`>=`) {data-toc-label='Greater than or equal'}
 
-[sizeable](#fn:1)[^1] > [sizeable](#fn:1)[^1]  
-Returns a boolean value, whether size[^2] of `left` is greater than or equal to size[^2] of `right`.
+[sizeable](glossary.md#sizeable) > [sizeable](glossary.md#sizeable)  
+Returns a boolean value, whether [size](glossary.md#size) of `left` is greater than or equal to [size](glossary.md#size) of `right`.
 
 ---
 
@@ -128,12 +128,12 @@ Returns a boolean value, whether `left` is not equal to `right`.
 ### Logical and (`&&`/`and`) {data-toc-label='Logical and'}
 
 [any](data_types.md) && [any](data_types.md)  
-If `left` is truthy[^3], return `right`. Otherwise, return `left`.
+If `left` is [truthy]((glossary.md#truthiness)), return `right`. Otherwise, return `left`.
 
 ### Logical or (`||`/`or`) {data-toc-label='Logical or'}
 
 [any](data_types.md) || [any](data_types.md)  
-If `left` is truthy[^3], return `left`. Otherwise, return `right`.
+If `left` is [truthy](glossary.md#truthiness), return `left`. Otherwise, return `right`.
 
 ---
 
@@ -152,14 +152,3 @@ Sets the value of `left` to the result of <operator\> evaluated on `left` and `r
 x = 1
 x += 2 # x == x + 2 == 3
 ```
-
-
-[^1]: Any type which has a well defined size[^2].
-[^2]:
-The size of an integer is its value  
-The size of a string is its length  
-The size of an array is its length  
-The size of an object is the number of keys
-[^3]:
-A value is truthy if its size[^2] is not zero.  
-A resource is always truthy. Undefined is always falsey.

@@ -30,7 +30,7 @@ if <condition>
   ...
 end
 ```
-Executes the code in the given [block](syntax.md#blocks) if `condition` is [truthy](operators.md#fn:3).
+Executes the code in the given [block](syntax.md#blocks) if `condition` is [truthy](glossary.md#truthiness).
 
 ### While
 ```ruby
@@ -38,7 +38,7 @@ while <condition>
   ...
 end
 ```
-Repeatedly executes the code in the given [block](syntax.md#blocks) while `condition` is [truthy](operators.md#fn:3).
+Repeatedly executes the code in the given [block](syntax.md#blocks) while `condition` is [truthy](glossary.md#truthiness).
 
 ### Loop
 ```ruby
