@@ -22,3 +22,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"conta
 execute if data storage bot:api/interpreter/function execute.signature{id:"map"} run function bot:interpreter/evaluate/function/builtin/map/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"obj"} run function bot:interpreter/evaluate/function/builtin/obj/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"any"} run function bot:interpreter/evaluate/function/builtin/any/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"every"} run function bot:interpreter/evaluate/function/builtin/every/init
