@@ -125,3 +125,13 @@ If `array` does not contain `element`, it returns `-1`.
 
 ## [bool](data_types.md#boolean) contains? ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Contains'}
 Returns whether `array` contains `element`.
+
+---
+
+## [bool](data_types.md#boolean) any ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Any'}
+Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value at least once.
+
+---
+
+## [bool](data_types.md#boolean) every ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Every'}
+Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value every time.
