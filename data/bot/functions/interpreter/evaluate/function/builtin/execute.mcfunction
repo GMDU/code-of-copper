@@ -21,3 +21,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"index
 execute if data storage bot:api/interpreter/function execute.signature{id:"contains"} run function bot:interpreter/evaluate/function/builtin/contains
 execute if data storage bot:api/interpreter/function execute.signature{id:"map"} run function bot:interpreter/evaluate/function/builtin/map/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"obj"} run function bot:interpreter/evaluate/function/builtin/obj/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"any"} run function bot:interpreter/evaluate/function/builtin/any/init
