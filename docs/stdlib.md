@@ -65,8 +65,15 @@ typeof(true) # boolean
 
 ## [enumerable](data_types.md#enumerable) delete ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index ) {data-toc-label='Delete'}
 Returns a copy of `target` with the value at `target[index]` deleted from it.  
-For arrays, this is the nth value, where n is `index`.  
-For object, this is the value with a key of `index`.
+For arrays and strings, this is the nth value, where n is `index`.  
+For object, this is the value with a key of `index`.  
+
+---
+
+## [enumerable](data_types.md#enumerable) set ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types) value ) {data-toc-label='Set'}
+Returns a copy of `target` with the value at `target[index]` set to `value`.  
+For arrays and strings, this is the nth value, where n is `index`.  
+For object, this is the value with a key of `index`.  
 
 ---
 
