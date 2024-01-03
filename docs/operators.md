@@ -135,7 +135,7 @@ Returns a boolean value, whether `left` is not equal to `right`.
 ### Logical and (`&&`/`and`) {data-toc-label='Logical and'}
 
 [any](data_types.md) && [any](data_types.md)  
-If `left` is [truthy]((glossary.md#truthiness)), return `right`. Otherwise, return `left`.
+If `left` is [truthy](glossary.md#truthiness), return `right`. Otherwise, return `left`.
 
 ### Logical or (`||`/`or`) {data-toc-label='Logical or'}
 
