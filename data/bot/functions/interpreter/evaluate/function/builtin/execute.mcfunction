@@ -25,3 +25,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"sort"
 execute if data storage bot:api/interpreter/function execute.signature{id:"any"} run function bot:interpreter/evaluate/function/builtin/any/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"every"} run function bot:interpreter/evaluate/function/builtin/every/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"set"} run function bot:interpreter/evaluate/function/builtin/set/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"flat"} run function bot:interpreter/evaluate/function/builtin/flat/init
