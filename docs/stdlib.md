@@ -33,7 +33,7 @@ Pauses execution for `time` game ticks. (20 game ticks = 1 second)
 
 ---
 
-### [int](data_types.md#integer) len ( [enumerable](data_types.md#enumerable) value ) {data-toc-label='Len'}
+### [int](data_types.md#integer) len ( [enumerable](glossary.md#enumerable) value ) {data-toc-label='Len'}
 Returns the length of `value`.  
 For strings, this is the number of characters.  
 For arrays, this is the number of elements.  
@@ -63,14 +63,14 @@ typeof(true) # boolean
 
 ---
 
-### [enumerable](data_types.md#enumerable) delete ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index ) {data-toc-label='Delete'}
+### [enumerable](glossary.md#enumerable) delete ( [enumerable](glossary.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index ) {data-toc-label='Delete'}
 Returns a copy of `target` with the value at `target[index]` deleted from it.  
 For arrays and strings, this is the nth value, where n is `index`.  
 For object, this is the value with a key of `index`.  
 
 ---
 
-### [enumerable](data_types.md#enumerable) set ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types.md) value ) {data-toc-label='Set'}
+### [enumerable](glossary.md#enumerable) set ( [enumerable](glossary.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types.md) value ) {data-toc-label='Set'}
 Returns a copy of `target` with the value at `target[index]` set to `value`.  
 For arrays and strings, this is the nth value, where n is `index`.  
 For object, this is the value with a key of `index`.  
@@ -171,7 +171,7 @@ Recursively collapses child array elements in `target` in to the output, to a de
 
 ---
 
-### [array](data_types.md#array) map ( [enumerable](data_types.md#enumerable) target, [proc](data_types.md#proc) proc ) {data-toc-label='Map'}  
+### [array](data_types.md#array) map ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) proc ) {data-toc-label='Map'}  
 Calls `proc` for each given element in `target`.  
 If `target` is a string or an array, `proc` is called with the current element as `arg 0`.  
 If `target` is an object, `proc` is called with the current element's key as `arg 0`,  and value as `arg 1`.  
@@ -200,3 +200,20 @@ Eg. `[['a', 1], ['b', 2]]` returns as `{a: 1, b: 2}`.
 Calls the function named `name`, passing it `args`.  
 Returns the return value of the called function.  
 Eg. `call("random", [1,10])` is equivalent to `random(1,10)`.  
+
+---
+
+### [array](data_types.md#array) filter ( [array](data_types.md#array) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Filter'}  
+Returns `target`, with only the elements for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
+
+---
+
+### [any](data_types.md) find ( [array](data_types.md#array) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Find'}  
+Returns the first element of `target` for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
+
+---
+
+### [any](data_types.md) reduce ( [array](data_types.md#array) target, [any](data_types.md) value, [proc](data_types.md#proc) proc ) {data-toc-label='Reduce'}  
+Reduces an array into a single value.  
+Calls `proc` with the next element of `target` and the previous return value of `proc`, or `value` to begin with.  
+Returns the last return value of `proc`.
