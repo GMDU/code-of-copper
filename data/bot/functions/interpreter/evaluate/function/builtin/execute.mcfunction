@@ -31,3 +31,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"slice
 execute if data storage bot:api/interpreter/function execute.signature{id:"reverse"} run function bot:interpreter/evaluate/function/builtin/reverse/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"join"} run function bot:interpreter/evaluate/function/builtin/join/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"find"} run function bot:interpreter/evaluate/function/builtin/find/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"filter"} run function bot:interpreter/evaluate/function/builtin/filter/init
