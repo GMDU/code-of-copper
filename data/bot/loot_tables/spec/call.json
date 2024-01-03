@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> CALL\")\nprint(\"Expected output: \")\nprint(\"Hello\")\nprint(\"world\")\nprint(12)\nprint(\"---\")','call(\"print\", [\"Hello\"])\n\nfunc foo(s1, s2)\n  print(s1 + s2)\nend\nlet args = [\"wor\",\"ld\"]\ncall(\"foo\", args)\n\nfunc sum(a, b)\n  return a + b\nend\nprint(call(\"sum\", [5,7]))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

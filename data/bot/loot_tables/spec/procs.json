@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> PROCS\")\nprint(\"Expected output:\")\nprint(\"Hello\")\nprint(3)\nprint(36)\nprint(\"In a proc!\")\nprint(true)\nprint(\"---\")','let write = -> print\nwrite(\"Hello\")\nfunc a(a,b)\n  return a + b\nend\nlet add = -> a\nprint(add(1,2))\n\nlet sum = -> (a,b) a + b\nprint(sum(15,21))','let proc = -> () {\n  print(\"In a proc!\")\n  return true\n}\n\nfunc call(p)\n  return p()\nend\n\nprint(call(proc))\n\nprint(\">>>\")']}"
+              "tag": "{pages:['print(\">>> PROCS\")\nprint(\"Expected output:\")\nprint(\"Hello\")\nprint(3)\nprint(36)\nprint(\"In a proc!\")\nprint(true)\nprint(\"---\")','let write = -> print\nwrite(\"Hello\")\nfunc a(a,b)\n  return a + b\nend\nlet add = -> a\nprint(add(1,2))\n\nlet sum = -> (a,b) a + b\nprint(sum(15,21))','let proc = -> () {\n  print(\"In a proc!\")\n  return true\n}\n\nfunc _call(p)\n  return p()\nend\n\nprint(_call(proc))\n\nprint(\">>>\")']}"
             }
           ]
         }
