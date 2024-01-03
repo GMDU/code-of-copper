@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> SLICE\")\nprint(\"Expected output:\")\n\nprint(\"ello\")\nprint([3,4])\n\nprint(\"---\")\n\nlet a = \"Hello\"\nlet b = [1,2,3,4,5]','print(slice(a, 1))\nprint(slice(b, 2, 2))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

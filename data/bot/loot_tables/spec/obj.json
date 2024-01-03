@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> OBJ\")\nprint(\"Expected output:\")\n\nprint({a: 1, b: 2})\n\nprint(\"---\")\n\nprint(\n obj([[\\'a\\', 1],[\\'b\\',2]])\n)\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
