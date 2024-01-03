@@ -28,3 +28,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"set"}
 execute if data storage bot:api/interpreter/function execute.signature{id:"flat"} run function bot:interpreter/evaluate/function/builtin/flat/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"slice"} run function bot:interpreter/evaluate/function/builtin/slice/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"reverse"} run function bot:interpreter/evaluate/function/builtin/reverse/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"join"} run function bot:interpreter/evaluate/function/builtin/join/init
