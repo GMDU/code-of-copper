@@ -1,0 +1,2 @@
+execute if score $current bot.utils.sort > $pivot bot.utils.sort run scoreboard players set $result bot.utils.sort 1
+execute if score $current bot.utils.sort <= $pivot bot.utils.sort run scoreboard players set $result bot.utils.sort -1

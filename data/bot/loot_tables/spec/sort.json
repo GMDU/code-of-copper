@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> SORT\")\nprint(\"Expected output:\")\n\nprint([1,2,3,4,5])\nprint([5,4,3,2,1])\n\nprint(\"---\")\n\nlet a = [1,2,3,4,5]\n\nprint(sort(a))','print(\n sort(\n  a,\n  -> (a, b) b <=> a \n )\n)\n \nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

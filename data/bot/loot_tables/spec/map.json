@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> MAP\")\nprint(\"Expected output:\")\n\nprint([2,3,4])\n\nprint(\"---\")\n\nprint(\n map(\n  [1,2,3], -> (x) x + 1\n )\n)\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

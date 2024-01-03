@@ -21,7 +21,12 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"index
 execute if data storage bot:api/interpreter/function execute.signature{id:"contains"} run function bot:interpreter/evaluate/function/builtin/contains
 execute if data storage bot:api/interpreter/function execute.signature{id:"map"} run function bot:interpreter/evaluate/function/builtin/map/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"obj"} run function bot:interpreter/evaluate/function/builtin/obj/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"sort"} run function bot:interpreter/evaluate/function/builtin/sort/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"any"} run function bot:interpreter/evaluate/function/builtin/any/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"every"} run function bot:interpreter/evaluate/function/builtin/every/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"set"} run function bot:interpreter/evaluate/function/builtin/set/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"call"} run function bot:interpreter/evaluate/function/builtin/call
+execute if data storage bot:api/interpreter/function execute.signature{id:"flat"} run function bot:interpreter/evaluate/function/builtin/flat/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"slice"} run function bot:interpreter/evaluate/function/builtin/slice/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"reverse"} run function bot:interpreter/evaluate/function/builtin/reverse/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"join"} run function bot:interpreter/evaluate/function/builtin/join/init
