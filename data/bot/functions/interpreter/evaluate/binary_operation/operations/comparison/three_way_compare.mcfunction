@@ -1,0 +1,3 @@
+data modify storage bot:interpreter evaluate.operation.result set value {type: "literal", variant: "integer", value: 0}
+execute if score .a bot.interpreter > .b bot.interpreter run data modify storage bot:interpreter evaluate.operation.result.value set value 1
+execute if score .a bot.interpreter < .b bot.interpreter run data modify storage bot:interpreter evaluate.operation.result.value set value -1

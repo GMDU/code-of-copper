@@ -26,6 +26,7 @@ execute if data storage bot:interpreter evaluate.operation{current:"greater"} ru
 execute if data storage bot:interpreter evaluate.operation{current:"greater_or_equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/greater_than_eq
 execute if data storage bot:interpreter evaluate.operation{current:"lesser"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/less_than
 execute if data storage bot:interpreter evaluate.operation{current:"lesser_or_equal"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/less_than_eq
+execute if data storage bot:interpreter evaluate.operation{current:"three_way_compare"} run function bot:interpreter/evaluate/binary_operation/operations/comparison/three_way_compare
 
 execute if data storage bot:interpreter evaluate.operation{current:"and"} run function bot:interpreter/evaluate/binary_operation/operations/boolean/and
 execute if data storage bot:interpreter evaluate.operation{current:"or"} run function bot:interpreter/evaluate/binary_operation/operations/boolean/or
