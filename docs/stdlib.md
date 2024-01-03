@@ -70,7 +70,7 @@ For object, this is the value with a key of `index`.
 
 ---
 
-### [enumerable](data_types.md#enumerable) set ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types) value ) {data-toc-label='Set'}
+### [enumerable](data_types.md#enumerable) set ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types.md) value ) {data-toc-label='Set'}
 Returns a copy of `target` with the value at `target[index]` set to `value`.  
 For arrays and strings, this is the nth value, where n is `index`.  
 For object, this is the value with a key of `index`.  
@@ -92,7 +92,7 @@ Returns the current game time, in ticks. Equivalent to mcfunction: `/time query 
 
 ---
 
-### [int](data_types.md#integer) abs ( [int](data_types#integer) value ) {data-toc-label='Abs'}
+### [int](data_types.md#integer) abs ( [int](data_types.md#integer) value ) {data-toc-label='Abs'}
 Returns the absolute value of `value`.  
 If `value` is positive, return `value`.  
 If `value` is negative, return `-value`.  
@@ -193,3 +193,10 @@ If `proc` is unset, sort will default to sorting by value in ascending order.
 Returns an object with key-value pairs drawn from child arrays in `target`.
 
 Eg. `[['a', 1], ['b', 2]]` returns as `{a: 1, b: 2}`.
+
+---
+
+### [any](data_types.md) call ( [string](data_types.md#string) name, [array](data_types.md#array) args ) {data-toc-label='Call'}  
+Calls the function named `name`, passing it `args`.  
+Returns the return value of the called function.  
+Eg. `call("random", [1,10])` is equivalent to `random(1,10)`.  
