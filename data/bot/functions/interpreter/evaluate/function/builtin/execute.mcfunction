@@ -17,6 +17,11 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"sign"
 execute if data storage bot:api/interpreter/function execute.signature{id:"min"} run function bot:interpreter/evaluate/function/builtin/min
 execute if data storage bot:api/interpreter/function execute.signature{id:"max"} run function bot:interpreter/evaluate/function/builtin/max
 execute if data storage bot:api/interpreter/function execute.signature{id:"int"} run function bot:interpreter/evaluate/function/builtin/int/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"index"} run function bot:interpreter/evaluate/function/builtin/index/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"contains"} run function bot:interpreter/evaluate/function/builtin/contains
 execute if data storage bot:api/interpreter/function execute.signature{id:"map"} run function bot:interpreter/evaluate/function/builtin/map/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"obj"} run function bot:interpreter/evaluate/function/builtin/obj/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"sort"} run function bot:interpreter/evaluate/function/builtin/sort/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"any"} run function bot:interpreter/evaluate/function/builtin/any/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"every"} run function bot:interpreter/evaluate/function/builtin/every/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"set"} run function bot:interpreter/evaluate/function/builtin/set/init

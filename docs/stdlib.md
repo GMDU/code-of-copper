@@ -65,8 +65,15 @@ typeof(true) # boolean
 
 ## [enumerable](data_types.md#enumerable) delete ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index ) {data-toc-label='Delete'}
 Returns a copy of `target` with the value at `target[index]` deleted from it.  
-For arrays, this is the nth value, where n is `index`.  
-For object, this is the value with a key of `index`.
+For arrays and strings, this is the nth value, where n is `index`.  
+For object, this is the value with a key of `index`.  
+
+---
+
+## [enumerable](data_types.md#enumerable) set ( [enumerable](data_types.md#enumerable) target, [int](data_types.md#integer) | [string](data_types.md#string) index, [any](data_types) value ) {data-toc-label='Set'}
+Returns a copy of `target` with the value at `target[index]` set to `value`.  
+For arrays and strings, this is the nth value, where n is `index`.  
+For object, this is the value with a key of `index`.  
 
 ---
 
@@ -114,3 +121,24 @@ If `b` is greater than `a`, return `b`. Otherwise, return `a`.
 Converts `value` into an integer.  
 If it fails, it returns zero.  
 If `value` is not a type that is convertable into an intger, it throws an error.    
+
+---
+
+## [int](data_types.md#integer) index ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Index'}
+Returns the index of the first occurence of `element` in `array`.  
+If `array` does not contain `element`, it returns `-1`.
+
+---
+
+## [bool](data_types.md#boolean) contains? ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Contains'}
+Returns whether `array` contains `element`.
+
+---
+
+## [bool](data_types.md#boolean) any ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Any'}
+Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value at least once.
+
+---
+
+## [bool](data_types.md#boolean) every ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Every'}
+Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value every time.

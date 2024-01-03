@@ -1,5 +1,6 @@
 data modify storage bot:interpreter evaluate.current set from storage bot:interpreter evaluate.stack[-1]
-data modify storage bot:interpreter evaluate merge value {break:false,loop:false}
+data modify storage bot:interpreter evaluate.break set value false
+data modify storage bot:interpreter evaluate.loop set value false
 
 execute if data storage bot:interpreter evaluate.current{type:"block"} run function bot:interpreter/evaluate/block/init
 execute if data storage bot:interpreter evaluate.current{type:"literal"} run function bot:interpreter/evaluate/literal/init
