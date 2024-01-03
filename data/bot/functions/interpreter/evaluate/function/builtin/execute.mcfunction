@@ -19,3 +19,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"max"}
 execute if data storage bot:api/interpreter/function execute.signature{id:"int"} run function bot:interpreter/evaluate/function/builtin/int/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"map"} run function bot:interpreter/evaluate/function/builtin/map/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"obj"} run function bot:interpreter/evaluate/function/builtin/obj/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"sort"} run function bot:interpreter/evaluate/function/builtin/sort/init
