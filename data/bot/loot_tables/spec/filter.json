@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> FIND\")\nprint(\"Expected output: \")\nprint(2)\nprint(2)\nprint(\"---\")\n\nlet last = 0\nprint(find([5,4,3,2,1],\n->(x){last = x\nreturn x < 3\n}))\nprint(last)\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
