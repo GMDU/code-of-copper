@@ -107,6 +107,13 @@ Returns a boolean value, whether [size](glossary.md#size) of `left` is less than
 [sizeable](glossary.md#sizeable) > [sizeable](glossary.md#sizeable)  
 Returns a boolean value, whether [size](glossary.md#size) of `left` is greater than or equal to [size](glossary.md#size) of `right`.
 
+### Three-way comparison (`<=>`) {data-toc-label='Three-way comparison'}
+
+[sizeable](glossary.md#sizeable) <=> [sizeable](glossary.md#sizeable)  
+If [size](glossary.md#size) of `left` is greater than `right`, it returns an integer of value `1`.  
+If [size](glossary.md#size) of `left` is lesser than `right`, it returns an integer of value `-1`.  
+If the [size](glossary.md#size) of both sides match, it returns an integer of value `0`.
+
 ---
 
 ## Precedence 3
