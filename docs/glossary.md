@@ -10,6 +10,14 @@ The current types that belong to the enumerable category are:
 - [array](data_types.md##array)  
 - [object](data_types.md##object)  
 
+#### Elements
+Different enumerables have different elements over which you can iterate.  
+If a proc is called with element of multiple values, each value is passed as a separate argument.  
+
+For strings, each element is a string containing this next character of the string.  
+For arrays, each element is just the next value in the array.  
+For objects, there are two values per element: A string of the key, and the value of the next key-value pair.  
+
 ### Sizeable
 Any data type that has a well defined [size](#size).
 

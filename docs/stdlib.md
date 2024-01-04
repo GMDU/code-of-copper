@@ -135,13 +135,13 @@ Returns whether `array` contains `element`.
 
 ---
 
-### [bool](data_types.md#boolean) any ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Any'}
-Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value at least once.
+### [bool](data_types.md#boolean) any ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Any'}
+Returns whether `predicate`, when called on all [elements](glossary.md#elements) of `target` separately, returns a [truthy](glossary.md#truthiness) value at least once.
 
 ---
 
-### [bool](data_types.md#boolean) every ( [array](data_types.md#array) array, [proc](data_types.md#proc) predicate ) {data-toc-label='Every'}
-Returns whether `predicate`, when called on all elements of `array` separately, returns a [truthy](glossary.md#truthiness) value every time.
+### [bool](data_types.md#boolean) every ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Every'}
+Returns whether `predicate`, when called on all [elements](glossary.md#elements) of `target` separately, returns a [truthy](glossary.md#truthiness) value every time.
 
 ---
 
@@ -155,12 +155,12 @@ Runs [str](#string-str-any-target) on each element of `target`, separating each 
 
 ---
 
-### [string | array](data_types.md) reverse ( [string | array](data_types.md) target ) {data-toc-label='Reverse'}  
+### [string](data_types.md#string) | [array](data_types.md#array) reverse ( [string](data_types.md#string) | [array](data_types.md#array) target ) {data-toc-label='Reverse'}  
 Returns a new string or array, where all elements are in reverse order to `target`.
 
 ---
 
-### [string | array](data_types.md) slice ( [string | array](data_types.md) target, [int](data_types.md#integer) offset, [int](data_types.md#integer) count) {data-toc-label='Slice'}  
+### [string](data_types.md#string) | [array](data_types.md#array) slice ( [string](data_types.md#string) | [array](data_types.md#array) target, [int](data_types.md#integer) offset, [int](data_types.md#integer) count) {data-toc-label='Slice'}  
 Returns `count` amount of elements, starting from position `offset`.  
 If `count` is not specified, it returns all objects starting from position `offset`.
 
@@ -172,9 +172,8 @@ Recursively collapses child array elements in `target` in to the output, to a de
 ---
 
 ### [array](data_types.md#array) map ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) proc ) {data-toc-label='Map'}  
-Calls `proc` for each given element in `target`.  
-If `target` is a string or an array, `proc` is called with the current element as `arg 0`.  
-If `target` is an object, `proc` is called with the current element's key as `arg 0`,  and value as `arg 1`.  
+Calls `proc` for each [element](glossary.md#elements) in `target`.  
+Returns an array of all the return values of `proc`.  
 
 ---
 
@@ -203,17 +202,18 @@ Eg. `call("random", [1,10])` is equivalent to `random(1,10)`.
 
 ---
 
-### [array](data_types.md#array) filter ( [array](data_types.md#array) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Filter'}  
-Returns `target`, with only the elements for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
+### [enumerable](glossary.md#enumerable) filter ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Filter'}  
+Returns `target`, with only the [elements](glossary.md#elements) for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
 
 ---
 
-### [any](data_types.md) find ( [array](data_types.md#array) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Find'}  
-Returns the first element of `target` for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
+### [any](data_types.md) find ( [enumerable](glossary.md#enumerable) target, [proc](data_types.md#proc) predicate ) {data-toc-label='Find'}  
+Returns the first [element](glossary.md#elements) of `target` for which `predicate`, when called with that element, returns a [truthy](glossary.md#truthiness) value.  
+If `target` is an object, it returns the value of the key-value pair for with `predicate` returns truthy.
 
 ---
 
-### [any](data_types.md) reduce ( [array](data_types.md#array) target, [any](data_types.md) value, [proc](data_types.md#proc) proc ) {data-toc-label='Reduce'}  
-Reduces an array into a single value.  
-Calls `proc` with the next element of `target` and the previous return value of `proc`, or `value` to begin with.  
+### [any](data_types.md) reduce ( [enumerable](glossary.md#enumerable) target, [any](data_types.md) value, [proc](data_types.md#proc) proc ) {data-toc-label='Reduce'}  
+Reduces an enumerable into a single value.  
+Calls `proc` with the next [element](glossary.md#elements) of `target` and the previous return value of `proc`, or `value` to begin with.  
 Returns the last return value of `proc`.
