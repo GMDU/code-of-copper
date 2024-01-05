@@ -1,4 +1,5 @@
-data modify storage bot:utils sort merge value {stack: [{}], callback: "bot:interpreter/utils/sort/partition/compare"}
+data modify storage bot:utils sort.callback set value "bot:interpreter/utils/sort/partition/compare"
+data modify storage bot:utils sort.stack set value [{}]
 data modify storage bot:utils sort.stack[-1].target set from storage bot:utils sort.target
 data remove storage bot:utils sort.return
 
