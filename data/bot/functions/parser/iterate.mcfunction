@@ -1,5 +1,7 @@
 data modify storage bot:parser current.value set from storage bot:parser iterate.target[0]
 data remove storage bot:parser iterate.target[0]
+data modify storage bot:parser current.flags append from storage bot:parser next.flags[]
+data remove storage bot:parser next
 
 function bot:parser/characters/check
 execute unless data storage bot:parser current{consumed:true} run function bot:parser/parse/init
