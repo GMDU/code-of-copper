@@ -35,3 +35,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"filte
 execute if data storage bot:api/interpreter/function execute.signature{id:"reduce"} run function bot:interpreter/evaluate/function/builtin/reduce/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"ascii"} run function bot:interpreter/evaluate/function/builtin/ascii
 execute if data storage bot:api/interpreter/function execute.signature{id:"char"} run function bot:interpreter/evaluate/function/builtin/char
+execute if data storage bot:api/interpreter/function execute.signature{id:"prefix"} run function bot:interpreter/evaluate/function/builtin/prefix/init
