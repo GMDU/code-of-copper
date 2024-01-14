@@ -34,3 +34,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"find"
 execute if data storage bot:api/interpreter/function execute.signature{id:"filter"} run function bot:interpreter/evaluate/function/builtin/filter/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"reduce"} run function bot:interpreter/evaluate/function/builtin/reduce/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"ascii"} run function bot:interpreter/evaluate/function/builtin/ascii
+execute if data storage bot:api/interpreter/function execute.signature{id:"char"} run function bot:interpreter/evaluate/function/builtin/char
