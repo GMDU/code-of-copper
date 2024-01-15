@@ -40,3 +40,6 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"suffi
 execute if data storage bot:api/interpreter/function execute.signature{id:"repeat"} run function bot:interpreter/evaluate/function/builtin/repeat/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"upper"} run function bot:interpreter/evaluate/function/builtin/upper/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"lower"} run function bot:interpreter/evaluate/function/builtin/lower/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"trim"} run function bot:interpreter/evaluate/function/builtin/trim
+execute if data storage bot:api/interpreter/function execute.signature{id:"ltrim"} run function bot:interpreter/evaluate/function/builtin/ltrim/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"rtrim"} run function bot:interpreter/evaluate/function/builtin/rtrim/init
