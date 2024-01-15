@@ -43,3 +43,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"lower
 execute if data storage bot:api/interpreter/function execute.signature{id:"trim"} run function bot:interpreter/evaluate/function/builtin/trim
 execute if data storage bot:api/interpreter/function execute.signature{id:"ltrim"} run function bot:interpreter/evaluate/function/builtin/ltrim/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"rtrim"} run function bot:interpreter/evaluate/function/builtin/rtrim/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"squeeze"} run function bot:interpreter/evaluate/function/builtin/squeeze/init
