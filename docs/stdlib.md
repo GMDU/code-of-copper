@@ -217,3 +217,77 @@ If `target` is an object, it returns the value of the key-value pair for with `p
 Reduces an enumerable into a single value.  
 Calls `proc` with the next [element](glossary.md#elements) of `target` and the previous return value of `proc`, or `value` to begin with.  
 Returns the last return value of `proc`.
+
+
+---
+
+### [array](data_types.md#array) shuffle ( [array](data_types.md#array) target ) {data-toc-label='Shuffle'}  
+Returns a new array containing the elements of `target`, in a random order.
+
+---
+
+### [array](data_types.md#array) arr ( [enumarable](glossary.md#enumerable) target ) {data-toc-label='Arr'}  
+Returns an array containing the elements of `target`.  
+If the elements are multiple values, it wraps the values of each element in a sub-array.
+
+---
+
+### [int](data_types.md#integer) ascii ( [char](glossary.md#character) char ) {data-toc-label='Ascii'}  
+Returns the [ASCII code](https://en.wikipedia.org/wiki/ASCII) of the first character of `char`.  
+
+---
+
+### [char](glossary.md#character) char ( [int](data_types.md#integer) code ) {data-toc-label='Char'}  
+Returns the character with the [ASCII code](https://en.wikipedia.org/wiki/ASCII) matching `code`.
+
+---
+
+### [bool](data_types.md#boolean) prefix? ( [string](data_types.md#string) target, [string](data_types.md#string) prefix ) {data-toc-label='Prefix'}  
+Returns a boolean value, whether `target` begins with `prefix`.
+
+---
+
+### [bool](data_types.md#boolean) suffix? ( [string](data_types.md#string) target, [string](data_types.md#string) suffix ) {data-toc-label='Suffix'}  
+Returns a boolean value, whether `target` ends with `suffix`.
+
+---
+
+### [string](data_types.md#string) repeat ( [string](data_types.md#string) target, [int](data_types.md#integer) count ) {data-toc-label='Repeat'}  
+Returns a string, with `target` repeated `count` times.
+
+---
+
+### [string](data_types.md#string) upper ( [string](data_types.md#string) target ) {data-toc-label='Upper'}  
+Returns `target`, converted to upper case.
+
+---
+
+### [string](data_types.md#string) lower ( [string](data_types.md#string) target ) {data-toc-label='Lower'}  
+Returns `target`, converted to lower case.
+
+---
+
+### [string](data_types.md#string) lower ( [string](data_types.md#string) target ) {data-toc-label='Lower'}  
+Returns `target`, converted to lower case.
+
+---
+
+### [string](data_types.md#string) trim ( [string](data_types.md#string) target ) {data-toc-label='Trim'}  
+Returns `target`, with whitespace removed from the left and right.
+
+---
+
+### [string](data_types.md#string) ltrim ( [string](data_types.md#string) target ) {data-toc-label='Ltrim'}  
+Returns `target`, with whitespace removed from the left.
+
+---
+
+### [string](data_types.md#string) rtrim ( [string](data_types.md#string) target ) {data-toc-label='Rtrim'}  
+Returns `target`, with whitespace removed from the right.
+
+---
+
+### [string](data_types.md#string) squeeze ( [string](data_types.md#string) target, [string](data_types.md#string)? characters ) {data-toc-label='Squeeze'}
+Returns `target`, with all repeated characters collapsed into one.  
+If `characters` is provided, it only collapses repeated characters contained in `characters`.
+

@@ -18,6 +18,10 @@ For strings, each element is a string containing this next character of the stri
 For arrays, each element is just the next value in the array.  
 For objects, there are two values per element: A string of the key, and the value of the next key-value pair.  
 
+### Character
+A character is a string with only one character.  
+If a function takes a character as a parameter, it uses the first character of the string given.
+
 ### Sizeable
 Any data type that has a well defined [size](#size).
 
