@@ -45,3 +45,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"ltrim
 execute if data storage bot:api/interpreter/function execute.signature{id:"rtrim"} run function bot:interpreter/evaluate/function/builtin/rtrim/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"squeeze"} run function bot:interpreter/evaluate/function/builtin/squeeze/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"shuffle"} run function bot:interpreter/evaluate/function/builtin/shuffle/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"arr"} run function bot:interpreter/evaluate/function/builtin/arr/init
