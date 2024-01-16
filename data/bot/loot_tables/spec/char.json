@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> CHAR\")\nprint(\"Expected output:\")\n\nprint(\"127 \u007f\")\nprint(\"7 \u0007\")\n\nprint(\"---\")\nprint(\"127 \" + str(char(127)))\nprint(\"7 \" + str(char(7)))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

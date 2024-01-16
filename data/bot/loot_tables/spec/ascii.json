@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> ASCII\")\nprint(\"Expected output:\")\n\nprint(\"A 65\")\nprint(\"! 33\")\n\nprint(\"---\")\n\nprint(\"A \" + str(ascii(\"A\")))\nprint(\"! \" + str(ascii(\"!\")))\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

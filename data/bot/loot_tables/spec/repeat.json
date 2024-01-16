@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> REPEAT\")\nprint(\"Expected output:\")\n\nprint(\"crazycrazycrazycrazycrazy\")\n\nprint(\"---\")\n\nprint(repeat(\"crazy\", 5))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
