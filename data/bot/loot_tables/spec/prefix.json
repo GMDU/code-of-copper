@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> PREFIX?\")\nprint(\"Expected output:\")\nprint(true)\nprint(false)\n\nprint(\"---\")\nprint(prefix?(\"hiya\", \"hi\"))\nprint(prefix?(\"hello\", \"hi\"))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

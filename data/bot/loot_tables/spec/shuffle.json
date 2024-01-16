@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> SHUFFLE\")\nprint(\"Expected output:\")\nprint(\"[1, 2, 3, 4, 5] in a random order\")\n\nprint(\"---\")\n\nprint(shuffle([1,2,3,4,5]))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

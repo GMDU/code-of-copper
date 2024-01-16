@@ -38,3 +38,11 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"char"
 execute if data storage bot:api/interpreter/function execute.signature{id:"prefix"} run function bot:interpreter/evaluate/function/builtin/prefix/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"suffix"} run function bot:interpreter/evaluate/function/builtin/suffix/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"repeat"} run function bot:interpreter/evaluate/function/builtin/repeat/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"upper"} run function bot:interpreter/evaluate/function/builtin/upper/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"lower"} run function bot:interpreter/evaluate/function/builtin/lower/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"trim"} run function bot:interpreter/evaluate/function/builtin/trim
+execute if data storage bot:api/interpreter/function execute.signature{id:"ltrim"} run function bot:interpreter/evaluate/function/builtin/ltrim/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"rtrim"} run function bot:interpreter/evaluate/function/builtin/rtrim/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"squeeze"} run function bot:interpreter/evaluate/function/builtin/squeeze/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"shuffle"} run function bot:interpreter/evaluate/function/builtin/shuffle/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"arr"} run function bot:interpreter/evaluate/function/builtin/arr/init

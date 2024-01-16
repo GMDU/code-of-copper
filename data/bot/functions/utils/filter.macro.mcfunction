@@ -1,0 +1,2 @@
+data modify storage moxlib:api/string/filter output set value true
+$execute if data storage moxlib:api/string/filter {target: ["$(key)"]} run data modify storage moxlib:api/string/filter output set value false

@@ -1,4 +1,4 @@
-data merge storage bot:helpers/registry {compare:true}
+data modify storage bot:helpers/registry compare set value true
 
 execute store success storage bot:helpers/registry compare byte 1 run data modify storage bot:helpers/registry target[0].filter[0] set from storage bot:helpers/registry key
 
