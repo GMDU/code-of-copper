@@ -6,4 +6,4 @@ execute if data storage bot:interpreter check_equality{result:true} run return -
 
 data remove storage bot:interpreter evaluate.stack[-1].args[0].value[0]
 scoreboard players add $index bot.interpreter 1
-execute if data storage bot:interpreter evaluate.stack[-1].args[0].value[] run function bot:interpreter/evaluate/function/builtin/index/iterate
+execute if data storage bot:interpreter evaluate.stack[-1].args[0].value[] run function bot:interpreter/evaluate/function/builtin/index/array/iterate
