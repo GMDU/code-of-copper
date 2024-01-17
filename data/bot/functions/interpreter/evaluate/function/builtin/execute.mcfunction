@@ -48,3 +48,4 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"shuff
 execute if data storage bot:api/interpreter/function execute.signature{id:"arr"} run function bot:interpreter/evaluate/function/builtin/arr/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"lpad"} run function bot:interpreter/evaluate/function/builtin/lpad/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"rpad"} run function bot:interpreter/evaluate/function/builtin/rpad/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"split"} run function bot:interpreter/evaluate/function/builtin/split/init
