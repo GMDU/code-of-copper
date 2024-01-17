@@ -46,3 +46,5 @@ execute if data storage bot:api/interpreter/function execute.signature{id:"rtrim
 execute if data storage bot:api/interpreter/function execute.signature{id:"squeeze"} run function bot:interpreter/evaluate/function/builtin/squeeze/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"shuffle"} run function bot:interpreter/evaluate/function/builtin/shuffle/init
 execute if data storage bot:api/interpreter/function execute.signature{id:"arr"} run function bot:interpreter/evaluate/function/builtin/arr/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"lpad"} run function bot:interpreter/evaluate/function/builtin/lpad/init
+execute if data storage bot:api/interpreter/function execute.signature{id:"rpad"} run function bot:interpreter/evaluate/function/builtin/rpad/init
