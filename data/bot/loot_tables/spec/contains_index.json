@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> INDEX/CONTAINS\")\nprint(\"Expected output:\")\nprint(0)\nprint(1)\nprint(-1)\nprint(true)\nprint(false)\n\nprint(\"---\")','print(index([1,2,3], 1))\nprint(index([4,5,6], 5))\nprint(index([1,2,4], 3))\nprint(contains?([\"hi\",\"there\"], \"hi\"))\nprint(contains?([true,undefined,/hi/], false))\n\nprint(\">>>\")']}"
+              "tag": "{pages:['print(\">>> INDEX/CONTAINS\")\nprint(\"Expected output:\")\nprint(0)\nprint(1)\nprint(-1)\nprint(true)\nprint(false)\nprint(2)\nprint(false)\n\nprint(\"---\")','print(index([1,2,3], 1))\nprint(index([4,5,6], 5))\nprint(index([1,2,4], 3))\nprint(contains?([\"hi\",\"there\"], \"hi\"))\nprint(contains?([true,undefined,/hi/], false))\n\nprint(index(\"hello\",\"ll\"))\nprint(contains?(\"Hi, what\\'s up?\", \"q\"))\n\nprint(\">>>\")']}"
             }
           ]
         }

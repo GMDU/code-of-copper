@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> LPAD/RPAD\")\nprint(\"Expected output:\")\nprint(\"0071\")\nprint(\"hi?!?!?!?\")\nprint(\"  foo\")\nprint(\"---\")\n\nprint(lpad(\"71\", 4, \"0\"))\nprint(rpad(\"hi\", 9, \"?!\"))\nprint(lpad(\"foo\", 5))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

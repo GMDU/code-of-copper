@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['print(\">>> SPLIT\")\nprint(\"Expected output:\")\nprint([\"Hi\",\"there\",\"bob\"])\nprint([\"Hello, \",\"world!\"])\nprint([\"f\",\"i\",\"z\",\"z\",\"b\",\"u\",\"z\",\"z\"])\nprint(\"---\")','print(split(\"Hi there bob\", \" \"))\nprint(split(\"Hello, , ,!world!\", \", ,!\"))\nprint(split(\"fizzbuzz\"))\n\nprint(\">>>\")']}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
