@@ -124,14 +124,16 @@ If `value` is not a type that is convertable into an intger, it throws an error.
 
 ---
 
-### [int](data_types.md#integer) index ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Index'}
-Returns the index of the first occurence of `element` in `array`.  
-If `array` does not contain `element`, it returns `-1`.
+### [int](data_types.md#integer) index ( [string](data_types.md#string) | [array](data_types.md#array) target, [string](data_types.md#string) | [any](data_types.md) element ) {data-toc-label='Index'}
+If `target` is an array, it returns the index of the first occurence of `element` in `target`.  
+If `target` is a string, it returns the index of the first character of the first substring to match `element`.
+
+If `target` does not contain `element`, it returns `-1`.
 
 ---
 
-### [bool](data_types.md#boolean) contains? ( [array](data_types.md#array) array, [any](data_types.md) element ) {data-toc-label='Contains'}
-Returns whether `array` contains `element`.
+### [bool](data_types.md#boolean) contains? ( [string](data_types.md#string) | [array](data_types.md#array) target, [string](data_types.md#string) | [any](data_types.md) element ) {data-toc-label='Contains'}
+Returns whether `target` contains `element`.
 
 ---
 
@@ -267,11 +269,6 @@ Returns `target`, converted to lower case.
 
 ---
 
-### [string](data_types.md#string) lower ( [string](data_types.md#string) target ) {data-toc-label='Lower'}  
-Returns `target`, converted to lower case.
-
----
-
 ### [string](data_types.md#string) trim ( [string](data_types.md#string) target ) {data-toc-label='Trim'}  
 Returns `target`, with whitespace removed from the left and right.
 
@@ -291,3 +288,24 @@ Returns `target`, with whitespace removed from the right.
 Returns `target`, with all repeated characters collapsed into one.  
 If `characters` is provided, it only collapses repeated characters contained in `characters`.
 
+---
+
+### [string](data_types.md#string) replace ( [string](data_types.md#string) target, [string](data_types.md#string) match, [string](data_types.md#string) substitute, [int](data_types.md#integer) count = -1 ) {data-toc-label='Replace'}
+Returns `target` but with `count` instances of substring `match` replaced with `substitute`, in left to right order.
+
+If `count` is negative, it will replace all matching substrings.
+
+---
+
+### [array](data_types.md#array) split ( [string](data_types.md#string) target, [string](data_types.md#string) match ) {data-toc-label='Split'}
+Splits `target` on each instance of substring `match`.
+
+---
+
+### [string](data_types.md#string) lpad ( [string](data_types.md#string) target, [int](data_types.md#integer) size, [string](data_types.md#string) padding = " " ) {data-toc-label='Lpad'}
+If the [size](glossary.md#size) of `target` is less than `size`, it returns `target` but padded with characters from `padding` at the start.
+
+---
+
+### [string](data_types.md#string) rpad ( [string](data_types.md#string) target, [int](data_types.md#integer) size, [string](data_types.md#string) padding = " " ) {data-toc-label='Rpad'}
+If the [size](glossary.md#size) of `target` is less than `size`, it returns `target` but padded with characters from `padding` at the end.
