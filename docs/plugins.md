@@ -22,12 +22,12 @@ Within that array, you will register your new functions. For example, we will be
 ```mcfunction
 # mynamespace:functions/registry.mcfunction
 
-data modify storage bot:api/interpreter/function register.target set value [{name: ["f","i","r","e","w","o","r","k"], id: "firework", args: [{type:"integer"}]}]
+data modify storage bot:api/interpreter/function register.target set value [{name: ["f","i","r","e","w","o","r","k"], id: "firework", function: "mynamespace:functions/firework/init", args: [{type:"integer"}]}]
 
 function bot:api/interpreter/function/register
 ```
 
-Key `name` is the name that will be used in GolemScript, eg `firework()`. Key `id` will be used later in the function index. Key `args` is used for typechecking (yet to be implemented).
+Key `name` is the name that will be used in GolemScript, eg `firework()`. Key `id` is used for general lookup of your function. Key `function` is the resource path of the function your function will call when it is run.  Key `args` is used for typechecking (yet to be implemented).
 
 You will need to add your registry function to the function tag: `bot:api/interpreter/function/registry`
 
@@ -35,26 +35,6 @@ You will need to add your registry function to the function tag: `bot:api/interp
 {
   "values": [
     "mynamespace:functions/registry"
-  ]
-}
-```
-
-### Index
-
-Next, you will need to create your function index.
-
-```mcfunction
-# mynamespace:functions/execute.mcfunction
-
-execute if data storage bot:api/interpreter/function execute.signature{id:"firework"} run function mynamespace:functions/firework/init
-```
-
-You will need to add your index function to the function tag: `bot:api/interpreter/function/execute`
-
-```json
-{
-  "values": [
-    "mynamespace:functions/execute"
   ]
 }
 ```
