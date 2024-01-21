@@ -1,0 +1,2 @@
+execute unless data storage glm:api/interpreter/function execute.metadata.status run function bot:glm/function/move/before
+execute if data storage glm:api/interpreter/function execute.metadata{status:"open"} run function bot:glm/function/move/open

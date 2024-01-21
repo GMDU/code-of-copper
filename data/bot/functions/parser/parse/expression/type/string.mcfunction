@@ -1,2 +1,0 @@
-execute if data storage bot:parser current{value:"\""} run data modify storage bot:parser expression.type set value {type:"literal",variant:"string",metadata:{type:"double"}}
-execute if data storage bot:parser current{value:"'"} run data modify storage bot:parser expression.type set value {type:"literal",variant:"string",metadata:{type:"single"}}

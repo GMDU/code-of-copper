@@ -1,1 +1,0 @@
-data modify storage bot:interpreter registry.external append from storage bot:api/interpreter/function register.target[]

@@ -1,2 +1,0 @@
-execute unless data storage bot:parser current{value:" "} run function bot:parser/parse/instruction/func/set_name
-execute if data storage bot:parser current{value:" "} run data modify storage bot:parser current.consumed set value true

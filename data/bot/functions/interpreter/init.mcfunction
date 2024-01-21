@@ -1,1 +1,0 @@
-function bot:interpreter/evaluate/init

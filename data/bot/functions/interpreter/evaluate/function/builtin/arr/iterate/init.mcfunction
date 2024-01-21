@@ -1,3 +1,0 @@
-execute if data storage bot:interpreter evaluate.stack[-1].metadata{type:"array"} run function bot:interpreter/evaluate/function/builtin/arr/iterate/array
-execute if data storage bot:interpreter evaluate.stack[-1].metadata{type:"object"} run function bot:interpreter/evaluate/function/builtin/arr/iterate/object
-execute if data storage bot:interpreter evaluate.stack[-1].metadata{type:"string"} run function bot:interpreter/evaluate/function/builtin/arr/iterate/string

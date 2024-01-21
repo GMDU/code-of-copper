@@ -1,4 +1,0 @@
-execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"array"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/array
-execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"integer"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/integer
-execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"object"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/object/init
-execute if data storage bot:interpreter evaluate.stack[-1].a{type:"literal",variant:"string"} run function bot:interpreter/evaluate/binary_operation/operations/maths/add/string

@@ -1,2 +1,0 @@
-$data modify storage bot:api/interpreter/function execute.return.value append from storage bot:interpreter evaluate.stack[-1].args[0].value[$(index)]
-$data remove storage bot:interpreter evaluate.stack[-1].args[0].value[$(index)]

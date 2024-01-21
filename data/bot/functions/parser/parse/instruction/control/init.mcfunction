@@ -1,2 +1,0 @@
-execute unless data storage bot:parser parent.metadata.status run function bot:parser/parse/instruction/control/set_expression
-execute if data storage bot:parser parent.metadata{status:"expression"} run function bot:parser/parse/instruction/control/set_block

@@ -1,2 +1,0 @@
-execute if data storage bot:parser stack[-1].metadata{no_matches:true} run function bot:parser/parse/line/no_matches
-execute unless data storage bot:parser stack[-1].metadata{no_matches:true} unless data storage bot:parser temp.replaced run function bot:parser/parse/line/instruction/check

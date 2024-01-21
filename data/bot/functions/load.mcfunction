@@ -1,5 +1,5 @@
 function bot:objectives
-function bot:interpreter/_load
+function bot:glm/function/place/registry
 function bot:version
 
 function bot:cleanup_entities

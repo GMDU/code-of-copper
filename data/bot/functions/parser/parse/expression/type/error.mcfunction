@@ -1,2 +1,0 @@
-data modify storage bot:parser raise set value '["[Expression] Unexpected character: \'",{"storage":"bot:parser","nbt":"current.value"},"\'. Expected [A-Z, a-z, 0-9, -, /, (, [, {, \\", \\\']"]'
-data modify storage bot:parser current.consumed set value true

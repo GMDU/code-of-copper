@@ -1,1 +1,0 @@
-data modify storage bot:parser close set value true
