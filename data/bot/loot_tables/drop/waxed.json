@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bot:drop/unwaxed",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{data:{waxed:true}}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "item.bot.waxed_golem_minecart",
+                "fallback": "Minecart with Waxed Copper Golem"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
