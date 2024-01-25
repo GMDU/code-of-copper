@@ -2,7 +2,7 @@
 
 ## Installation
 To install the datapack, first download the latest release from [Modrinth](https://modrinth.com/datapack/code-of-copper){target=_blank}.  
-You will also need [Moxlib](https://modrinth.com/datapack/moxlib){target=_blank}, and if you want [Regular Expression](data_types.md#regex) support, [Regex](https://modrinth.com/datapack/regex){target=_blank}.
+You will also need [GolemScript](https://modrinth.com/datapack/golemscript){target=_blank}, [Moxlib](https://modrinth.com/datapack/moxlib){target=_blank}, and if you want [Regular Expression](https://datapack.dev/docs/golemscript/data_types.md#regex) support, [Regex](https://modrinth.com/datapack/regex){target=_blank}.
 
 Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.wiki/Tutorials/Installing_a_data_pack){target=_blank}.
 
@@ -18,13 +18,4 @@ If you would like to follow along with the datapack and learn the language as yo
 
 ## Getting started with GolemScript
 GolemScript is written in Minecraft books, which are applied to the golem to give it a program.  
-There are many built-in [functions](stdlib.md), [keywords](keywords.md) and [operators](operators.md). These are all documented throughout this site.
-
-For the basic GolemScript syntax, see [syntax](syntax.md).  
-For the various data-types and values you will use, see [data types](data_types.md).  
-And for some example programs utilising these features, see [examples](examples.md).
-
-## Extending GolemScript
-GolemScript has many built-in functions, to aid you in programming with it. If there are missing functions, you can define custom functions within GolemScript.  
-However, not all behaviour is possible to implement inside GolemScript, and so sometimes you need to write it in native mcfunction.  
-Luckily, GolemScript has you covered! See [plugins](plugins.md) for information on creating your own built-in functions.
+See the [GolemScript documentation](https://datapack.dev/docs/golemscript){target=_blank} for more information on the language.
