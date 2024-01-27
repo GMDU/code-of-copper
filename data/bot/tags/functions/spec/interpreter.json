@@ -1,6 +1,0 @@
-{
-  "values": [
-    "bot:spec/interpreter/evaluate/literal",
-    "bot:spec/interpreter/evaluate/expression"
-  ]
-}

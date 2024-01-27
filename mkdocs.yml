@@ -35,11 +35,5 @@ extra:
       link: https://github.com/GMDU
 nav:
   - 'index.md'
-  - 'syntax.md'
-  - 'data_types.md'
   - 'stdlib.md'
-  - 'operators.md'
-  - 'keywords.md'
   - 'examples.md'
-  - 'glossary.md'
-  - 'plugins.md'
