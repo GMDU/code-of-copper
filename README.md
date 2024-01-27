@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/GMDU/code-of-copper">
-    <img src="docs/assets/logo.png" alt="Logo" width="128" height="128">
+  <a href="https://modrinth.com/datapack/code-of-copper/">
+    <img src="https://cdn.modrinth.com/data/6kxnrwLF/8fc1a8b5ca4e4b981fd60b083abea44af57440a0.png" alt="Logo" width="128" height="128">
   </a>
 
 <h2 align="center">Code of Copper</h2>
@@ -14,11 +14,10 @@ Right-clicking the Golem with an empty hand will execute it's current program.
 While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
 
 **A datapack by Moxvallix, Gears and Wulfian. Enjoy!**  
-[**Explore the docs »**](https://datapack.dev/docs/code_of_copper)  
-[Report Bug](https://github.com/GMDU/code-of-copper/issues)
+<a href="https://datapack.dev/docs/code_of_copper" target="_blank">**Explore the docs
+»**</a>  
+<a href="https://github.com/GMDU/code-of-copper/issues" target="_blank">Report Bug</a>
 </div>
-
----
 
 ## Requirements
 - **This datapack will only work in versions 1.20 and higher**
@@ -31,7 +30,7 @@ While we recommend playing through the pack, as an addition to your world, and s
 To install the datapack, first download the latest release from [Modrinth](https://modrinth.com/datapack/code-of-copper).  
 You will also need [Moxlib](https://modrinth.com/datapack/moxlib), and if you want Regular Expression support, [Regex](https://modrinth.com/datapack/regex).
 
-Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.wiki/Tutorials/Installing_a_data_pack).
+Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack).
 
 When you install the datapack, you must leave and rejoin the world (or restart the server) for all effects to properly take place.
 
