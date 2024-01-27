@@ -13,6 +13,8 @@ Right-clicking the Golem with an empty hand will execute it's current program.
 
 While we recommend playing through the pack, as an addition to your world, and slowly discovering the language and features over time, if you would like a quick demo of the pack, you can use `/place template bot:demo` to place our demo structure.
 
+Code of Copper is a [runtime](https://datapack.dev/docs/golemscript/glossary#runtime) for [GolemScript](https://modrinth.com/datapack/golemscript), the programming language used to program the Golems.
+
 **A datapack by Moxvallix, Gears and Wulfian. Enjoy!**  
 <a href="https://datapack.dev/docs/code_of_copper" target="_blank">**Explore the docs
 »**</a>  
@@ -20,15 +22,16 @@ While we recommend playing through the pack, as an addition to your world, and s
 </div>
 
 ## Requirements
-- **This datapack will only work in versions 1.20 and higher**
+- **This datapack will only work in versions 1.20.2 and higher**
 - **Make sure to remember to download and install the resource pack**
 - **This datapack will not work without the following datapack libraries:**
+  - [GolemScript](https://modrinth.com/datapack/golemscript)
   - [Moxlib](https://modrinth.com/datapack/moxlib)
   - [Regex Lib](https://modrinth.com/datapack/regex)
 
 ## Installation
 To install the datapack, first download the latest release from [Modrinth](https://modrinth.com/datapack/code-of-copper).  
-You will also need [Moxlib](https://modrinth.com/datapack/moxlib), and if you want Regular Expression support, [Regex](https://modrinth.com/datapack/regex).
+You will also need [GolemScript](https://modrinth.com/datapack/golemscript), [Moxlib](https://modrinth.com/datapack/moxlib), and [Regex](https://modrinth.com/datapack/regex).
 
 Put these in the `datapacks` folder of your world. For more information, see the [Minecraft wiki](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack).
 
@@ -44,7 +47,9 @@ If you would like to follow along with the datapack and learn the language as yo
 
 ## Getting started with GolemScript
 GolemScript is written in Minecraft books, which are applied to the golem to give it a program.  
-See [our documentation](https://datapack.dev/docs/code_of_copper) for more information.
+
+To learn more about Code of Copper's features, see [Code of Copper documentation](https://datapack.dev/docs/code_of_copper).
+To learn the language, see the [GolemScript documentation](https://datapack.dev/docs/golemscript).  
 
 ## License
 This project is distributed under the GPL-3.0 License. See `LICENSE.md` for more information.
