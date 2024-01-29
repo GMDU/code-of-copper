@@ -14,7 +14,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:807001,EntityTag:{id:\"minecraft:marker\",UUID:[I;630956989,-35109831,-2014879120,-1832353081]},bot:{id:\"golem_spawn\"}}"
+              "tag": "{CustomModelData:807001,EntityTag:{id:\"minecraft:marker\",UUID:[I;630956989,-35109831,-2014879120,-1832353081],data:{oxidisation:0b}},bot:{id:\"golem_spawn\"}}"
             },
             {
               "function": "set_name",
