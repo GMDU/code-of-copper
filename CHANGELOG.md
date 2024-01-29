@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] - 2024-01-29
+The big split
+
+### Added
+- The background of the text above the golem is now coloured based on its oxidisation level
+
+### Changed
+- The GolemScript language has been split from this datapack
+  - It is now its own separate pack
+  - This datapack uses its API to run programs and control the golems
+- Empty and same programs now rerun the previous program
+- Broken golems now store their oxidisation level, and whether they had been waxed
+
+### Removed
+- All code that processes the GolemScript language
+  - This can now all be found in the [GolemScript datapack](https://modrinth.com/datapack/golemscript)
+  - Code of Copper is now a runtime for GolemScript, and only contains code for manipulating golems
+- The experimental API
+  - This is now part of the GolemScript API
+
 ## [0.3.0-alpha-1] - 2023-12-24
 ### Added
 - Experimental, unstable support for extensions.
@@ -226,7 +246,7 @@ Various bug fixes.
 - Print command now works from within a while loop.
 - Blocks now correctly change when placed.
 
-## [0.1.0] - 2023-01-30
+## [0.1.0] - 2023-01-29
 Initial release!
 
 ### Added
