@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems love the\n# truth.\n# If they see\n# anything truthy,\n# they can\\'t help\n# but follow.\n\nlet success = true\n\nif success\n print(\"I will follow...\")\n move(1, 0, -1)\nend', '# Blank strings, empty arrays and objects, zero and false are not truthy.\n\n# Every other value however, is\n\nn = 0\n\nif n\n  print(\"This will not appear\")\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems love the\n# truth.\n# If they see\n# anything truthy,\n# they can't help\n# but follow.\n\nlet success = true\n\nif success\n print(\"I will follow...\")\n move(1, 0, -1)\nend",
+                "# Blank strings, empty arrays and objects, zero and false are not truthy.\n\n# Every other value however, is\n\nn = 0\n\nif n\n  print(\"This will not appear\")\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

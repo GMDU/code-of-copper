@@ -5,67 +5,67 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/array_equals_string"
+          "value": "bot:programs/array_equals_string"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/get_a_block"
+          "value": "bot:programs/get_a_block"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/i_need_sleep"
+          "value": "bot:programs/i_need_sleep"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/index"
+          "value": "bot:programs/index"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/inventory"
+          "value": "bot:programs/inventory"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/life"
+          "value": "bot:programs/life"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/loop"
+          "value": "bot:programs/loop"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/memory"
+          "value": "bot:programs/memory"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/move"
+          "value": "bot:programs/move"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/object"
+          "value": "bot:programs/object"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/place_blocks"
+          "value": "bot:programs/place_blocks"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/regex"
+          "value": "bot:programs/regex"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/string_addition"
+          "value": "bot:programs/string_addition"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/success"
+          "value": "bot:programs/success"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/to_infinity_and_beyond"
+          "value": "bot:programs/to_infinity_and_beyond"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "bot:programs/while"
+          "value": "bot:programs/while"
         }
       ]
     }

@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> FILTER\")\nprint(\"Expected output: \")\nprint([2,4,6])\nprint(\"aaeo\")\nprint({d:4,f:6})\nprint(\"---\")\n\nprint(filter([1,2,3,4,5,6],\n-> (x) x % 2 == 0\n))','print(filter(\"ahaheho\",\n-> (c) c != \"h\"\n))\n\nprint(filter(\n{a:1,b:2,c:3,d:4,e:5,f:6},\n-> (k,v) k != \"b\" && v % 2 == 0\n))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> FILTER\")\nprint(\"Expected output: \")\nprint([2,4,6])\nprint(\"aaeo\")\nprint({d:4,f:6})\nprint(\"---\")\n\nprint(filter([1,2,3,4,5,6],\n-> (x) x % 2 == 0\n))",
+                "print(filter(\"ahaheho\",\n-> (c) c != \"h\"\n))\n\nprint(filter(\n{a:1,b:2,c:3,d:4,e:5,f:6},\n-> (k,v) k != \"b\" && v % 2 == 0\n))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

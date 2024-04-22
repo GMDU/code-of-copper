@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Sometimes the\n# golems get a bit\n# confused between\n# different data types\n# but we can use that\n# to our advantage.\n\nlet array = [1,2,3]\n\nif array > 2\n  print(\"Array is longer than 2\")\nend\n\n', 'let string = \"Hello, world!\"\n\nif string < 100\n  print(\"String is short enough\")\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Sometimes the\n# golems get a bit\n# confused between\n# different data types\n# but we can use that\n# to our advantage.\n\nlet array = [1,2,3]\n\nif array > 2\n  print(\"Array is longer than 2\")\nend\n\n",
+                "let string = \"Hello, world!\"\n\nif string < 100\n  print(\"String is short enough\")\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

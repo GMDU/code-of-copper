@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# Golems can learn\n# to perform a\n# function, and love\n# to help out.\n\nfunc run(dist)\n  print(dist)\n  move(dist,0,0)\nend\n\nrun(2)\", \"# They can also\n# return the results\n# of the function they\n# perform.\n\nfunc square(num)\n  return num ** 2\nend\n\nlet result = square(2)\n\nprint(result)\"]}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems, if need be,\n# can break out of a\n# loop before it's \n# finished\n\nwhile true\n  print(\"Looping...\")\n  let block = getblock(1,0,0)\n  if block == \"minecraft:dirt\"\n    break\n  end\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

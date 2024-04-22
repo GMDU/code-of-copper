@@ -4,8 +4,12 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "durability": {
-          "max": 0
+        "predicates": {
+          "minecraft:damage": {
+            "durability": {
+              "max": 0
+            }
+          }
         }
       }
     }

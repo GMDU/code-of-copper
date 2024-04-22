@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> POS\")\nprint(\"Expected output: Bot\\'s current coords.\")\nprint(\"---\")\nprint(pos())\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> POS\")\nprint(\"Expected output: Bot's current coords.\")\nprint(\"---\")\nprint(pos())\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

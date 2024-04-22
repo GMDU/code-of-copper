@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can recall\n# certain parts of\n# their memory, even\n# if they were stored\n# as larger\n# structures before.\n\nhello_world = [\n\"Hello\", \", \", \"world\", \"1\"\n]\n\nprint(hello_world[2])\nprint(hello_world[0][3])']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems can recall\n# certain parts of\n# their memory, even\n# if they were stored\n# as larger\n# structures before.\n\nhello_world = [\n\"Hello\", \", \", \"world\", \"1\"\n]\n\nprint(hello_world[2])\nprint(hello_world[0][3])"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

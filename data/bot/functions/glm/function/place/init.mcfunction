@@ -12,11 +12,11 @@ data modify storage moxlib:api/data/get key.id set from storage bot:private temp
 function bot:utils/get.macro with storage moxlib:api/data/get
 
 data modify storage bot:private temp.place.slot set from storage moxlib:api/data/get output.Slot
-data modify storage bot:private temp.place.tag set from storage moxlib:api/data/get output.tag
+data modify storage bot:private temp.place.components set from storage moxlib:api/data/get output.components
 data modify storage bot:private temp.place.item set from storage moxlib:api/data/get output
 data remove storage bot:private temp.place.item.Slot
 
-execute store result score $count bot.interpreter run data get storage moxlib:api/data/get output.Count
+execute store result score $count bot.interpreter run data get storage moxlib:api/data/get output.count
 
 execute if data storage moxlib:api/data/get {success:false} run return -1
 
@@ -38,7 +38,7 @@ execute store result storage bot:private temp.place.z int 1 run scoreboard playe
 data modify storage moxlib:api/string/filter target set from storage bot:private registry.tools
 data modify storage moxlib:api/string/filter key set from storage bot:private temp.place.id
 
-function moxlib:api/string/filter
+function bot:utils/filter.macro with storage moxlib:api/string/filter
 
 execute if data storage moxlib:api/string/filter {output:false} at @s run function bot:glm/function/place/tool with storage bot:private temp.place
 execute unless data storage moxlib:api/string/filter {output:false} at @s run function bot:glm/function/place/block with storage bot:private temp.place

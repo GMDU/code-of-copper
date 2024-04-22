@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> RTRIM\")\nprint(\"Expected output:\")\n\nprint(\"	 Testing\")\n\nprint(\"---\")\n\nprint(rtrim(\"	 Testing 	\"))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> RTRIM\")\nprint(\"Expected output:\")\n\nprint(\"	 Testing\")\n\nprint(\"---\")\n\nprint(rtrim(\"	 Testing 	\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

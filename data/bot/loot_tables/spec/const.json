@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> CONST\")\nprint(\"Expected output: AN ERROR\")\n\nconst foo = 5\nfoo = 6']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> CONST\")\nprint(\"Expected output: AN ERROR\")\n\nconst foo = 5\nfoo = 6"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

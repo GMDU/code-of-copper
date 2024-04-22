@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet i = 0\n\nwhile i < 10\n  print(\"i is less than 10\")\n  i += 1\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# If you tell it to, a\n# Golem can run\n# instructions again\n# and again.\n\nlet i = 0\n\nwhile i < 10\n  print(\"i is less than 10\")\n  i += 1\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

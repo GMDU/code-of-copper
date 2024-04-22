@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:cyan_glazed_terracotta"
+      "id": "minecraft:cyan_glazed_terracotta"
     },
     "title": "Roll of the Dice!",
     "description": "Adobe Garden Glue Mountain Turtle!",

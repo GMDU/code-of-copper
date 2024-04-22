@@ -4,20 +4,28 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:sheep_spawn_egg",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
-              "count": 1
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 807001,
+                "minecraft:entity_data": {
+                  "id": "minecraft:chest_minecart",
+                  "Tags": ["bot.golem","bot.golem.body"],
+                  "data": {"oxidisation":0}
+                },
+                "minecraft:custom_data": {
+                  "bot": {
+                    "id": "bot_spawn"
+                  }
+                }
+              }
             },
             {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:807001,EntityTag:{id:\"minecraft:marker\",UUID:[I;630956989,-35109831,-2014879120,-1832353081],data:{oxidisation:0b}},bot:{id:\"golem_spawn\"}}"
-            },
-            {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "translate": "item.bot.golem_minecart",

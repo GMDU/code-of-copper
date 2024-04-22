@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> FLAT\")\nprint(\"Expected output:\")\n\nprint([1,2,[3]])\nprint([1,2,3])\n\nprint(\"---\")\n\nlet a = [1,[2,[3]]]\nprint(flat(a))\nprint(flat(a, 2))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> FLAT\")\nprint(\"Expected output:\")\n\nprint([1,2,[3]])\nprint([1,2,3])\n\nprint(\"---\")\n\nlet a = [1,[2,[3]]]\nprint(flat(a))\nprint(flat(a, 2))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

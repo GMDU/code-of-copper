@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# We needed a way to\n# organise the Golem\\'s\n# memories.\n\n# We came up with the\n# Object, that could\n# hold memories to\n# a simple name, in a\n# compact manner.\n\nlet obj = {a:1,b:2+3}\n\nprint(obj[\"b\"])']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# We needed a way to\n# organise the Golem's\n# memories.\n\n# We came up with the\n# Object, that could\n# hold memories to\n# a simple name, in a\n# compact manner.\n\nlet obj = {a:1,b:2+3}\n\nprint(obj[\"b\"])"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can even\n# see what they have\n# in their inventory.\n\nprint(INVENTORY)\n\nif INVENTORY[0] == \"minecraft:dirt\"\n  place(0, [1,0,0])\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems can even\n# see what they have\n# in their inventory.\n\nprint(INVENTORY)\n\nif INVENTORY[0] == \"minecraft:dirt\"\n  place(0, [1,0,0])\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

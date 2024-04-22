@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:[\"# The Golems can\n# get a little bit\n# quirky sometimes...\n\nnum = random(0, 10)\n\nprint(num)\n\nnum = random(5, 20)\n\nprint(num)\"]}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# The Golems can\n# get a little bit\n# quirky sometimes...\n\nnum = random(0, 10)\n\nprint(num)\n\nnum = random(5, 20)\n\nprint(num)"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

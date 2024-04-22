@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can perform\n# actions based on\n# the world around\n# them. \n\nlet blk = getblock(0,-1,0)\nprint(blk)\n\nprint(POS)\nif POS == [0,0,0]\n  print(\"You\\'re at the origin!\")\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems can perform\n# actions based on\n# the world around\n# them. \n\nlet blk = getblock(0,-1,0)\nprint(blk)\n\nprint(POS)\nif POS == [0,0,0]\n  print(\"You're at the origin!\")\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

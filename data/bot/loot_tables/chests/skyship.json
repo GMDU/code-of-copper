@@ -8,23 +8,23 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb_block",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:raw_copper_block",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 2
@@ -33,12 +33,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 3,
+          "type": "minecraft:item",
           "name": "minecraft:raw_copper",
+          "weight": 3,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -47,12 +47,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:lightning_rod",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -61,12 +61,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 7,
+          "type": "minecraft:item",
           "name": "minecraft:copper_ingot",
+          "weight": 7,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 7
@@ -75,12 +75,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 3,
                 "max": 5
@@ -98,21 +98,17 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
           "weight": 1,
           "quality": 2,
-          "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{pages:[\"\"]}"
-            },
-            {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Skyfarer's Journal",
@@ -123,12 +119,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:feather",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -137,12 +133,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:book",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -151,12 +147,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:leather",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -165,12 +161,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 3,
+          "type": "minecraft:item",
           "name": "minecraft:paper",
+          "weight": 3,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 6
@@ -188,50 +184,50 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:nether_star",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:slow_falling\"}"
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_invisibility"
             }
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
+          "name": "minecraft:copper_block",
           "weight": 1,
           "quality": 5,
-          "name": "minecraft:copper_block",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:copper_ingot",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 7
@@ -240,12 +236,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -254,12 +250,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:coal",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 5

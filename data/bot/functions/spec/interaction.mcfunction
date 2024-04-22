@@ -1,1 +1,1 @@
-execute at @s run particle dust 1.000 0.000 0.000 1 ~ ~0.5 ~ 0.125 0.125 0.125 1 1 force
+execute at @s run particle dust{color:[1.0,0.0,0.0], scale:1.0} ~ ~0.5 ~ 0.125 0.125 0.125 1 1 force

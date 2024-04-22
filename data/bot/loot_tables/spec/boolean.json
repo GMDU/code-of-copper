@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> BOOLEAN\")\nprint(\"Expected output:\")\n\nprint([true, false, true, false, false, true])\nprint(\"---\")\nprint([1 < 2, 2 < 1, 1 == 2 || \\'foo\\' == \\'foo\\', false || false && true, true && true && true && false, 4 != 5])\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> BOOLEAN\")\nprint(\"Expected output:\")\n\nprint([true, false, true, false, false, true])\nprint(\"---\")\nprint([1 < 2, 2 < 1, 1 == 2 || 'foo' == 'foo', false || false && true, true && true && true && false, 4 != 5])\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

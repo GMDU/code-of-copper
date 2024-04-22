@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> REVERSE\")\nprint(\"Expected output:\")\n\nprint(\"!dlroW ,olleH\")\n\nprint(\"---\")\n\nprint(\n reverse(\n  \"Hello, World!\"\n )\n)\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> REVERSE\")\nprint(\"Expected output:\")\n\nprint(\"!dlroW ,olleH\")\n\nprint(\"---\")\n\nprint(\n reverse(\n  \"Hello, World!\"\n )\n)\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

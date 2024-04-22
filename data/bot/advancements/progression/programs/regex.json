@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:spyglass"
+      "id": "minecraft:spyglass"
     },
     "title": "How Irregular",
     "description": "You used regex to solve a problem. Now you have two",

@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> GETBLOCK\")\nprint(\"Expected output:\")\n\nprint(:waxed_copper_block)\n\nprint(\"---\")\n\nprint(getblock(0, -1, 0))\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> GETBLOCK\")\nprint(\"Expected output:\")\n\nprint(:waxed_copper_block)\n\nprint(\"---\")\n\nprint(getblock(0, -1, 0))\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

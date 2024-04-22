@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:comparator"
+      "id": "minecraft:comparator"
     },
     "title": "It's Been a While",
     "description": "While you wait, check out the while instruction",

@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> SPLIT\")\nprint(\"Expected output:\")\nprint([\"Hi\",\"there\",\"bob\"])\nprint([\"Hello, \",\"world!\"])\nprint([\"f\",\"i\",\"z\",\"z\",\"b\",\"u\",\"z\",\"z\"])\nprint(\"---\")','print(split(\"Hi there bob\", \" \"))\nprint(split(\"Hello, , ,!world!\", \", ,!\"))\nprint(split(\"fizzbuzz\"))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> SPLIT\")\nprint(\"Expected output:\")\nprint([\"Hi\",\"there\",\"bob\"])\nprint([\"Hello, \",\"world!\"])\nprint([\"f\",\"i\",\"z\",\"z\",\"b\",\"u\",\"z\",\"z\"])\nprint(\"---\")",
+                "print(split(\"Hi there bob\", \" \"))\nprint(split(\"Hello, , ,!world!\", \", ,!\"))\nprint(split(\"fizzbuzz\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

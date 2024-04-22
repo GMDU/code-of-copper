@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> FIND\")\nprint(\"Expected output: \")\nprint(2)\nprint(2)\nprint(\"?\")\nprint(2)\nprint(\"---\")','let last = 0\nprint(find([5,4,3,2,1],\n->(x){last = x\nreturn x < 3\n}))\nprint(last)\n\nprint(find(\"AAAA?\",\n-> (c) c != \"A\"))\n\nprint(find({a:1,b:2},\n-> (k,v) k != \"a\"))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> FIND\")\nprint(\"Expected output: \")\nprint(2)\nprint(2)\nprint(\"?\")\nprint(2)\nprint(\"---\")",
+                "let last = 0\nprint(find([5,4,3,2,1],\n->(x){last = x\nreturn x < 3\n}))\nprint(last)\n\nprint(find(\"AAAA?\",\n-> (c) c != \"A\"))\n\nprint(find({a:1,b:2},\n-> (k,v) k != \"a\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

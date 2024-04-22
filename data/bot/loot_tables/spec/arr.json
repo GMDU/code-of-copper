@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> ARR\")\nprint(\"Expected output:\")\nprint([\\'a\\',\\'b\\',\\'c\\'])\nprint([[\\'a\\', 1], [\\'b\\', 2]])\nprint([1,2,3])\n\nprint(\"---\")\nprint(arr(\\'abc\\'))\nprint(arr({a: 1, b: 2}))\nprint(arr([1,2,3]))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> ARR\")\nprint(\"Expected output:\")\nprint(['a','b','c'])\nprint([['a', 1], ['b', 2]])\nprint([1,2,3])\n\nprint(\"---\")\nprint(arr('abc'))\nprint(arr({a: 1, b: 2}))\nprint(arr([1,2,3]))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

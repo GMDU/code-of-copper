@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> SUFFIX?\")\nprint(\"Expected output:\")\nprint(true)\nprint(false)\n\nprint(\"---\")\nprint(suffix?(\"hello\", \"lo\"))\nprint(suffix?(\"howdy\", \"lo\"))\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> SUFFIX?\")\nprint(\"Expected output:\")\nprint(true)\nprint(false)\n\nprint(\"---\")\nprint(suffix?(\"hello\", \"lo\"))\nprint(suffix?(\"howdy\", \"lo\"))\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

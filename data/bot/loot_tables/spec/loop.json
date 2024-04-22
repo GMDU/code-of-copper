@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> LOOP\")\nprint(\"Expected output:\")\nprint(\"hahahahaha\")\nprint(\"---\")\nlet str = \"\"\n\nloop 5\n str += \"ha\" \nend\n\nprint(str)\n\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> LOOP\")\nprint(\"Expected output:\")\nprint(\"hahahahaha\")\nprint(\"---\")\nlet str = \"\"\n\nloop 5\n str += \"ha\" \nend\n\nprint(str)\n\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

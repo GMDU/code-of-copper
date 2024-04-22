@@ -8,8 +8,12 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> FUNCTIONS\")\nprint(\"Expected output:\")\n\nprint(3)\nprint(undefined)\nprint(undefined)\nprint(\"---\")\nfunc plus(a, b)\n let c = a + b\n return c\n print(\"THIS IS AN ERROR!\")\nend','print(plus(1, 2))\nprint(b)\nprint(c)\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> FUNCTIONS\")\nprint(\"Expected output:\")\n\nprint(3)\nprint(undefined)\nprint(undefined)\nprint(\"---\")\nfunc plus(a, b)\n let c = a + b\n return c\n print(\"THIS IS AN ERROR!\")\nend",
+                "print(plus(1, 2))\nprint(b)\nprint(c)\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# We did it!\n# The Golem reeks\n# of life!\n#\n# ...Well, it reeks of\n# oil at least.\n\nprint(\"Initialising...\")\n\nprint(\"I am online...\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# We did it!\n# The Golem reeks\n# of life!\n#\n# ...Well, it reeks of\n# oil at least.\n\nprint(\"Initialising...\")\n\nprint(\"I am online...\")"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

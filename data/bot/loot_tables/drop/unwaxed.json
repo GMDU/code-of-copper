@@ -5,15 +5,15 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "bot:spawn",
+          "value": "bot:spawn",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:807002}",
+              "function": "minecraft:set_custom_model_data",
+              "value": 807002,
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -25,8 +25,8 @@
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:807003}",
+              "function": "minecraft:set_custom_model_data",
+              "value": 807003,
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -38,8 +38,8 @@
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:807004}",
+              "function": "minecraft:set_custom_model_data",
+              "value": 807004,
               "conditions": [
                 {
                   "condition": "minecraft:entity_scores",
@@ -47,17 +47,6 @@
                   "scores": {
                     "bot.golem.oxidisation": 3
                   }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:copy_nbt",
-              "source": "this",
-              "ops": [
-                {
-                  "source": "data",
-                  "target": "EntityTag.data",
-                  "op": "merge"
                 }
               ]
             },
@@ -73,6 +62,7 @@
                   "italic": false
                 }
               ],
+              "mode": "append",
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",

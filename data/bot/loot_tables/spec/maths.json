@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> MATHS\")\nprint(\"Expected output: 96\")\n\nlet math = (1 + 2) / 3 * 4 * (5**2) + (9 % 5) - 6 >> 3 << 3\n\nprint(math)\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> MATHS\")\nprint(\"Expected output: 96\")\n\nlet math = (1 + 2) / 3 * 4 * (5**2) + (9 % 5) - 6 >> 3 << 3\n\nprint(math)\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

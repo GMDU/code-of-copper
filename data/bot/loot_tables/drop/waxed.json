@@ -5,11 +5,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "bot:drop/unwaxed",
+          "value": "bot:drop/unwaxed",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{data:{waxed:true}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:chest_minecart",
+                  "Tags": ["bot.golem","bot.golem.body"],
+                  "data": {"waxed": true}
+                }
+              }
             },
             {
               "function": "minecraft:set_lore",
@@ -17,11 +23,11 @@
               "lore": [
                 {
                   "text": "Waxed",
-                  "italic": false,
-                  "color": "gold"
+                  "color": "gold",
+                  "italic": false
                 }
               ],
-              "replace": false
+              "mode": "append"
             }
           ]
         }

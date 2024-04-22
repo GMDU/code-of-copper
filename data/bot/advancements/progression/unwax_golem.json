@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:golden_axe"
+      "id": "minecraft:golden_axe"
     },
     "title": "Written in Rust",
     "description": "Scrape the wax from the Golem, allowing it to oxidise again",

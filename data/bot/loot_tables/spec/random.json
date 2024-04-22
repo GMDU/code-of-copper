@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['print(\">>> RANDOM\")\nprint(\"Expected output: 5 random numbers from 1-10.\")\nprint(\"---\")\nloop 5\n print(random(1, 10))\nend\nprint(\">>>\")']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "print(\">>> RANDOM\")\nprint(\"Expected output: 5 random numbers from 1-10.\")\nprint(\"---\")\nloop 5\n print(random(1, 10))\nend\nprint(\">>>\")"
+              ],
+              "mode": "replace_all"
             }
           ]
         }

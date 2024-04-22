@@ -4,49 +4,49 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:trident",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 4,
-          "name": "minecraft:leather_leggings",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "weight": 4,
-          "name": "minecraft:leather_chestplate",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "item",
           "weight": 1,
-          "name": "minecraft:diamond_hoe",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "My Hoe"
@@ -56,23 +56,23 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:leather_helmet",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:leather_boots",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
@@ -87,23 +87,23 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb_block",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:raw_copper_block",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 2
@@ -112,12 +112,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 3,
+          "type": "minecraft:item",
           "name": "minecraft:raw_copper",
+          "weight": 3,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -126,12 +126,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:lightning_rod",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -140,12 +140,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 7,
+          "type": "minecraft:item",
           "name": "minecraft:copper_ingot",
+          "weight": 7,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 7
@@ -154,12 +154,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:honeycomb",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 3,
                 "max": 5
@@ -177,21 +177,17 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
           "weight": 1,
           "quality": 2,
-          "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{pages:[\"\"]}"
-            },
-            {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Seadweller's Notebook",
@@ -202,12 +198,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:feather",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -216,12 +212,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:book",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -230,12 +226,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:leather",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
@@ -244,12 +240,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 3,
+          "type": "minecraft:item",
           "name": "minecraft:paper",
+          "weight": 3,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 6
@@ -267,12 +263,12 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 2,
                 "max": 6
@@ -281,27 +277,27 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 2,
+          "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 2,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:long_water_breathing\"}"
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_invisibility"
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:salmon",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -310,12 +306,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:cod",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -324,12 +320,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:cookie",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 5
@@ -338,12 +334,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:bread",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 9

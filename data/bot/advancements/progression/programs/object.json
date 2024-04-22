@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:egg"
+      "id": "minecraft:egg"
     },
     "title": "It's an Object",
     "description": "I mean, it is. And sometimes it contains things.",

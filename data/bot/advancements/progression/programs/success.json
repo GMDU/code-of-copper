@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:glow_lichen"
+      "id": "minecraft:glow_lichen"
     },
     "title": "Hidden in the Cracks",
     "description": "Discover an ancient program whilst cleaning your Golem (perhaps there are more...)",

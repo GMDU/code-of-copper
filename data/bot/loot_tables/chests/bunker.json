@@ -8,21 +8,17 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
           "weight": 1,
           "quality": 2,
-          "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{pages:[\"\"]}"
-            },
-            {
-              "function": "set_name",
+              "function": "minecraft:set_name",
               "name": [
                 {
                   "text": "Keeper's Recordbook",
@@ -33,12 +29,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:feather",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 7
@@ -47,12 +43,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:book",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 13
@@ -61,12 +57,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:leather",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 6
@@ -75,12 +71,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:paper",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 11
@@ -98,60 +94,60 @@
       "bonus_rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "weight": 3,
+          "type": "minecraft:item",
           "name": "minecraft:golden_apple",
+          "weight": 3,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 1,
+          "type": "minecraft:item",
           "name": "minecraft:enchanted_golden_apple",
+          "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 5,
+          "type": "minecraft:item",
           "name": "minecraft:potion",
+          "weight": 5,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:long_invisibility\"}"
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_invisibility"
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 4,
+          "type": "minecraft:item",
           "name": "minecraft:cake",
+          "weight": 4,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": 1
             }
           ]
         },
         {
-          "type": "item",
-          "weight": 10,
+          "type": "minecraft:item",
           "name": "minecraft:apple",
+          "weight": 10,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 4
@@ -160,12 +156,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 15,
+          "type": "minecraft:item",
           "name": "minecraft:cookie",
+          "weight": 15,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 5
@@ -174,12 +170,12 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 20,
+          "type": "minecraft:item",
           "name": "minecraft:bread",
+          "weight": 20,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 9

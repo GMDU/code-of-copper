@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Oh no! I appear to \n# have made an\n# infinite loop!\n\n# Wait, I can just hit it\n# to make it stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Oh no! I appear to \n# have made an\n# infinite loop!\n\n# Wait, I can just hit it\n# to make it stop.\n\nwhile 1\n  print \"This is an infinite loop\"\nend"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

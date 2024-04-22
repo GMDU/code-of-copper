@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:dropper"
+      "id": "minecraft:dropper"
     },
     "title": "I Demand Arrays",
     "description": "Unearth the ancient knowledge of Array indices",

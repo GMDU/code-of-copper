@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:barrier"
+      "id": "minecraft:barrier"
     },
     "title": "Slam the breaks",
     "description": "Break out of a loop early",

@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems can read,\n# but they need to\n# know what they are\n# looking for. We\n# made a \"Regular\n# Expression\", to tell\n# the Golem what to\n# find.\n\nlet regex = /h\\\\w+o/\nprint(match(regex, \"hello!!!\"))']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems can read,\n# but they need to\n# know what they are\n# looking for. We\n# made a \"Regular\n# Expression\", to tell\n# the Golem what to\n# find.\n\nlet regex = /h\\\\w+o/\nprint(match(regex, \"hello!!!\"))"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

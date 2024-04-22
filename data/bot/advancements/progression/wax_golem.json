@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:honeycomb"
+      "id": "minecraft:honeycomb"
     },
     "title": "A Well-Oiled Machine",
     "description": "Prevent the Golem from oxidising, by coating it with Beeswax",

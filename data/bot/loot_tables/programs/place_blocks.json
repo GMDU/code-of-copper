@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Place a block into\n# slot 0 of the Golem.\n#\n# It loves placing\n# blocks!\n\nprint(\"Insert block!\")\n\nplace(0, [1,1,0])\n\n# Now try putting\n# a pickaxe in the\n# same slot.']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Place a block into\n# slot 0 of the Golem.\n#\n# It loves placing\n# blocks!\n\nprint(\"Insert block!\")\n\nplace(0, [1,1,0])\n\n# Now try putting\n# a pickaxe in the\n# same slot."
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",

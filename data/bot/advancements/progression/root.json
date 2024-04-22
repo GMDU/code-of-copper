@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:sheep_spawn_egg",
+      "id": "minecraft:sheep_spawn_egg",
       "nbt": "{CustomModelData:807001}"
     },
     "title": "Code of Copper",

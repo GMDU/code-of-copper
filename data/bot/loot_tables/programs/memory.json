@@ -8,8 +8,11 @@
           "name": "minecraft:writable_book",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{pages:['# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet x = 1\nlet y = 2\nlet z = \"Boop.\"\nlet calc = x + y\n\nprint(z)\nprint(calc)']}"
+              "function": "minecraft:set_writable_book_pages",
+              "pages": [
+                "# Golems have an\n# excellent memory.\n# We can let it know\n# what we want to\n# save, and it can\n# recall it easily.\n\nlet x = 1\nlet y = 2\nlet z = \"Boop.\"\nlet calc = x + y\n\nprint(z)\nprint(calc)"
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_name",
