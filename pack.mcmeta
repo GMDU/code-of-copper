@@ -1,8 +1,8 @@
 {
   "pack": {
-      "pack_format": 26,
+      "pack_format": 41,
       "description": "Programmable Copper Golems.",
-      "supported_formats": {"min_inclusive": 18, "max_inclusive": 26}
+      "supported_formats": 41
   },
   "overlays": {
     "entries": [

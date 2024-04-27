@@ -1,11 +1,9 @@
 {
   "name": "Code of Copper",
   "slug": "code-of-copper",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "game_versions": [
-    "1.20.2",
-    "1.20.3",
-    "1.20.4"
+    "1.20.5"
   ],
   "summary": "Programmable Copper Golems. Fully text-based programming language in a vanilla datapack.",
   "license": "GPL-3.0-or-later",
@@ -19,7 +17,7 @@
   ],
   "dependencies": {
     "golemscript": "0.3.1",
-    "moxlib": "0.5.11",
+    "moxlib": "0.5.12",
     "regex": "0.1.1"
   },
   "dev_dependencies": {},
