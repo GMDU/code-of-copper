@@ -8,17 +8,6 @@
           "value": "bot:spawn",
           "functions": [
             {
-              "function": "minecraft:copy_custom_data",
-              "source": "this",
-              "ops": [
-                {
-                  "source": "data",
-                  "target": "bot.data",
-                  "op": "merge"
-                }
-              ]
-            },
-            {
               "function": "minecraft:set_count",
               "count": 1
             },

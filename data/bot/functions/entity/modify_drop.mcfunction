@@ -1,1 +1,0 @@
-data modify entity @s Item.components.minecraft:entity_data.data set from entity @s Item.components.minecraft:custom_data.bot.data
