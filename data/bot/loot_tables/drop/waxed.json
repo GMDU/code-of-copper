@@ -8,16 +8,6 @@
           "value": "bot:drop/unwaxed",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:entity_data": {
-                  "id": "minecraft:chest_minecart",
-                  "Tags": ["bot.golem","bot.golem.body"],
-                  "data": {"waxed": true}
-                }
-              }
-            },
-            {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [

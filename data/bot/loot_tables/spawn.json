@@ -13,9 +13,8 @@
               "components": {
                 "minecraft:custom_model_data": 807001,
                 "minecraft:entity_data": {
-                  "id": "minecraft:chest_minecart",
-                  "Tags": ["bot.golem","bot.golem.body"],
-                  "data": {"oxidisation":0}
+                  "id": "minecraft:marker",
+                  "Tags": ["bot.spawn"]
                 },
                 "minecraft:custom_data": {
                   "bot": {
