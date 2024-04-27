@@ -32,6 +32,20 @@
                   "italic": false
                 }
               ]
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "bot:version"
+              },
+              "ops": [
+                {
+                  "source": "{}",
+                  "target": "bot.version",
+                  "op": "merge"
+                }
+              ]
             }
           ]
         }

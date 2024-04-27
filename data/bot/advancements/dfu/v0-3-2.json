@@ -1,0 +1,53 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:sheep_spawn_egg",
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "bot": {
+                        "id": "bot_spawn"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:sheep_spawn_egg",
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "bot": {
+                          "version": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bot:dfu/v0-3-2"
+  }
+}
